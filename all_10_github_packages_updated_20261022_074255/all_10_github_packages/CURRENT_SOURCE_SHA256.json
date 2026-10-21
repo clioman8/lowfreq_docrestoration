@@ -1,0 +1,16 @@
+{
+  "docrestore/__init__.py": "4ec8af8ebcad4cd270b9f813659b6b7333a91edd041d83c9bd1d9c5361d336fa",
+  "docrestore/aggregate.py": "10f6f5bd1c0ff519b8c71993bb6e810a1b8329cd5b567ba4efba4c8667dbe95f",
+  "docrestore/assets.py": "4b514ff7cdc3662a676fa3c0118ccb6236fea3390f3828c9c8eb2ba52ae95128",
+  "docrestore/cases.py": "ffb20881a605ee597b286c88e134d30852467ffcb30af91b7ccd0b6c195d1a65",
+  "docrestore/common.py": "54e96ec47e46924fff497603d7d1df2bdb6cb3915601dd7a9e5c9584744524c8",
+  "docrestore/data.py": "3aacdc5a4b964d91fb193ea8536a1755993892152b2ff062ae699da74e27245b",
+  "docrestore/diagnose.py": "3742dafdbe8fcb4cbb2b41b42f5f9a14746260943ca1a4d835afe5bcffa16032",
+  "docrestore/evaluate.py": "a1b7a7962a02cccd0261108e111a77f17d8830955f1ef4ee98f318c688c24280",
+  "docrestore/losses.py": "f843f07ef23a9497164f1311fcec3c6e398b0790a6f6881f669c25335e5a7019",
+  "docrestore/metrics.py": "f621c06fd61439e83aceb44a5d84bec1e64968cb858652673a12a3dc5e6035df",
+  "docrestore/model.py": "f4ecb43c76b22214a45891ef1b7e25981996ed8d0b6275189cb828fdffa041a6",
+  "docrestore/operators.py": "89e0cb49105357b8fb865ab254efcb5f466b2f40cb365e8cb38457e375bda63f",
+  "docrestore/plan.py": "5207a21c227b63ffb887a3c0fbba67c216d84141fa4e6e0ba4ec09e146eb7284",
+  "docrestore/train.py": "2c868fea92ec9b5c86b0220377874cef1d4705af0323c6434cb5b627c09f24c7"
+}
