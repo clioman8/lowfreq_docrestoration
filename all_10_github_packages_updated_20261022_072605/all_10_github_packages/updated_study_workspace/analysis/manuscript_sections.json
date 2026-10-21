@@ -1,0 +1,585 @@
+{
+  "title": "An Empirical Comparison of Low-Frequency Subspace Consistency Regularization for Document Image Restoration",
+  "subtitle": "OCR Performance under Controlled Degradation Severity Shifts",
+  "authors": [
+    {
+      "name": "Beomsoo Park",
+      "affiliation_index": 1,
+      "email": "tw00313@postech.ac.kr"
+    },
+    {
+      "name": "Kevin Short",
+      "affiliation_index": 2,
+      "email": "Kevin.Short@unh.edu"
+    },
+    {
+      "name": "Jihoon Ryoo",
+      "affiliation_index": 3,
+      "email": "jiryoo@cs.stonybrook.edu"
+    }
+  ],
+  "affiliations": [
+    {
+      "index": 1,
+      "text": "Graduate School of Artificial Intelligence, POSTECH"
+    },
+    {
+      "index": 2,
+      "text": "Department of Mathematics and Statistics, CEPS, University of New Hampshire, Durham"
+    },
+    {
+      "index": 3,
+      "text": "Department of Computer Science, Stony Brook University, Stony Brook Korea"
+    }
+  ],
+  "sections": [
+    {
+      "number": "1",
+      "title": "Introduction",
+      "paragraphs": [
+        "Document restoration is often evaluated by the visual similarity between a restored image and a clean target. When restoration precedes optical character recognition (OCR), the practical endpoint is the text recognized from the output. This study therefore evaluates restoration through character error rate (CER), alongside pixel and structural image metrics, using one fixed recognition pipeline.",
+        "The comparison concerns the spectral scope of a training-time forward-consistency penalty. Given a degraded observation and a predicted clean image, forward consistency measures whether applying the known degradation operator to the prediction reproduces the observation. A full-residual loss penalizes every residual direction. A low-frequency subspace loss controls only the orthogonal projection onto a fixed set of test vectors. Restriction removes direct supervision in the complementary residual directions; whether this improves recognition under a severity shift is an empirical question.",
+        "We compare supervised reconstruction alone, reconstruction with full consistency, and reconstruction with low-frequency subspace consistency. All three use the same U-Net, source partition, reconstruction loss and optimization budget. Training uses paired synthetic examples with known degradation parameters, while the restoration network receives only the degraded image. Evaluation increases diffusion and fading along one specified severity path, retaining the same held-out text regions at every condition.",
+        "The contribution is an application-focused comparison with explicit projection normalization, metadata-linked source-group separation, matched training seeds and an equal validation-search budget. The primary endpoint is each training seed's maximum corpus CER over the shifted conditions, summarized across seeds. Severity-wise CER, PSNR, SSIM and deterministic failure examples provide context for that endpoint. The study does not assume that subspace restriction helps, and it does not introduce a new weak formulation or claim a general robustness guarantee."
+      ],
+      "equations": [],
+      "subsections": []
+    },
+    {
+      "number": "2",
+      "title": "Related Work and Positioning",
+      "paragraphs": [],
+      "equations": [],
+      "subsections": [
+        {
+          "number": "2.1",
+          "title": "Residual learning against finite test spaces",
+          "paragraphs": [
+            "Variational physics-informed neural networks (VPINNs) express PDE residual conditions against a finite test space, using neural-network trial functions and polynomial test functions [1]. Robust VPINNs further distinguish a basis-dependent residual expression from a discrete dual-norm construction [2]. These works motivate careful specification of the tested residual directions and their normalization.",
+            "Here the residual is an image-domain discrepancy after a forward degradation map. Its Euclidean projection is specified directly; the network is not trained to solve the degradation PDE through a variational formulation. The PDE error-estimation results of variational methods are therefore not transferred to the restoration problem. The relevant connection is the restriction of residual control to a finite, explicitly defined test space."
+          ],
+          "equations": []
+        },
+        {
+          "number": "2.2",
+          "title": "Frequency-selective image objectives",
+          "paragraphs": [
+            "Focal Frequency Loss adaptively emphasizes frequency components that are difficult to reconstruct and supplements spatial-domain reconstruction losses [3]. The treatment studied here differs in both its target and its weighting: it acts on the forward-consistency residual, and its selected low-frequency directions are fixed before training. It is not an implementation or empirical benchmark of Focal Frequency Loss.",
+            "The distinction matters because a degradation operator can already attenuate high-frequency reconstruction errors before any explicit projection is applied. Consequently, the full-consistency baseline is not spectrally neutral. The comparison tests the additional restriction imposed on the forward residual, rather than a contrast between a frequency-aware objective and an unweighted image error."
+          ],
+          "equations": []
+        },
+        {
+          "number": "2.3",
+          "title": "Shared reconstruction and recognition endpoints",
+          "paragraphs": [
+            "U-Net supplies a common encoder-decoder architecture with skip connections [4]. We adapt that architecture to grayscale image restoration and hold its implementation fixed across objectives. Structural similarity (SSIM) [5] complements the shared absolute-error reconstruction term. Neither the architecture citation nor the use of SSIM establishes a document-recognition advantage; that question is evaluated with the same fixed OCR engine for every method.",
+            "CER operationalizes the retained text under that recognizer. It does not measure historical authenticity, semantic equivalence or human legibility. No language-model correction, semantic completion or contextual-recovery stage enters the training or evaluation pipeline."
+          ],
+          "equations": []
+        }
+      ]
+    },
+    {
+      "number": "3",
+      "title": "Problem Formulation",
+      "paragraphs": [],
+      "equations": [],
+      "subsections": [
+        {
+          "number": "3.1",
+          "title": "Paired restoration with a known training operator",
+          "paragraphs": [
+            "Let u0 be a clean H-by-W grayscale region, with black ink represented by zero and a white background by one. A degradation map D_eta produces the observation y. The network f_theta predicts a clean region from y alone. The paired training record retains eta for consistency evaluation, but eta is not an input channel or conditioning variable of the restoration network.",
+            "The image geometry, rendering transcript and source identity remain fixed when a region is assigned multiple degradation conditions. This pairing makes severity comparisons within the held-out set directly traceable to the same clean target."
+          ],
+          "equations": [
+            {
+              "id": "1",
+              "latex": "u_0\\in[0,1]^{H\\times W},\\quad y=D_\\eta(u_0),\\quad \\widehat u=f_\\theta(y)",
+              "description": "Paired grayscale restoration setting."
+            },
+            {
+              "id": "2",
+              "latex": "r_\\theta=D_\\eta(f_\\theta(y))-y",
+              "description": "Forward-consistency residual for a paired observation."
+            }
+          ]
+        },
+        {
+          "number": "3.2",
+          "title": "Diffusion-reaction degradation and discretization",
+          "paragraphs": [
+            "We model ink density as v=1-u and evolve it through isotropic diffusion with a nonnegative reaction term. Positive reaction strength reduces ink density and therefore fades text toward the white background. Zero normal flux is imposed at the image boundary. This convention avoids interpreting positive reaction as darkening of the grayscale background.",
+            "The implementation uses a symmetric nearest-neighbor graph Laplacian with one adjacent pixel per axis at an endpoint. This is the zero-flux finite-volume discretization on the rectangular pixel grid. Pixel spacing is h=1, and time is divided into eight backward-Euler steps. The negative Laplacian is diagonalized by an orthonormal DCT-II, so the update is evaluated using its closed-form spectral multiplier rather than an iterative linear solver. No iterative convergence tolerance is needed for this implementation.",
+            "NumPy/SciPy generation uses float64 arithmetic; the PyTorch counterpart preserves the differentiable image computation and supports tensor-valued degradation parameters. Clipping, additive noise and 8-bit quantization are excluded from the forward operator. Observation arrays are stored as float32 for restoration inference; separate rounded 8-bit PNGs support the fixed OCR evaluation. This separation preserves the matched forward map during learning while making the evaluated images explicit."
+          ],
+          "equations": [
+            {
+              "id": "3",
+              "latex": "\\partial_t v=\\kappa\\Delta v-\\alpha v,\\quad v(0)=1-u_0,\\quad \\nabla v\\cdot n=0,\\quad D_\\eta(u_0)=1-v(T)",
+              "description": "Ink-density diffusion and fading with nonnegative kappa and alpha."
+            },
+            {
+              "id": "4",
+              "latex": "[(1+\\Delta t\\alpha)I-\\Delta t\\kappa L_h]v^{n+1}=v^n,\\quad \\Delta t=T/n_t",
+              "description": "Backward-Euler update with a negative-semidefinite discrete Laplacian."
+            },
+            {
+              "id": "5",
+              "latex": "\\mu_{pq}=\\frac{4}{h^2}\\left[\\sin^2\\!\\left(\\frac{\\pi p}{2H}\\right)+\\sin^2\\!\\left(\\frac{\\pi q}{2W}\\right)\\right]",
+              "description": "Nonnegative eigenvalues of minus the discrete graph Laplacian."
+            },
+            {
+              "id": "6",
+              "latex": "g_{pq}(\\eta)=\\left[1+\\frac{T}{n_t}(\\alpha+\\kappa\\mu_{pq})\\right]^{-n_t}",
+              "description": "Multiplier for n_t implicit steps; p=0,...,H-1 and q=0,...,W-1."
+            }
+          ]
+        },
+        {
+          "number": "3.3",
+          "title": "Controlled severity shifts",
+          "paragraphs": [
+            "Training samples kappa uniformly from [0.15,0.60] and alpha uniformly from [0,0.08], with T=1. Evaluation uses five named conditions with (kappa,alpha) equal to (0.4,0.04), (0.8,0.08), (1.6,0.12), (2.8,0.20) and (4.5,0.35) for S0 through S4, respectively. S0 is an in-range reference; S1-S4 follow the prespecified stronger diffusion-and-fading path. Duration T=1 is held fixed along that path.",
+            "Every validation or test region is evaluated at every named condition. Development decisions use only training and validation regions. Because diffusion and reaction change together, a severity-wise difference measures their combined effect and does not separately estimate their causal contributions. The finite set of shifted conditions defines the scope of the reported maximum CER."
+          ],
+          "equations": [
+            {
+              "id": "7",
+              "latex": "\\eta_s=(\\kappa_s,\\alpha_s,T),\\quad y_{i,s}=D_{\\eta_s}(u_{0,i}),\\quad s\\in\\{0,1,2,3,4\\}",
+              "description": "Matched clean target and transcript across the five severity conditions."
+            }
+          ]
+        },
+        {
+          "number": "3.4",
+          "title": "Source identity, language verification and split integrity",
+          "paragraphs": [
+            "The supplied source archive is the OpenSLR SLR11 LibriSpeech language-model text corpus [6]. A complete local scan identified 14,476 source books, totaling 4,686,244,335 UTF-8 bytes, plus BOOKS.TXT and README.TXT. These are text sources rather than scanned document images. The included README states that Project Gutenberg headers and footers were removed for language modelling. OpenSLR identifies this text resource as public domain.",
+            "All 14,476 source IDs matched a frozen official Project Gutenberg catalog snapshot retrieved on 22 October 2026. Exactly 14,475 records were tagged English and one English/Chinese. Eligibility required a text record tagged exactly en, exactly one named catalog contributor, and a source within the reader's 16 MiB bound. Anonymous, Unknown, Various, empty and multiple-contributor records were excluded. The first 500 eligible books in the original tar order were selected before any image generation or OCR inspection, from a pool of 9,899 eligible sources.",
+            "The selected books comprise 210 metadata-linked source groups, keyed by the normalized full singleton Authors field. Books sharing that catalog attribution remain together, including alternative editions or collected works; full-text canonical duplicates are additionally merged by the data code. Most singleton fields identify authors, but four selected entries name translators and one has a dubious-author qualifier. Role labels are part of the grouping key. The partition is therefore disjoint in these recorded contributor/work groups, rather than an independently verified author-identity-disjoint benchmark. With split seed 20261021, the stored partition contains 357/67/76 books and 168/21/21 groups in training/validation/test, respectively. Region count is independent of these source counts.",
+            "Each extracted source retains its original numeric ID and was verified byte-for-byte by SHA256 against its tar member. No raw full-book duplicate and no whitespace/casefold full-book duplicate was found in the full archive. This hash audit does not rule out partial textual overlap. The fixed paragraph filter produced 142,729 eligible chunks from the selected books, with 142,406 unique chunks; repeated chunk hashes occurred within recorded contributor/work groups, and none crossed those groups. Identical candidate chunks are removed globally before rendering, and identical rendered transcripts cannot cross partitions. The source split is reused when the rendering budget is increased."
+          ],
+          "equations": []
+        }
+      ]
+    },
+    {
+      "number": "4",
+      "title": "Restoration Objectives",
+      "paragraphs": [],
+      "equations": [],
+      "subsections": [
+        {
+          "number": "4.1",
+          "title": "Common restoration network",
+          "paragraphs": [
+            "All groups use one four-level U-Net with channel widths 32, 64, 128 and 256. Each block has two padded 3-by-3 convolutions, GroupNorm and ReLU activations. Max pooling supplies the three downsampling operations; nearest-neighbor upsampling and concatenated skip features supply the decoder. A 1-by-1 convolution and sigmoid produce a single grayscale output. The model receives no degradation parameters.",
+            "The shared implementation, initialization seed, source sampling, degradation sampling, optimizer and step budget are held constant between corresponding runs. Nearest-neighbor upsampling and valid-window SSIM avoid specific nondeterministic backward operations; realized backend determinism and environment versions are retained with the run metadata. Matched seeds support paired comparisons but do not establish bitwise equivalence across devices or software versions."
+          ],
+          "equations": []
+        },
+        {
+          "number": "4.2",
+          "title": "Shared supervised reconstruction",
+          "paragraphs": [
+            "The common data objective combines mean absolute pixel error and one minus SSIM, with beta=0.1. Images use the fixed [0,1] range. The differentiable SSIM and the reported SSIM use an 11-by-11 Gaussian window with sigma=1.5, population moments, and constants K1=0.01 and K2=0.03. Only complete windows contribute to the spatial average; the five-pixel boundary has no padded-window contribution. SSIM supplies a shared structural criterion rather than a guarantee of character-topology preservation."
+          ],
+          "equations": [
+            {
+              "id": "8",
+              "latex": "\\mathcal L_{data}=\\frac{1}{N}\\|\\widehat u-u_0\\|_1+\\beta[1-\\mathrm{SSIM}(\\widehat u,u_0)],\\quad N=HW",
+              "description": "Reconstruction loss common to all three methods."
+            }
+          ]
+        },
+        {
+          "number": "4.3",
+          "title": "Full forward consistency",
+          "paragraphs": [
+            "The full-consistency objective uses the known degradation parameters of the same training example and the same discrete forward map that generated its observation. Its residual energy is averaged over all pixels and then over the minibatch. This matched-operator design does not evaluate blind parameter estimation or operator misspecification.",
+            "The forward map is affine in grayscale image values. Writing A_eta for its linear part gives D_eta(uhat)-D_eta(u0)=A_eta(uhat-u0). Consequently, even full consistency suppresses reconstruction-error directions attenuated by the degradation map. For this diffusion-reaction operator, the DCT-mode weights are proportional to the squared multipliers g_pq. The projected method adds a further restriction to the already filtered forward residual."
+          ],
+          "equations": [
+            {
+              "id": "9",
+              "latex": "\\mathcal L_{full}=\\frac{1}{N}\\|r_\\theta\\|_2^2",
+              "description": "Full forward-consistency energy per pixel."
+            },
+            {
+              "id": "10",
+              "latex": "D_\\eta(u)=A_\\eta u+(1-A_\\eta 1),\\quad r_\\theta=A_\\eta(\\widehat u-u_0)",
+              "description": "Matched affine-map identity; it follows from the adopted linear ink-density dynamics."
+            }
+          ]
+        },
+        {
+          "number": "4.4",
+          "title": "Low-frequency subspace consistency",
+          "paragraphs": [
+            "Vectorize a forward residual as a real N-dimensional vector. The columns of Q are a fixed orthonormal set of low-frequency real Fourier test vectors. Their Euclidean orthogonal projector is P_Q=Q Q^T. The projected loss equals the squared norm of the test coefficients divided by N; it is not divided by the number of retained modes. The implementation evaluates the coefficient matrix product without constructing an N-by-N projector.",
+            "For a linearly independent nonorthonormal test matrix Phi, projection energy requires a Gram-matrix correction. A raw sum of squared test responses is generally a different quantity. Using an orthonormal Q makes the implemented objective unambiguous and permits direct verification against an explicit projector on small images.",
+            "Projection cannot increase residual energy, so equal numerical regularization weights need not imply comparable effective strength. Groups B and C therefore receive separate weight selection under the same search budget. The shared reconstruction term remains active in every group, including residual directions outside the selected subspace."
+          ],
+          "equations": [
+            {
+              "id": "11",
+              "latex": "Q^TQ=I_m,\\quad P_Q=QQ^T,\\quad \\mathcal L_{sub}=\\frac{1}{N}\\|P_Qr_\\theta\\|_2^2=\\frac{1}{N}\\|Q^Tr_\\theta\\|_2^2",
+              "description": "Orthogonal projection energy with N-pixel normalization."
+            },
+            {
+              "id": "12",
+              "latex": "\\mathcal L_{sub}=\\frac{1}{N}r_\\theta^T\\Phi(\\Phi^T\\Phi)^{-1}\\Phi^Tr_\\theta",
+              "description": "Equivalent expression for a linearly independent nonorthonormal basis."
+            },
+            {
+              "id": "13",
+              "latex": "0\\leq\\mathcal L_{sub}\\leq\\mathcal L_{full}",
+              "description": "Projection contraction for the same residual."
+            }
+          ]
+        },
+        {
+          "number": "4.5",
+          "title": "Fixed test-space construction",
+          "paragraphs": [
+            "The main test space has m=32 real directions and includes the constant mode. Conjugate Fourier frequency classes are ordered by squared cycles-per-pixel radius, then by signed row and column frequency. The lexicographically smaller raw frequency index represents a conjugate pair. Cosine precedes sine; self-conjugate DC and Nyquist classes contribute only a cosine. The ordered real-vector list is truncated at exactly m directions. In particular, m=32 can end with an unpaired cosine, so this convention is deterministic but not rotationally invariant.",
+            "Basis generation uses float64, with orthogonality and projection scaling checked numerically before use. The Fourier vectors analyze the image residual; they neither impose periodic boundary conditions on the degradation solver nor necessarily diagonalize its zero-flux operator. The solver's DCT-II representation and the residual-analysis Fourier basis have distinct roles."
+          ],
+          "equations": []
+        },
+        {
+          "number": "4.6",
+          "title": "Experimental groups and validation budget",
+          "paragraphs": [
+            "Group A minimizes the shared data loss. Group B adds full forward consistency with weight lambda_f. Group C adds low-frequency subspace consistency with weight lambda_p. There is no combined full-plus-subspace group in the primary comparison. The subspace dimension is fixed during the weight search.",
+            "The regularized groups use the same candidate-weight grid {0.1,1,10} and the same per-candidate optimization and validation budget. Selection first minimizes maximum shifted validation CER, then mean shifted validation CER, and finally the numerical weight for a remaining candidate tie. Within a run, the first checkpoint attaining the best lexicographic validation pair is retained. These choices are frozen before final test evaluation."
+          ],
+          "equations": [
+            {
+              "id": "14",
+              "latex": "\\mathcal L_A=\\mathcal L_{data},\\quad \\mathcal L_B=\\mathcal L_{data}+\\lambda_f\\mathcal L_{full},\\quad \\mathcal L_C=\\mathcal L_{data}+\\lambda_p\\mathcal L_{sub}",
+              "description": "Three objectives sharing one restoration architecture and supervised term."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": "5",
+      "title": "Experimental Protocol",
+      "paragraphs": [],
+      "equations": [],
+      "subsections": [
+        {
+          "number": "5.1",
+          "title": "Synthetic printed-text regions and exact transcripts",
+          "paragraphs": [
+            "Clean regions are rendered from the frozen 500-book English source pool using Liberation Sans, Serif and Mono Regular, version 2.1.5. The font archive includes the SIL Open Font License 1.1, which is retained with the experiment assets. The corpus, font and OCR-language files are identified by archived hashes. The rendering corpus is synthetic printed text; it does not consist of scanned Gutenberg pages.",
+            "Source paragraphs undergo fixed punctuation mapping, NFKD decomposition and removal of combining marks, followed by conversion to printable ASCII and collapsed whitespace. Case and ordinary punctuation are preserved. A Latin-script ratio filter and a minimum of eight alphabetic words restrict eligible source chunks; language verification is separately supplied by official catalog metadata. Each source contributes at most 300 deterministic chunks of at most 160 whitespace-delimited tokens before region rendering. No OCR score is used to accept or reject source text.",
+            "The renderer uses 256-by-256 grayscale regions, font size 22 and a 16-pixel margin. It places complete words on complete lines and stops before a line would exceed the region boundary. The saved transcript is exactly the sequence of drawn lines, rather than the full original paragraph. Bounding boxes, font identity, render seed, source offset and image hashes are stored with each sample. All images and severity variants inherit their recorded source group's partition.",
+            "The main rendering budget is 8,000 training, 1,000 validation and 1,000 test regions, specified separately from source-book counts. Increasing that budget from development reuses the source-partition manifest and rejects a changed source pool, changed canonical text hash or changed group membership. Clean images are stored as 8-bit grayscale targets; degradation parameters and observation arrays retain their separate numeric provenance."
+          ],
+          "equations": []
+        },
+        {
+          "number": "5.2",
+          "title": "Development checks and configuration freeze",
+          "paragraphs": [
+            "Development uses training and validation regions only. The clean and degraded references characterize whether the fixed OCR pipeline can read the rendered text and whether the severity path gives informative changes in recognition. Timing checks measure forward generation, training, validation OCR and inference on the available hardware. Numerical checks address operator signs, endpoint behavior, agreement of NumPy and PyTorch maps, image and parameter gradients, basis orthogonality and loss normalization.",
+            "Before final test evaluation, the source pool and partition, rendering settings, severity path, loss definitions, weight grid, step budget, validation frequency, OCR configuration and secondary-analysis thresholds are frozen in a configuration file with a recorded SHA256. The result report distinguishes completed development measurements from full training and final test measurements. A numerical generation check alone is not evidence that a severity condition is informative for OCR."
+          ],
+          "equations": []
+        },
+        {
+          "number": "5.3",
+          "title": "Training and paired repetitions",
+          "paragraphs": [
+            "Adam is used with learning rate 2e-4 and minibatches of eight regions. Every candidate run receives 10,000 optimization steps. Validation checkpoints are evaluated at steps 250, 500, 1,000, 2,000, 4,000, 6,000, 8,000 and 10,000. Training degradations are sampled within the frozen mild range, and identical seeds align initialization, data ordering and parameter sampling between corresponding groups where the backend permits. The three training seeds are 0, 1 and 2. Realized computational costs are reported from the run summaries.",
+            "The run plan searches weights for Groups B and C using seed 0. The selected seed-0 run is retained as that group's first reported repetition; the selected weight is then trained with seeds 1 and 2. Group A uses the same three seeds without a regularization search. This reuse is explicit: the three reported repetitions describe variation of the selected procedure and are not three untouched replications independent of hyperparameter selection.",
+            "Checkpoint selection uses the validation CER criterion throughout the fixed training budget. The restoration network is never differentiated through OCR. Validation recognition selects among completed checkpoints but supplies no gradient to the reconstruction or consistency objectives. Run metadata records configuration and data hashes, seed, objective, weight, software environment and checkpoint identity. Resume checkpoints retain optimizer and random-generator states and are accepted only when their provenance matches the run."
+          ],
+          "equations": []
+        },
+        {
+          "number": "5.4",
+          "title": "Validation selection and held-out testing",
+          "paragraphs": [
+            "For each candidate checkpoint, CER is pooled across validation regions separately at each severity. Selection uses the maximum of the shifted-condition corpus CERs, followed by their arithmetic mean. Both regularized groups receive equal candidate counts and equal training budgets. Test regions are not used to choose weights, checkpoints, training duration, subspace dimension, preprocessing or degradation parameters.",
+            "All selected models are evaluated on exactly the same held-out region identities and transcripts under S0-S4. The evaluator rejects unmatched target sets, duplicate sample/condition records, mixed OCR provenance and inconsistent restoration checkpoint identities. The trained models receive float32 degraded arrays; the fixed recognizer receives the corresponding rounded 8-bit image outputs."
+          ],
+          "equations": []
+        },
+        {
+          "number": "5.5",
+          "title": "Fixed OCR and nonlearned references",
+          "paragraphs": [
+            "Tesseract 5.5.3 is used with English language data, LSTM engine mode 1 and page-segmentation mode 6, corresponding to a single uniform text block [7]. One installation and one language-data file are used throughout. The exact executable build string, traineddata SHA256 and command-line arguments accompany evaluation records. No external rescaling, thresholding, morphological operation or language-model correction is added; Tesseract's internal processing remains part of the fixed recognizer.",
+            "Clean regions and degraded inputs without restoration supply nonlearned reference conditions. They are evaluated once for a fixed region/condition set and are not relabeled as training-seed repetitions. Restored outputs are clipped to the fixed image range for export and rounded to 8-bit PNGs for OCR. PSNR and SSIM are computed from the same exported images against the clean grayscale target, so reported image metrics characterize the actual images passed to recognition."
+          ],
+          "equations": []
+        },
+        {
+          "number": "5.6",
+          "title": "Text normalization and image metrics",
+          "paragraphs": [
+            "Ground-truth and OCR strings are normalized to Unicode NFC and have whitespace collapsed to single spaces. Case and punctuation are retained. Corpus CER is the sum of character-level Levenshtein edit distances divided by the total normalized ground-truth character count. It is not the unweighted mean of region-level CERs and is not clipped at one. Substitutions, deletions, insertions and character counts remain available in the per-region records.",
+            "PSNR uses the mean squared pixel error and data range one; an exact image match has infinite PSNR and is represented explicitly rather than replaced with an arbitrary finite cap. SSIM follows the valid-window Gaussian definition used in the shared loss. Image metrics are averaged over regions within each method/seed/severity cell. CER and image-metric rankings are interpreted separately because neither establishes the other endpoint."
+          ],
+          "equations": [
+            {
+              "id": "15",
+              "latex": "\\mathrm{CER}_{j,s}=\\frac{\\sum_i\\mathrm{ED}(g_i,\\widehat g_{i,j,s})}{\\sum_i|g_i|}",
+              "description": "Character-weighted corpus CER at one severity and training seed."
+            },
+            {
+              "id": "16",
+              "latex": "\\mathrm{PSNR}=10\\log_{10}\\!\\left(\\frac{1}{\\mathrm{MSE}}\\right),\\quad \\mathrm{MSE}=\\frac{1}{N}\\|u_0-\\widehat u\\|_2^2",
+              "description": "PSNR for evaluated grayscale images in the fixed unit range."
+            }
+          ]
+        },
+        {
+          "number": "5.7",
+          "title": "Primary and paired outcomes",
+          "paragraphs": [
+            "For each training seed, the primary scalar is the largest corpus CER across S1-S4. The reported primary summary is the mean of those seed-specific maxima and their sample standard deviation. Taking the maximum after averaging severity-wise CER across seeds is a different statistic and is not substituted for this endpoint. The maximum concerns the predefined finite scenario set, not every possible degradation.",
+            "The paired comparisons subtract the maximum-CER statistic of Group A or B from that of Group C within the same seed. Negative differences favor C. Individual-seed values and differences accompany the aggregate summary. With three training seeds, the standard deviation is a descriptive measure of training variation; error bars are not presented as confidence intervals or as evidence of statistical significance."
+          ],
+          "equations": [
+            {
+              "id": "17",
+              "latex": "W_j=\\max_{s\\in\\{1,2,3,4\\}}\\mathrm{CER}_{j,s},\\quad \\overline W=\\frac{1}{J}\\sum_{j=1}^{J}W_j",
+              "description": "Primary aggregation: maximum within seed, then mean across seeds."
+            },
+            {
+              "id": "18",
+              "latex": "s_W=\\sqrt{\\frac{1}{J-1}\\sum_{j=1}^{J}(W_j-\\overline W)^2},\\quad J=3",
+              "description": "Sample standard deviation across training seeds."
+            },
+            {
+              "id": "19",
+              "latex": "\\Delta_j^{C-A}=W_j^C-W_j^A,\\quad \\Delta_j^{C-B}=W_j^C-W_j^B",
+              "description": "Paired objective comparisons under corresponding seeds."
+            }
+          ]
+        },
+        {
+          "number": "5.8",
+          "title": "Secondary severity and recognition-transition summaries",
+          "paragraphs": [
+            "Secondary outcomes are CER at S0-S4, mean CER across S1-S4, PSNR, SSIM, and measured computational cost. Variation across severity and variation across training seeds are reported separately. A lower mean shifted CER accompanied by a larger maximum CER is treated as a tradeoff in these measured endpoints.",
+            "An operational CER threshold of 0.10 summarizes the first tested condition whose CER strictly exceeds the threshold. A crossing at S0 is labeled already present at reference; an empty crossing set is labeled not reached within the tested range. Censored outcomes are not assigned an invented severity index or converted to an ordinary numeric mean. Nonmonotonic behavior remains visible in the complete CER curve. Consecutive CER differences are changes per tested severity step, not derivatives with respect to a physical degradation parameter."
+          ],
+          "equations": [
+            {
+              "id": "20",
+              "latex": "s^*_{j}=\\min\\{s\\in\\{0,1,2,3,4\\}:\\mathrm{CER}_{j,s}>\\tau\\},\\quad \\tau=0.10",
+              "description": "First tested threshold crossing, with empty sets reported as not reached."
+            },
+            {
+              "id": "21",
+              "latex": "\\delta_{j,s}=\\mathrm{CER}_{j,s+1}-\\mathrm{CER}_{j,s}",
+              "description": "Local CER change per severity-index step."
+            }
+          ]
+        },
+        {
+          "number": "5.9",
+          "title": "Deterministic qualitative cases",
+          "paragraphs": [
+            "Cases use the predesignated seed 0 and the existing held-out set. The reference case is the smallest region ID at S0. The threshold-adjacent case minimizes the distance between degraded-input region CER and 0.10 within the fixed interval [0.08,0.12]. The severe-input case has the largest degraded-input CER at S4. A failure case is the largest strictly positive region-level CER deterioration of C relative to A over the region/severity set. Ties use region ID and then severity order.",
+            "If the threshold interval contains no candidate, or C has no positive deterioration relative to A, that selection is reported as absent. Each selected record retains clean/input/A/B/C images, OCR strings, transcript, source ID, severity, seed and the selection rule. These examples illustrate measured behavior without replacing aggregate results or establishing semantic recovery or character authenticity."
+          ],
+          "equations": []
+        }
+      ],
+      "tables": [
+        {
+          "id": "source_partition",
+          "title": "Frozen source pool and partition",
+          "columns": [
+            "Quantity",
+            "Training",
+            "Validation",
+            "Test",
+            "Total"
+          ],
+          "rows": [
+            [
+              "Source books",
+              357,
+              67,
+              76,
+              500
+            ],
+            [
+              "Catalog contributor/work groups",
+              168,
+              21,
+              21,
+              210
+            ]
+          ],
+          "status": "Measured from development source manifest; final rendering must reuse it."
+        }
+      ]
+    },
+    {
+      "number": "8",
+      "title": "Limitations",
+      "paragraphs": [
+        "The experiment concerns synthetic English printed-text regions rendered with three font families. It does not establish transfer to scanned historical documents, handwriting, complex page layouts or other languages. The fixed metadata-based source selection and contributor/work grouping improve traceability and separation but do not prove complete semantic independence. Five selected catalog attributions are role-qualified, including four translator-only records and one dubious-author record; attribution keys do not establish the identities of all original authors. Alias or role variations and partial overlap can remain imperfectly resolved.",
+        "The diffusion-reaction family provides a controlled abstraction of blur and fading. It omits stains, bleed-through, geometric distortion, sensor noise and other real acquisition or aging effects. Diffusion and reaction change together along the principal severity path, so their individual effects are not identified. Known training parameters and a matched numerical operator make this a supervised controlled comparison rather than a blind or misspecified inverse problem.",
+        "Conclusions are conditional on the chosen U-Net, loss normalization, fixed m=32 Fourier subspace, equal but finite weight-search budget and one Tesseract pipeline. The m=32 ordering can end in an unpaired cosine and is not rotationally invariant. Full consistency already filters reconstruction errors through the degradation map; a difference between B and C alone does not demonstrate that the omitted residual directions are artifacts or irrelevant to recognition.",
+        "Three seeds provide limited coverage of optimization variability, and seed 0 participates in both weight selection and the reported repetitions. The maximum CER is restricted to four shifted conditions. The operational recognition threshold does not measure human readability or semantic recoverability. The comparator set isolates training objectives but is not a comprehensive benchmark of restoration architectures or frequency-domain methods."
+      ],
+      "equations": [],
+      "subsections": []
+    }
+  ],
+  "appendices": [
+    {
+      "number": "A",
+      "title": "Data and Run Provenance",
+      "paragraphs": [
+        "The supplied corpus TGZ has 1,803,499,244 bytes, MD5 fb7f9ff25536b60b90bc1d0715c5ec80 and SHA256 9d0da0460cf7b1e7413ff8ed5ba4f8f14ae6bee0b3ffb2842c5d234515bd77c9. The frozen Project Gutenberg catalog snapshot has 5,594,864 bytes and SHA256 27299ac657fc8812aa11a108393abbe40c9e9d8e2c43b80229d23f31250f2aa8. It was obtained from the official catalog feed https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz on 22 October 2026. Selection lists, catalog fields, contributor/work groups and per-source hashes are archived separately from generated image manifests.",
+        "The selected 500 original texts total 210,728,223 bytes. Every extracted file's SHA256 matches its original tar member. Role-qualified singleton catalog attributions occur at IDs 391, 981, 1578 and 2290 (translator) and 1676 (dubious author); these records are retained under the frozen metadata rule. The Liberation-font TGZ SHA256 is 7191c669bf38899f73a2094ed00f7b800553364f90e2637010a69c0e268f25d0. The supplied English traineddata SHA256 is 8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba. Its internal components support the LSTM engine; the local asset's exact upstream repository commit is not inferred from its filename.",
+        "Per-region records retain source book, contributor/work group, partition, font hash, transcript, render seed, bounding box, clean-image hash, degradation parameters and observation hashes. Per-run records identify the exact configuration, source and evaluation manifests, random seed, objective, weight, model state and selected checkpoint. OCR records preserve raw strings, normalized strings, edit counts and recognizer provenance. These files support reproduction of each aggregate cell without pooling seeds or severity conditions."
+      ],
+      "equations": [],
+      "subsections": []
+    },
+    {
+      "number": "B",
+      "title": "Numerical Verification Definitions",
+      "paragraphs": [
+        "Operator checks include the identity at kappa=alpha=0, the reaction-only attenuation of constant ink, nonincreasing total ink under positive reaction, and the reflecting endpoint stencil. Dense small-grid solves are compared with the DCT implementation; independent NumPy and PyTorch paths are compared in the same precision. Finite-difference checks of image and parameter derivatives address differentiability of the implemented discrete map. Numerical pass/fail results and tolerances belong to the archived verification output, not to assumed analytical guarantees.",
+        "Projection checks evaluate Q^T Q against the identity, nonnegative energy, contraction relative to the full residual, equivalence to an explicit projector on small images and equality with the full loss when a complete real basis is used. A constant residual checks the inclusion and normalization of the DC direction. The comparison uses energy divided by N for both full and projected objectives, with the same batch averaging.",
+        "The rendering and partition checks verify exact drawn transcripts, complete-word and complete-line placement, image bounds, deterministic source assignment and reuse of the same group partition at larger sample counts. Evaluation checks verify character-weighted CER, unbounded insertion errors, valid-window SSIM and the ordering of maximum-within-seed versus averaging-across-seeds. These are implementation checks and do not establish a restoration-performance advantage."
+      ],
+      "equations": [],
+      "subsections": []
+    }
+  ],
+  "references": [
+    {
+      "id": 1,
+      "authors": "E. Kharazmi, Z. Zhang, and G. E. Karniadakis",
+      "title": "Variational Physics-Informed Neural Networks For Solving Partial Differential Equations",
+      "year": 2019,
+      "venue": "arXiv:1912.00873",
+      "url": "https://arxiv.org/abs/1912.00873"
+    },
+    {
+      "id": 2,
+      "authors": "S. Rojas, P. Maczuga, J. Muñoz-Matute, D. Pardo, and M. Paszynski",
+      "title": "Robust Variational Physics-Informed Neural Networks",
+      "year": 2023,
+      "venue": "arXiv:2308.16910, revised March 2024",
+      "url": "https://arxiv.org/abs/2308.16910"
+    },
+    {
+      "id": 3,
+      "authors": "L. Jiang, B. Dai, W. Wu, and C. C. Loy",
+      "title": "Focal Frequency Loss for Image Reconstruction and Synthesis",
+      "year": 2021,
+      "venue": "Proceedings of the IEEE/CVF International Conference on Computer Vision",
+      "pages": "13919-13929",
+      "url": "https://openaccess.thecvf.com/content/ICCV2021/papers/Jiang_Focal_Frequency_Loss_for_Image_Reconstruction_and_Synthesis_ICCV_2021_paper.pdf"
+    },
+    {
+      "id": 4,
+      "authors": "O. Ronneberger, P. Fischer, and T. Brox",
+      "title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+      "year": 2015,
+      "venue": "arXiv:1505.04597",
+      "url": "https://arxiv.org/abs/1505.04597"
+    },
+    {
+      "id": 5,
+      "authors": "Z. Wang, A. C. Bovik, H. R. Sheikh, and E. P. Simoncelli",
+      "title": "Image Quality Assessment: From Error Visibility to Structural Similarity",
+      "year": 2004,
+      "venue": "IEEE Transactions on Image Processing",
+      "volume": "13",
+      "issue": "4",
+      "pages": "600-612",
+      "doi": "10.1109/TIP.2003.819861",
+      "url": "https://eceweb.uwaterloo.ca/~z70wang/publications/ssim.html"
+    },
+    {
+      "id": 6,
+      "authors": "OpenSLR",
+      "title": "LibriSpeech language models, vocabulary and G2P models (SLR11)",
+      "year": "n.d.",
+      "venue": "Open Speech and Language Resources",
+      "url": "https://us.openslr.org/11/",
+      "accessed": "22 October 2026"
+    },
+    {
+      "id": 7,
+      "authors": "Tesseract OCR contributors",
+      "title": "Command Line Usage",
+      "year": "n.d.",
+      "venue": "Tesseract documentation",
+      "url": "https://tesseract-ocr.github.io/tessdoc/Command-Line-Usage.html",
+      "accessed": "22 October 2026"
+    }
+  ],
+  "authoring_notes": {
+    "exclude_from_published_manuscript": true,
+    "source_material": [
+      "Original rough-draft text",
+      "Consolidated experiment/docrestore implementation",
+      "Local DB asset audit",
+      "Specified primary-source publications and official documentation"
+    ],
+    "design_reference_content_used": false,
+    "results_claims_in_this_file": false,
+    "abstract_results_discussion_conclusion": "Generated separately from actual completed experiment records; do not derive empirical claims from this file.",
+    "frozen_protocol": {
+      "configuration": "experiment/configs/frozen.json",
+      "rendered_regions": {
+        "train": 8000,
+        "validation": 1000,
+        "test": 1000
+      },
+      "main_steps": 10000,
+      "batch_size": 8,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "lambda_grid": [
+        0.1,
+        1.0,
+        10.0
+      ],
+      "evaluation_steps": [
+        250,
+        500,
+        1000,
+        2000,
+        4000,
+        6000,
+        8000,
+        10000
+      ],
+      "ocr_version": "5.5.3"
+    },
+    "reconcile_before_final_render": [
+      "Final configuration controls numeric training budget, severity table, lambda grid, evaluation interval and exact engine version.",
+      "Actual source split is fixed to development manifest: 357/67/76 books, 168/21/21 catalog contributor/work groups.",
+      "Section 8 is a base limitation draft; result builder owns final integration.",
+      "Development metadata was produced before the verification-method label patch; keep original hashed traces unchanged and describe earlier labels as software metadata rather than user manual verification.",
+      "The code records the declared metadata-verification method; the actual independent verification evidence is the frozen catalog and DB audit.",
+      "Five singleton Authors entries contain attribution roles: translator IDs391/981/1578/2290 and dubious-author1676. Role labels were retained in frozen grouping; avoid unqualified author-identity-disjoint claims.",
+      "The main plan reuses the selected seed-0 tuning run among final repetitions.",
+      "If reported image metrics are changed to float32 arrays later, revise Section 5.5; current evaluator calculates metrics on exported OCR PNGs.",
+      "No unobserved experimental success, superiority, accuracy or convergence is asserted by this text."
+    ]
+  }
+}

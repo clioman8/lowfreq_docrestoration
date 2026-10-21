@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "test_ocr_inspected": false,
+  "clean_counts": {
+    "train": 8000,
+    "validation": 1000,
+    "test": 1000
+  },
+  "evaluation_counts": {
+    "validation_S0": 1000,
+    "validation_S1": 1000,
+    "validation_S2": 1000,
+    "validation_S3": 1000,
+    "validation_S4": 1000,
+    "test_S0": 1000,
+    "test_S1": 1000,
+    "test_S2": 1000,
+    "test_S3": 1000,
+    "test_S4": 1000
+  },
+  "used_source_book_counts": {
+    "train": 357,
+    "validation": 67,
+    "test": 76
+  },
+  "file_hashes_verified": 30000,
+  "cross_split_source_groups": 0,
+  "cross_split_exact_transcripts": 0,
+  "cross_split_exact_images": 0,
+  "manifest_sha256": "3a7256bd0a1464dbbb91c4d42e5ffbba6517e2e676a6d0bb5763d31eaa28c760",
+  "eval_manifest_sha256": "f1dae7e310b7235fc6db6581b68c85e068c57ae3e996364d5780c2396e1302d1"
+}
