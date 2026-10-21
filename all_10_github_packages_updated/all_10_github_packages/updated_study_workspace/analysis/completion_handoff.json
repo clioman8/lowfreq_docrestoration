@@ -1,0 +1,129 @@
+{
+  "objective": "Finish the user's English empirical thesis PDF using actual completed A/B/C experiments",
+  "user_priority": "Main experiment takes priority even if it requires several days",
+  "monitor": {
+    "automation_id": "pdf",
+    "kind": "heartbeat",
+    "interval": "hourly",
+    "status": "ACTIVE"
+  },
+  "running_session_id": null,
+  "process_state_file": "experiment/study_status.json",
+  "resume_command": "scripts/start_study_background.ps1 (after verifying no live study processes)",
+  "liveness_rule": "Confirm the parent_pid/child_pid still exist and logs advance; a stale status=running alone is not proof of a live experiment. Never launch a duplicate live pipeline.",
+  "frozen_config": "experiment/configs/frozen.json",
+  "source_lock": "experiment/provenance/study_lock.json",
+  "scientific_sources_immutable": true,
+  "completed_checks": {
+    "tests": "45 passed, zero failed/error/skipped, including real deterministic CUDA backward and exact CPU checkpoint resume",
+    "test_record": "experiment/provenance/test_validation.json",
+    "numerical_record": "experiment/provenance/numerical_verification.json",
+    "main_data_integrity": "experiment/provenance/data_integrity.json",
+    "main_data_counts": {
+      "train": 8000,
+      "validation": 1000,
+      "test": 1000
+    },
+    "evaluation_counts": "1000 documents for each validation/test severity S0-S4",
+    "file_hashes_verified": 30000,
+    "cross_split_exact_source_transcript_image_collisions": 0
+  },
+  "experiment_design": {
+    "training_runs": 13,
+    "reported_selected_runs": 9,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "lambda_grid": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "max_steps": 10000,
+    "checkpoint_steps": [
+      250,
+      500,
+      1000,
+      2000,
+      4000,
+      6000,
+      8000,
+      10000
+    ],
+    "validation_ocr_images": 520000,
+    "seed_zero_selection_reuse": true,
+    "validation_test_same_known_severity_values": true,
+    "source_books": 500,
+    "contributor_work_groups": 210,
+    "source_book_splits": [
+      357,
+      67,
+      76
+    ],
+    "source_group_splits": [
+      168,
+      21,
+      21
+    ],
+    "catalog_caveat": "Five contributor records are translator/dubious-author attributions. Do not claim perfect verified author-identity disjointness. See manuscript JSON for exact qualification."
+  },
+  "remaining_steps": [
+    "Let main pipeline finish 13 training runs, fixed validation selection, nine test exports/evaluations, references, aggregate and cases",
+    "If process has stopped, diagnose logs and resume exactly; preserve partial failed folders instead of deleting evidence",
+    "Read actual results and selected OCR cases; revise generated abstract, results, discussion, conclusion and case analysis against their evidence",
+    "Run bundled Python scripts/build_manuscript.py --check-inputs",
+    "Read PDF skill; run required PDF operation marker immediately before first actual PDF creation, exactly once",
+    "Run bundled Python scripts/build_manuscript.py",
+    "Render EVERY page with pdftoppm and inspect images at readable size; fix layout and re-render until clean",
+    "Check all table values/seed signs/SD/threshold statuses, references, equations, source attribution and missing placeholders",
+    "Record final visual QA and artifact paths, mark study complete only after review",
+    "After PDF QA, record output/pdf/final_visual_qa.json and run bundled Python scripts/package_final_delivery.py; this rebuilds code ZIP to include every final change and includes all four supplied original files.",
+    "Deliver requested final PDF with an output file citation; include concise empirical conclusion and material limits",
+    "Deactivate heartbeat pdf after successful delivery"
+  ],
+  "builder": "scripts/build_manuscript.py",
+  "math_renderer": "scripts/render_manuscript_math.py",
+  "manuscript_source": "analysis/manuscript_sections.json",
+  "final_output": "output/pdf/low_frequency_subspace_document_restoration.pdf",
+  "bundled_python": "C:/Users/ParkBS/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+  "pdf_skill": "C:/Users/ParkBS/.codex/plugins/cache/openai-primary-runtime/pdf/26.1017.22135/skills/pdf/SKILL.md",
+  "pdf_marker_has_run": false,
+  "final_pdf_has_been_created": false,
+  "design_reference_restriction": "선행 연구.zip is only a design reference. No research contents, figures, findings or citations may be copied from it.",
+  "last_heartbeat": {
+    "checked_at_kst": "2026-10-22T05:23:48.220659+09:00",
+    "status": "running",
+    "current_stage": "C_lambda0p1_seed0",
+    "completed_training_runs": 4,
+    "reported_parent_pid": 30280,
+    "reported_child_pid": 13120,
+    "launch_mode": "detached_hidden_background",
+    "last_training_step": 499,
+    "training_log_age_seconds": 110.28888463973999,
+    "source_and_config_integrity": "PASS against frozen study lock",
+    "action": "Recovered the one interrupted pre-checkpoint attempt with unchanged seed/config; process now runs independently of the expired exec session. Updated code ZIP created and final all-input bundle added to completion workflow."
+  },
+  "process_launch_mode": "hidden detached background; launcher stdout/stderr saved in experiment/logs",
+  "user_attachment_requirement": {
+    "requested_at_kst": "2026-10-22",
+    "include_all_four_supplied_originals": true,
+    "include_our_latest_changes": true,
+    "updated_code_zip": "output/packages/all_10_github_packages_updated.zip",
+    "final_delivery_zip": "output/packages/complete_thesis_delivery.zip",
+    "evidence_zip": "output/packages/reproducibility_evidence.zip",
+    "package_command": "bundled Python scripts/package_final_delivery.py",
+    "qa_gate_file": "output/pdf/final_visual_qa.json",
+    "qa_required_fields": [
+      "status=passed",
+      "pdf_sha256",
+      "page_count",
+      "inspected_pages=all 1..N",
+      "issues_remaining=[]"
+    ],
+    "instruction": "After final PDF is visually verified, rebuild the updated code ZIP and bundle all four original inputs unchanged alongside updated PDF/code and actual reproducibility evidence. Deliver the bundle link and standalone PDF."
+  },
+  "recovery_record": "experiment/provenance/recovery_events.json",
+  "timing_caveat": "One pre-checkpoint C seed0 lambda0.1 attempt stopped at 249 updates and was preserved separately. Main summary times exclude that abandoned attempt; disclose recovery overhead separately."
+}
