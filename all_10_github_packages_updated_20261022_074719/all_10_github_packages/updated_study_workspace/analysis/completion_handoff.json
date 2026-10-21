@@ -1,0 +1,229 @@
+{
+  "objective": "Finish the user's English empirical thesis PDF using actual completed A/B/C experiments",
+  "user_priority": "Main experiment takes priority even if it requires several days",
+  "monitor": {
+    "automation_id": "pdf",
+    "kind": "heartbeat",
+    "interval": "hourly",
+    "status": "ACTIVE",
+    "verified_schedule": "RRULE:FREQ=MINUTELY;INTERVAL=60",
+    "schedule_verified_at_kst": "2026-10-22T05:47:00+09:00",
+    "prompt_encoding_repair": {
+      "checked_at_kst": "2026-10-22T06:53:56.006089+09:00",
+      "previous_replacement_character_count": 1251,
+      "replacement_character_count_after": 0,
+      "clean_source": "analysis/continuation_prompt_ko.txt",
+      "stored_prompt_matches_source_except_trimmed_final_newline": true,
+      "stored_prompt_sha256": "4307dc56481e3d9846d9fd44f3b903db23d75ad93266a1bcd9357877309b4a12",
+      "transfer_method": "Read UTF8 source, emit ASCII-escaped JSON to the tool orchestrator, then update existing automation through the app tool. No raw automation-file edits.",
+      "name_restored": true,
+      "cadence_and_active_status_preserved": true
+    }
+  },
+  "running_session_id": null,
+  "process_state_file": "experiment/study_status.json",
+  "resume_command": "scripts/start_study_background.ps1 (after verifying no live study processes)",
+  "liveness_rule": "Confirm the parent_pid/child_pid still exist and logs advance; a stale status=running alone is not proof of a live experiment. Never launch a duplicate live pipeline.",
+  "frozen_config": "experiment/configs/frozen.json",
+  "source_lock": "experiment/provenance/study_lock.json",
+  "scientific_sources_immutable": true,
+  "completed_checks": {
+    "tests": "45 passed, zero failed/error/skipped, including real deterministic CUDA backward and exact CPU checkpoint resume",
+    "test_record": "experiment/provenance/test_validation.json",
+    "numerical_record": "experiment/provenance/numerical_verification.json",
+    "main_data_integrity": "experiment/provenance/data_integrity.json",
+    "main_data_counts": {
+      "train": 8000,
+      "validation": 1000,
+      "test": 1000
+    },
+    "evaluation_counts": "1000 documents for each validation/test severity S0-S4",
+    "file_hashes_verified": 30000,
+    "cross_split_exact_source_transcript_image_collisions": 0
+  },
+  "experiment_design": {
+    "training_runs": 13,
+    "reported_selected_runs": 9,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "lambda_grid": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "max_steps": 10000,
+    "checkpoint_steps": [
+      250,
+      500,
+      1000,
+      2000,
+      4000,
+      6000,
+      8000,
+      10000
+    ],
+    "validation_ocr_images": 520000,
+    "seed_zero_selection_reuse": true,
+    "validation_test_same_known_severity_values": true,
+    "source_books": 500,
+    "contributor_work_groups": 210,
+    "source_book_splits": [
+      357,
+      67,
+      76
+    ],
+    "source_group_splits": [
+      168,
+      21,
+      21
+    ],
+    "catalog_caveat": "Five contributor records are translator/dubious-author attributions. Do not claim perfect verified author-identity disjointness. See manuscript JSON for exact qualification."
+  },
+  "remaining_steps": [
+    "Let main pipeline finish 13 training runs, fixed validation selection, nine test exports/evaluations, references, aggregate and cases",
+    "If process has stopped, diagnose logs and resume exactly; preserve partial failed folders instead of deleting evidence",
+    "Read actual results and selected OCR cases; revise generated abstract, results, discussion, conclusion and case analysis against their evidence",
+    "Run bundled Python scripts/build_manuscript.py --check-inputs",
+    "Read PDF skill; run required PDF operation marker immediately before first actual PDF creation, exactly once",
+    "Run bundled Python scripts/build_manuscript.py",
+    "Render EVERY page with pdftoppm and inspect images at readable size; fix layout and re-render until clean",
+    "Check all table values/seed signs/SD/threshold statuses, references, equations, source attribution and missing placeholders",
+    "Record final visual QA and artifact paths, mark study complete only after review",
+    "After PDF QA, record output/pdf/final_visual_qa.json and run bundled Python scripts/package_final_delivery.py; this rebuilds code ZIP to include every final change and includes all four supplied original files.",
+    "Deliver requested final PDF with an output file citation; include concise empirical conclusion and material limits",
+    "Deactivate heartbeat pdf after successful delivery"
+  ],
+  "builder": "scripts/build_manuscript.py",
+  "math_renderer": "scripts/render_manuscript_math.py",
+  "manuscript_source": "analysis/manuscript_sections.json",
+  "final_output": "output/pdf/low_frequency_subspace_document_restoration.pdf",
+  "bundled_python": "C:/Users/ParkBS/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+  "pdf_skill": "C:/Users/ParkBS/.codex/plugins/cache/openai-primary-runtime/pdf/26.1017.22135/skills/pdf/SKILL.md",
+  "pdf_marker_has_run": false,
+  "final_pdf_has_been_created": false,
+  "design_reference_restriction": "선행 연구.zip is only a design reference. No research contents, figures, findings or citations may be copied from it.",
+  "last_heartbeat": {
+    "checked_at_kst": "2026-10-22T07:45:06.274116+09:00",
+    "status": "running",
+    "current_stage": "B_lambda1_seed1",
+    "completed_training_runs": 9,
+    "reported_parent_pid": 30280,
+    "reported_child_pid": 28708,
+    "parent_pid_liveness_verified": true,
+    "child_pid_liveness_verified": true,
+    "liveness_basis": "Host query at07:44:43 KST confirmed parent30280 and child28708. Bseed1 advanced to7267; validation OCR/log updated07:43:22. Background stderr remains0B.",
+    "source_and_config_integrity": "PASS:14 research sources, frozen configuration and source split hash match the study lock.",
+    "action": "Existing pipeline remains healthy; no duplicate run or scientific change. Preserved newly supplied074255 ZIP as tenth immutable additional input; all ten hashes verified. Existing hourly pdf monitor remains ACTIVE. PDF and final bundle are pending completed experiments and actual review; no PDF marker or repeated original-input request."
+  },
+  "process_launch_mode": "hidden detached background; launcher stdout/stderr saved in experiment/logs",
+  "user_attachment_requirement": {
+    "requested_at_kst": "2026-10-22",
+    "include_all_four_supplied_originals": true,
+    "include_our_latest_changes": true,
+    "updated_code_zip": "output/packages/all_10_github_packages_updated.zip",
+    "final_delivery_zip": "output/packages/complete_thesis_delivery.zip",
+    "evidence_zip": "output/packages/reproducibility_evidence.zip",
+    "package_command": "bundled Python scripts/package_final_delivery.py",
+    "qa_gate_file": "output/pdf/final_visual_qa.json",
+    "qa_required_fields": [
+      "status=passed",
+      "pdf_sha256",
+      "page_count",
+      "inspected_pages=all 1..N",
+      "issues_remaining=[]"
+    ],
+    "instruction": "After final PDF is visually verified, rebuild the updated code ZIP and bundle all four original inputs unchanged alongside updated PDF/code and actual reproducibility evidence. Deliver the bundle link and standalone PDF.",
+    "additional_input_snapshots_manifest": "analysis/input_snapshots/manifest.json",
+    "preserve_resupplied_code_version_separately": true,
+    "additional_supplied_code_snapshot_count": 10,
+    "latest_supplied_code_filename": "all_10_github_packages_updated_20261022_074255.zip",
+    "latest_supplied_code_sha256": "287ed11b5cf41b0d7e8bf3a9c95c3e975c041e1bc6cdae4ffdb5174b78c64ee1",
+    "original_input_snapshots_manifest": "analysis/original_inputs/manifest.json"
+  },
+  "recovery_record": "experiment/provenance/recovery_events.json",
+  "timing_caveat": "One pre-checkpoint C seed0 lambda0.1 attempt stopped at 249 updates and was preserved separately. Main summary times exclude that abandoned attempt; disclose recovery overhead separately.",
+  "design_reference_reconfirmed_at_kst": "2026-10-22T05:34:27.684159+09:00",
+  "latest_user_status_estimate": {
+    "observed_at_kst": "2026-10-22T07:46:09.921128+09:00",
+    "completed_training_runs": 9,
+    "current_stage": "B_lambda1_seed1",
+    "current_training_step_observed": 7999,
+    "current_activity": "8000-step validation OCR temporary file and prediction manifest updated07:45:48 KST; previous host PID check07:44:43 confirmed the same parent and child.",
+    "mean_completed_run_minutes": 25.220295096481486,
+    "estimated_training_end_kst": "2026-10-22T09:06:53.870823+09:00",
+    "public_training_estimate": "2026-10-22 09:00-09:30 Asia/Seoul",
+    "estimated_post_training_evaluation_minutes": "20-30; validation-throughput extrapolation only",
+    "public_pdf_qa_estimate": "2026-10-22 10:00-12:00 Asia/Seoul",
+    "public_final_delivery_estimate": "Whole ZIP time remains conditional on exact missing original code archive. PDF work continues independently.",
+    "estimate_conditions": "No interruption and current throughput maintained; result interpretation, writing, all-page visual review and final archive verification remain."
+  },
+  "latest_user_instruction": "Continue unchanged frozen scientific settings and notify when the final thesis PDF and complete updated ZIP have both finished validation.",
+  "continuation_prompt_ko": "analysis/continuation_prompt_ko.txt",
+  "manuscript_prepublication_audit": {
+    "checked_at_kst": "2026-10-22T06:11:02.955737+09:00",
+    "scope": "Methodology reporting and non-empirical narrative; actual incomplete test results were not read.",
+    "checks": [
+      "Seed-0 tuning reuse disclosed",
+      "Known validation/test severity path disclosed",
+      "Seed-wise maximum before mean and sample SD retained",
+      "Censored crossings not replaced with numeric indices",
+      "Contributor/work grouping caveat retained",
+      "Recovery timing exclusion disclosed",
+      "Narrative does not assume that C wins"
+    ],
+    "fixes": [
+      "Added the planned secondary mean shifted CER table from existing seed_summary values, with seed mean/sample SD; degraded reference remains a single nonlearned evaluation",
+      "Aligned three remaining author-group references with recorded contributor/work groups"
+    ],
+    "builder_sha256": "300148169abb96f1992e986bf47e4345a4c4feec980361abf9e3e25127a4db8c",
+    "manuscript_sections_sha256": "447e498c44da33eef8f809d616677cdf422e9a8ce1e4f865d986fbd51c3d950b",
+    "syntax_and_json": "PASS",
+    "scientific_sources_and_config": "UNCHANGED: hashes match frozen study lock",
+    "pdf_created": false
+  },
+  "original_input_preservation": {
+    "manifest": "analysis/original_inputs/manifest.json",
+    "preserved_count": 3,
+    "required_original_count": 4,
+    "missing_exact_original": "all_10_github_packages.zip",
+    "expected_bytes": 256492,
+    "expected_sha256": "d28c5e6042d6b2276b6d67aca331d2f4d097e8c82ad38112886d8936bb541cd1",
+    "search": "Exact filename,82 ZIPs,217457 profile/cache files,RecycleBin and download relocation metadata searched without a matching raw archive. Preserved original nested members remain verified.",
+    "experiment_can_continue": true,
+    "current_code_packaging_command": "bundled Python scripts/package_updated_code.py --original-code-directory analysis/code/all_10_github_packages",
+    "when_original_is_supplied": "Run bundled Python scripts/preserve_original_inputs.py --require-all; final packager uses verified workspace originals.",
+    "user_action": "Please reattach the initially supplied original all_10_github_packages.zip for the final complete bundle.",
+    "request_prepared_at_kst": "2026-10-22T06:22:25.027462+09:00",
+    "notification_rule": "The missing exact original code ZIP was requested with the 062232 code delivery. Do not repeat the unchanged request on every user continuation or heartbeat. Continue experiments and manuscript independently while awaiting it.",
+    "user_request_already_sent": true
+  },
+  "packaging_identity_audit": {
+    "checked_at_kst": "2026-10-22T06:36:00.508194+09:00",
+    "fixed": [
+      "Raw original mode now requires the recorded exact256492-byte archive and SHA256 before labeling it unchanged",
+      "Original expected_sha256 is retained across repeated missing states"
+    ],
+    "verification": [
+      "Python AST checks passed",
+      "Updated ZIP was rejected by raw-original mode without writes",
+      "Isolated4-byte probe: preserved GOOD identity survived two missing states and rejected equal-sized EVIL replacement; no preserved replacement was published"
+    ],
+    "scope": "Packaging helpers only; no experiment, frozen scientific source, GPU test, input archive or PDF change",
+    "source_sha256": {
+      "scripts/package_updated_code.py": "e27ed073f9e3eeb5b88ea7d4aed21bfcf580604086aeced52295fa807b998859",
+      "scripts/preserve_original_inputs.py": "46afdc45cc0813e2f086199ef9981083597c9406a2e1609f304e4f6f900cfd66",
+      "scripts/package_final_delivery.py": "77aa1bc187d11e269ccbaabf8ecb2cac2dd3568e655dd0dc964a4ef75ae51a48"
+    },
+    "frozen_integrity": "PASS"
+  },
+  "latest_current_run_estimate": {
+    "observed_at_kst": "2026-10-22T07:46:09.921128+09:00",
+    "run": "B_lambda1_seed1",
+    "estimated_finish_kst": "2026-10-22T07:51:14.217706+09:00",
+    "public_estimate": "2026-10-22 07:50-07:55 Asia/Seoul",
+    "basis": "Mean completed runtime25.22minutes; same fixed training and OCR validation budget. Final checkpoint validation remains."
+  }
+}

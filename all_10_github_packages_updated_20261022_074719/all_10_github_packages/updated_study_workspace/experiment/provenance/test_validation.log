@@ -1,0 +1,59 @@
+test_mismatched_targets_are_rejected (test_cases.CaseSelectionTests.test_mismatched_targets_are_rejected) ... ok
+test_near_and_severe_use_input_not_restored_ranking (test_cases.CaseSelectionTests.test_near_and_severe_use_input_not_restored_ranking) ... ok
+test_no_failure_is_not_invented (test_cases.CaseSelectionTests.test_no_failure_is_not_invented) ... ok
+test_evaluation_severities_share_clean_target_and_exclude_training (test_data.DataTests.test_evaluation_severities_share_clean_target_and_exclude_training) ... ok
+test_exact_drawn_transcript_and_no_clipped_ink (test_data.DataTests.test_exact_drawn_transcript_and_no_clipped_ink) ... ok
+test_fixed_text_rules_strip_boilerplate_and_preserve_case (test_data.DataTests.test_fixed_text_rules_strip_boilerplate_and_preserve_case) ... ok
+test_font_archive_is_whitelisted_and_license_preserved (test_data.DataTests.test_font_archive_is_whitelisted_and_license_preserved) ... ok
+test_language_verification_cannot_be_inferred_from_latin_script (test_data.DataTests.test_language_verification_cannot_be_inferred_from_latin_script) ... ok
+test_official_style_book_id_is_preserved (test_data.DataTests.test_official_style_book_id_is_preserved) ... ok
+test_requires_three_independent_groups (test_data.DataTests.test_requires_three_independent_groups) ... ok
+test_scaling_samples_reuses_split_and_rejects_source_changes (test_data.DataTests.test_scaling_samples_reuses_split_and_rejects_source_changes) ... ok
+test_source_disjoint_dataset_is_deterministic (test_data.DataTests.test_source_disjoint_dataset_is_deterministic) ... ok
+test_split_is_order_independent_and_groups_stay_together (test_data.DataTests.test_split_is_order_independent_and_groups_stay_together) ... ok
+test_tar_streaming_rejects_traversal_and_links (test_data.DataTests.test_tar_streaming_rejects_traversal_and_links) ... ok
+test_diagnostic_config_and_explicit_override (test_evaluate_parallel.ParallelEvaluationTests.test_diagnostic_config_and_explicit_override) ... ok
+test_earlier_ocr_failure_precedes_later_manifest_error (test_evaluate_parallel.ParallelEvaluationTests.test_earlier_ocr_failure_precedes_later_manifest_error) ... ok
+test_evaluate_cli_forwards_workers_and_default_remains_one (test_evaluate_parallel.ParallelEvaluationTests.test_evaluate_cli_forwards_workers_and_default_remains_one) ... ok
+test_failure_keeps_destination_and_original_error_with_no_partial_file (test_evaluate_parallel.ParallelEvaluationTests.test_failure_keeps_destination_and_original_error_with_no_partial_file) ... ok
+test_input_errors_are_atomic_for_empty_duplicate_and_invalid_json (test_evaluate_parallel.ParallelEvaluationTests.test_input_errors_are_atomic_for_empty_duplicate_and_invalid_json) ... ok
+test_parallel_is_byte_identical_for_all_modes_and_provenance (test_evaluate_parallel.ParallelEvaluationTests.test_parallel_is_byte_identical_for_all_modes_and_provenance) ... ok
+test_workers_must_be_a_positive_integer (test_evaluate_parallel.ParallelEvaluationTests.test_workers_must_be_a_positive_integer) ... ok
+test_batch_parameters_and_affine_residual (test_math.NumpyOperatorTests.test_batch_parameters_and_affine_residual) ... ok
+test_dct_solver_matches_repeated_dense_implicit_steps (test_math.NumpyOperatorTests.test_dct_solver_matches_repeated_dense_implicit_steps) ... ok
+test_heat_preserves_constant_and_mean_ink (test_math.NumpyOperatorTests.test_heat_preserves_constant_and_mean_ink) ... ok
+test_identity_and_zero_duration (test_math.NumpyOperatorTests.test_identity_and_zero_duration) ... ok
+test_invalid_parameters (test_math.NumpyOperatorTests.test_invalid_parameters) ... ok
+test_one_pixel_and_wrapper (test_math.NumpyOperatorTests.test_one_pixel_and_wrapper) ... ok
+test_reaction_fades_towards_white (test_math.NumpyOperatorTests.test_reaction_fades_towards_white) ... ok
+test_data_loss_identity_and_tiny_windows (test_math.ProjectionAndLossTests.test_data_loss_identity_and_tiny_windows) ... ok
+test_invalid_basis (test_math.ProjectionAndLossTests.test_invalid_basis) ... ok
+test_orthogonal_residual_zero_subspace_loss (test_math.ProjectionAndLossTests.test_orthogonal_residual_zero_subspace_loss) ... ok
+test_orthogonality_all_modes_odd_even_and_32 (test_math.ProjectionAndLossTests.test_orthogonality_all_modes_odd_even_and_32) ... ok
+test_pixel_normalization_not_mode_normalization (test_math.ProjectionAndLossTests.test_pixel_normalization_not_mode_normalization) ... ok
+test_projector_energy_and_complete_basis (test_math.ProjectionAndLossTests.test_projector_energy_and_complete_basis) ... ok
+test_numpy_torch_batch_agreement_and_gradients (test_math.TorchMathTests.test_numpy_torch_batch_agreement_and_gradients) ... ok
+test_torch_identity_and_module (test_math.TorchMathTests.test_torch_identity_and_module) ... ok
+test_torch_projection_and_data_loss_agree_with_numpy (test_math.TorchMathTests.test_torch_projection_and_data_loss_agree_with_numpy) ... ok
+test_atomic_checkpoint_failure_preserves_previous_snapshot (test_training.TrainingIntegrationTests.test_atomic_checkpoint_failure_preserves_previous_snapshot) ... ok
+test_checkpoint_weights_only_roundtrip (test_training.TrainingIntegrationTests.test_checkpoint_weights_only_roundtrip) ... ok
+test_engine_version_accepts_official_build_but_requires_exact_core (test_training.TrainingIntegrationTests.test_engine_version_accepts_official_build_but_requires_exact_core) ... ok
+test_explicit_validation_schedule_and_legacy_every (test_training.TrainingIntegrationTests.test_explicit_validation_schedule_and_legacy_every) ... ok
+test_float32_model_operator_losses_all_groups (test_training.TrainingIntegrationTests.test_float32_model_operator_losses_all_groups) ... ok
+test_resume_matches_uninterrupted_updates_across_loader_epoch (test_training.TrainingIntegrationTests.test_resume_matches_uninterrupted_updates_across_loader_epoch)
+Replay from step 2 after work at steps 3/4, including all RNG streams. ... {"group": "C", "seed": 17, "step": 2, "data_loss": 0.35582542419433594, "full_loss": 0.01574479416012764, "sub_loss": 0.0014374393504112959, "total_loss": 0.3559691607952118, "projected_energy_fraction": 0.09129616658002995, "output_gradient_data": 0.08801073580980301, "output_gradient_full": 0.007145552895963192, "output_gradient_sub": 0.0031026536598801613, "weighted_to_data_gradient_ratio": 0.0035253127571195364, "validation_max_shifted_cer": 0.076, "validation_mean_shifted_cer": 0.076}
+{"group": "C", "seed": 17, "step": 4, "data_loss": 0.3509412109851837, "full_loss": 0.015295851975679398, "sub_loss": 0.0030320240184664726, "total_loss": 0.35124441981315613, "projected_energy_fraction": 0.19822524585668258, "output_gradient_data": 0.08670363575220108, "output_gradient_full": 0.007082954980432987, "output_gradient_sub": 0.004387708846479654, "weighted_to_data_gradient_ratio": 0.005060582421720028, "validation_max_shifted_cer": 0.085, "validation_mean_shifted_cer": 0.085}
+{"group": "C", "seed": 17, "step": 6, "data_loss": 0.36292219161987305, "full_loss": 0.02684100717306137, "sub_loss": 0.0031117864418774843, "total_loss": 0.363233357667923, "projected_energy_fraction": 0.11593404158844638, "output_gradient_data": 0.11832749843597412, "output_gradient_full": 0.01362660527229309, "output_gradient_sub": 0.006628429051488638, "weighted_to_data_gradient_ratio": 0.005601766053587198, "validation_max_shifted_cer": 0.084, "validation_mean_shifted_cer": 0.084}
+{"best_step": 2, "best_validation_max_shifted_cer": 0.076, "best_validation_mean_shifted_cer": 0.076, "steps": 6, "total_seconds": 0.08346229999915522, "validation_seconds": 0.008522800000719144, "training_and_diagnostics_seconds": 0.07493949999843608, "group": "C", "seed": 17, "lambda": 0.1, "stage": "pilot"}
+{"group": "C", "seed": 17, "step": 2, "data_loss": 0.35582542419433594, "full_loss": 0.01574479416012764, "sub_loss": 0.0014374393504112959, "total_loss": 0.3559691607952118, "projected_energy_fraction": 0.09129616658002995, "output_gradient_data": 0.08801073580980301, "output_gradient_full": 0.007145552895963192, "output_gradient_sub": 0.0031026536598801613, "weighted_to_data_gradient_ratio": 0.0035253127571195364, "validation_max_shifted_cer": 0.076, "validation_mean_shifted_cer": 0.076}
+{"group": "C", "seed": 17, "step": 4, "data_loss": 0.3509412109851837, "full_loss": 0.015295851975679398, "sub_loss": 0.0030320240184664726, "total_loss": 0.35124441981315613, "projected_energy_fraction": 0.19822524585668258, "output_gradient_data": 0.08670363575220108, "output_gradient_full": 0.007082954980432987, "output_gradient_sub": 0.004387708846479654, "weighted_to_data_gradient_ratio": 0.005060582421720028, "validation_max_shifted_cer": 0.085, "validation_mean_shifted_cer": 0.085}
+{"group": "C", "seed": 17, "step": 6, "data_loss": 0.36292219161987305, "full_loss": 0.02684100717306137, "sub_loss": 0.0031117864418774843, "total_loss": 0.363233357667923, "projected_energy_fraction": 0.11593404158844638, "output_gradient_data": 0.11832749843597412, "output_gradient_full": 0.01362660527229309, "output_gradient_sub": 0.006628429051488638, "weighted_to_data_gradient_ratio": 0.005601766053587198, "validation_max_shifted_cer": 0.084, "validation_mean_shifted_cer": 0.084}
+{"best_step": 2, "best_validation_max_shifted_cer": 0.076, "best_validation_mean_shifted_cer": 0.076, "steps": 6, "total_seconds": 0.06068330000016431, "validation_seconds": 0.00788999999895168, "training_and_diagnostics_seconds": 0.05279330000121263, "group": "C", "seed": 17, "lambda": 0.1, "stage": "pilot", "resumed_from_step": 2, "training_segments": 2, "timing_note": "Sum of completed snapshot intervals and this segment; abandoned work and resume setup excluded"}
+ok
+test_strict_deterministic_cuda_backward (test_training.TrainingIntegrationTests.test_strict_deterministic_cuda_backward) ... ok
+test_validation_selection_is_corpus_weighted_and_excludes_s0 (test_training.TrainingIntegrationTests.test_validation_selection_is_corpus_weighted_and_excludes_s0) ... ok
+
+----------------------------------------------------------------------
+Ran 45 tests in 3.051s
+
+OK
