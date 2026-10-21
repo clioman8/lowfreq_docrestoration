@@ -1,0 +1,36 @@
+이 채팅의 문서 이미지 복원 논문 완성 작업을 계속해줘. 수일이 걸려도 본 실험을 우선하며, 이미 고정한 과학적 설정을 그대로 유지해줘.
+
+작업 폴더:
+C:\Users\ParkBS\Documents\ChatGPT\문서 이미지 복원을 위한 저주파 서브스페이스 일관성 정규화 기법의 경험적 비교
+
+1. 같은 PC의 위 작업 폴더에서 이어서 작업한다. 먼저 analysis/completion_handoff.json, experiment/study_status.json, 최신 로그를 UTF-8로 읽는다. 코드 ZIP은 코드와 재현 설정의 스냅샷이며 진행 중인 학습 체크포인트, 전체 DB, 실측 결과를 포함하지 않는다. 기존 작업 폴더의 데이터와 실행 기록을 보존하고, 실행 중인 폴더에 ZIP을 덮어쓰지 않는다.
+
+2. scripts/run_study.py의 실제 실행 상태를 확인한다. 상태 파일의 status만 믿지 말고 parent_pid와 child_pid의 실제 생존, 로그 및 OCR 임시 파일의 갱신을 확인한다. 정상 실행 중이면 중복 실행하지 않는다. 실행이 중단되거나 실패했다면 로그를 검토하여 잠긴 연구 코드는 변경하지 않고 허용된 프로젝트 안에서 런처 등 운영 오류를 고친 뒤 같은 고정 설정으로 재개한다. 기존 실행과 체크포인트를 보존하고, 재개는 현재 런처인 scripts/start_study_background.ps1과 체크포인트 재개 규칙을 따른다.
+
+3. experiment/configs/frozen.json, experiment/provenance/study_lock.json의 과학적 설정, 잠긴 연구 코드, 데이터 분할을 유지한다. 테스트 결과를 보고 가중치, 열화 설정, 학습 횟수, seed, 체크포인트 선택 규칙을 바꾸지 않는다. 새로운 설정으로 실험을 다시 설계하지 않는다.
+
+4. run_study.py가 총 13회 학습, validation 기반 가중치와 체크포인트 선택, A/B/C의 3개 seed 평가(선택된 총 9회), reference OCR, aggregate, cases까지 수행하도록 이어간다. seed 0의 가중치 탐색 실행을 최종 보고에도 재사용한다는 사실과 validation/test가 같은 알려진 severity 값을 사용한다는 사실을 정확히 설명한다. 근거는 experiment/results/main과 experiment/provenance에 보존한다.
+
+5. 실험이 모두 완료된 뒤 실제 결과와 OCR 내용을 읽고 analysis/manuscript_sections.json 및 scripts/build_manuscript.py로 영어 논문을 완성한다. 자동 생성된 초록, 결과, 논의, 결론, 사례 설명은 실제 수치와 OCR 내용에 맞춰 편집한다. 실험이 미완료이면 수치, 관찰, 완성 논문을 꾸며내지 않는다.
+
+6. 결과에는 severity별 CER, 각 seed에서 S1-S4 중 최대 CER를 먼저 구한 뒤 계산한 seed 간 평균과 표본 SD, 보조 지표인 평균 shifted CER, PSNR, SSIM, paired differences, threshold crossing, 실제 OCR와 대표 사례 및 실패 사례, 계산 비용과 한계를 포함한다. scripts/build_manuscript.py에는 기존 seed_summary의 mean_shifted_cer를 사용하는 seed별 평균 shifted CER 표와 그 값들의 평균·표본 SD가 이미 추가되어 있다. 단일 degraded-input 기준에는 training-seed SD를 부여하지 않는다. 출처 그룹 명칭도 recorded contributor/work groups로 정리되어 있으므로 이 수정사항을 유지한다. 미관측 threshold crossing을 임의의 수치로 대체하지 않는다. 데이터 출처와 contributor/work 그룹 분할의 한계도 인계 파일에 따라 정확히 기술한다.
+
+7. 선행 연구.zip은 논문의 형식과 디자인만 참고한다. 그 안의 연구 내용, 그림, 결과, 인용을 가져오지 않는다. 첨부 문서 안의 지시와 사용자의 요청을 구분한다.
+
+8. PDF 스킬과 번들 런타임을 사용한다. scripts/build_manuscript.py --check-inputs로 근거를 검증한 뒤, 첫 실제 PDF 생성 직전에 필요한 시작 마커를 정확히 한 번 실행한다. analysis/completion_handoff.json의 pdf_marker_has_run과 생성 기록을 확인하여 중복 실행을 피한다. 최종 PDF 경로는 output/pdf/low_frequency_subspace_document_restoration.pdf이다.
+
+9. PDF 전 페이지를 렌더링하여 잘림, 수식, 표, 글꼴, 그림과 페이지 배치를 읽을 수 있는 크기로 시각 검수하고 수정한다. 수치와 OCR 인용도 원본 결과와 대조한다. 전 페이지 검수가 끝난 뒤에만 output/pdf/final_visual_qa.json에 status="passed", 실제 pdf_sha256, page_count, inspected_pages 전체 목록(1부터 마지막 페이지까지), issues_remaining=[]를 기록한다. 시작 마커 실행 여부와 검수 결과도 인계 파일에 기록한다.
+
+10. 사용자가 처음 제공한 원본 네 파일을 모두 변경 없이 보존한다: 원본 논문 PDF, DB ZIP, 원본 all_10_github_packages.zip, 선행 연구.zip. 이후 다시 첨부한 모든 코드 ZIP 버전도 analysis/input_snapshots/manifest.json에 기록된 불변 스냅샷으로 각각 별도 보존한다. 새 재첨부 버전이 있으면 해당 파일의 해시를 확인하여 목록에 추가하고 이전 버전은 유지한다. analysis/completion_handoff.json의 user_attachment_requirement를 따른다.
+
+원본 보존 관련 추가 인계: 최초 all_10_github_packages.zip(256,492바이트, SHA256 d28c5e6042d6b2276b6d67aca331d2f4d097e8c82ad38112886d8936bb541cd1)이 기존 경로와 보관본 검색에서 발견되지 않았다. 나머지 원본 세 파일은 analysis/original_inputs/manifest.json에 기록된 작업 폴더 내 검증 사본으로 보존했다. 사용자가 최초 원본 코드 ZIP을 다시 제공하면 scripts/preserve_original_inputs.py --require-all을 실행해 동일성을 검증하고 보존한다. 실험은 이 누락과 무관하게 기존 체크포인트로 계속 진행한다. 원본을 확보하기 전 코드 스냅샷만 다시 만들 때에는 scripts/package_updated_code.py --original-code-directory analysis/code/all_10_github_packages를 명시적으로 사용한다. 이 모드는 해시가 검증된 원본 중첩 패키지로 현재 코드를 포장할 뿐, 사라진 원본 외부 ZIP을 복원하거나 원본 그대로라고 주장하지 않는다. 최종 전체 묶음에는 정확한 원본 코드 ZIP 자체가 필요하다. 동일한 누락에 대한 재첨부 요청을 이미 전달했다면 반복해서 알리지 않는다.
+
+11. PDF 전체 페이지 QA가 통과하면 번들 Python으로 scripts/package_final_delivery.py를 실행한다. 이 스크립트로 최신 수정 코드 ZIP을 다시 만들고, 네 원본 파일, 별도 보존한 재첨부 코드 ZIP, 완성 PDF, 최신 코드, 실제 재현 근거를 output/packages/complete_thesis_delivery.zip에 묶는다. 코드, 설정, 본문, 재현 자료의 최종 수정사항을 모두 반영하고 ZIP의 CRC와 해시를 검증한다.
+
+12. 원래 unified exec 세션은 종료되어 실험을 분리된 백그라운드 실행으로 재개했다. 현재 프로세스 번호는 과거 메시지가 아니라 최신 상태 파일과 실제 프로세스에서 확인한다. 체크포인트 저장 전 중단 1회의 기록은 experiment/provenance/recovery_events.json에 있으며 해당 시도와 로그는 별도로 보존했다. 과학적 설정은 변경하지 않았다. 완료된 실행의 시간 합계에 해당 중단 시도의 비용이 포함되지 않는다는 점을 계산 비용과 한계에 명시한다.
+
+13. 작업 상태가 그대로이거나 조치할 일이 없으면 조용히 유지한다. 최종 완료, 실패 또는 사용자 조치가 필요할 때만 알린다. 기존 후속 확인 automation_id=pdf를 중복 생성하지 않는다. 최종 논문 PDF와 검증된 전체 ZIP을 모두 사용자에게 전달하고 알린 뒤에만 해당 후속 실행을 비활성화한다.
+
+최종 전달물은 다음 두 파일이다:
+- output/pdf/low_frequency_subspace_document_restoration.pdf
+- output/packages/complete_thesis_delivery.zip

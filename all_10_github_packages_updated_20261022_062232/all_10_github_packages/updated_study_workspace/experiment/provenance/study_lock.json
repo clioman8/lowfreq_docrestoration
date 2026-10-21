@@ -1,0 +1,131 @@
+{
+  "frozen_at_kst": "2026-10-22T03:28:56.866900+09:00",
+  "config_sha256": "99c88879bacc3d6c11516bfd1f031871469f13946bee371f9c3c558953753a51",
+  "source_sha256": {
+    "docrestore/__init__.py": "4ec8af8ebcad4cd270b9f813659b6b7333a91edd041d83c9bd1d9c5361d336fa",
+    "docrestore/aggregate.py": "10f6f5bd1c0ff519b8c71993bb6e810a1b8329cd5b567ba4efba4c8667dbe95f",
+    "docrestore/assets.py": "4b514ff7cdc3662a676fa3c0118ccb6236fea3390f3828c9c8eb2ba52ae95128",
+    "docrestore/cases.py": "ffb20881a605ee597b286c88e134d30852467ffcb30af91b7ccd0b6c195d1a65",
+    "docrestore/common.py": "54e96ec47e46924fff497603d7d1df2bdb6cb3915601dd7a9e5c9584744524c8",
+    "docrestore/data.py": "3aacdc5a4b964d91fb193ea8536a1755993892152b2ff062ae699da74e27245b",
+    "docrestore/diagnose.py": "3742dafdbe8fcb4cbb2b41b42f5f9a14746260943ca1a4d835afe5bcffa16032",
+    "docrestore/evaluate.py": "a1b7a7962a02cccd0261108e111a77f17d8830955f1ef4ee98f318c688c24280",
+    "docrestore/losses.py": "f843f07ef23a9497164f1311fcec3c6e398b0790a6f6881f669c25335e5a7019",
+    "docrestore/metrics.py": "f621c06fd61439e83aceb44a5d84bec1e64968cb858652673a12a3dc5e6035df",
+    "docrestore/model.py": "f4ecb43c76b22214a45891ef1b7e25981996ed8d0b6275189cb828fdffa041a6",
+    "docrestore/operators.py": "89e0cb49105357b8fb865ab254efcb5f466b2f40cb365e8cb38457e375bda63f",
+    "docrestore/plan.py": "5207a21c227b63ffb887a3c0fbba67c216d84141fa4e6e0ba4ec09e146eb7284",
+    "docrestore/train.py": "2c868fea92ec9b5c86b0220377874cef1d4705af0323c6434cb5b627c09f24c7"
+  },
+  "test_images_rendered_before_freeze": false,
+  "test_ocr_inspected_before_freeze": false,
+  "development_diagnostic": {
+    "split": "validation",
+    "test_inspected": false,
+    "clean_corpus_cer": 0.004669688229638786,
+    "severity_corpus_cer": {
+      "S0": 0.005356407086938607,
+      "S1": 0.03186375497871172,
+      "S2": 0.016893283889575606,
+      "S3": 0.05466282104106579,
+      "S4": 0.2981733278395825
+    },
+    "elapsed_seconds": 9.540353700000196,
+    "engine": {
+      "tesseract_version": "tesseract v5.5.3.20260724\n leptonica-1.87.0\n  libgif 5.2.2 : libjpeg 8d (libjpeg-turbo 3.1.3) : libpng 1.6.58 : libtiff 4.7.2 : zlib 1.3.1 : libwebp 1.6.0 : libopenjp2 2.5.4\n Found AVX2\n Found AVX\n Found FMA\n Found SSE4.1\n Found libarchive 3.8.8 zlib/1.3.2 liblzma/5.8.3 bz2lib/1.0.8 liblz4/1.10.0 libzstd/1.5.7 expat/expat_2.8.2 cng/1.0 libb2/system\n Found libcurl/8.21.0 Schannel zlib/1.3.2 brotli/1.2.0 zstd/1.5.7 libidn2/2.3.8 libpsl/0.21.5 libssh2/1.11.1 WinLDAP",
+      "tessdata_sha256": "8280aed0782fe27257a68ea10fe7ef324ca0f8d85bd2fd145d1c2b560bcb66ba",
+      "language": "eng",
+      "oem": 1,
+      "psm": 6,
+      "normalization": "unicode_nfc_whitespace_collapse_case_punctuation_preserved_v1",
+      "preprocessing": "none_external_tesseract_internal_only",
+      "omp_thread_limit": 1,
+      "ssim_definition": "gaussian11_sigma1.5_population_valid_mean_clamp_range1_v3"
+    },
+    "needs_human_calibration": true,
+    "note": "No universal CER cutoffs are imposed. Inspect readable clean text, useful severity variation, and measured runtime; then freeze settings before final testing."
+  },
+  "development_pilots": {
+    "A_lambda0_seed0": {
+      "best_step": 250,
+      "best_validation_max_shifted_cer": 0.1642631506661173,
+      "best_validation_mean_shifted_cer": 0.054903172641120726,
+      "steps": 500,
+      "total_seconds": 51.017893600001116,
+      "validation_seconds": 19.784815400000298,
+      "training_and_diagnostics_seconds": 31.23307820000082,
+      "group": "A",
+      "seed": 0,
+      "lambda": 0.0,
+      "stage": "pilot"
+    },
+    "B_lambda1_seed0": {
+      "best_step": 250,
+      "best_validation_max_shifted_cer": 0.11536876802637,
+      "best_validation_mean_shifted_cer": 0.04257656915258893,
+      "steps": 500,
+      "total_seconds": 53.74893820000034,
+      "validation_seconds": 19.50363660000039,
+      "training_and_diagnostics_seconds": 34.24530159999995,
+      "group": "B",
+      "seed": 0,
+      "lambda": 1.0,
+      "stage": "pilot"
+    },
+    "C_lambda1_seed0": {
+      "best_step": 250,
+      "best_validation_max_shifted_cer": 0.16604861969509682,
+      "best_validation_mean_shifted_cer": 0.05775305589891498,
+      "steps": 500,
+      "total_seconds": 53.46506059999956,
+      "validation_seconds": 21.158290299999862,
+      "training_and_diagnostics_seconds": 32.3067702999997,
+      "group": "C",
+      "seed": 0,
+      "lambda": 1.0,
+      "stage": "pilot"
+    },
+    "B_lambda10_seed0": {
+      "best_step": 500,
+      "best_validation_max_shifted_cer": 0.1330861145447054,
+      "best_validation_mean_shifted_cer": 0.04889438263974728,
+      "steps": 500,
+      "total_seconds": 56.21283250000124,
+      "validation_seconds": 21.440416400000686,
+      "training_and_diagnostics_seconds": 34.772416100000555,
+      "group": "B",
+      "seed": 0,
+      "lambda": 10.0,
+      "stage": "pilot"
+    },
+    "C_lambda10_seed0": {
+      "best_step": 500,
+      "best_validation_max_shifted_cer": 0.257656915258893,
+      "best_validation_mean_shifted_cer": 0.0865609119626425,
+      "steps": 500,
+      "total_seconds": 54.35094079999908,
+      "validation_seconds": 19.867451699999947,
+      "training_and_diagnostics_seconds": 34.48348909999913,
+      "group": "C",
+      "seed": 0,
+      "lambda": 10.0,
+      "stage": "pilot"
+    }
+  },
+  "source_split_sha256": "24f40ea309f4787c3134fa8e9cbcfdf776330f5d904b573e7ce44468d66e1af7",
+  "main_training_runs": 13,
+  "reported_training_repetitions": 9,
+  "checkpoint_evaluations_per_run": 8,
+  "planned_training_updates": 130000,
+  "planned_validation_ocr_images": 520000,
+  "selection_policy": "max shifted corpus CER, then mean shifted CER, then smaller lambda; earliest checkpoint on exact ties",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.7 (tags/v3.13.7:bcee1c3, Aug 14 2025, 14:15:11) [MSC v.1944 64 bit (AMD64)]",
+  "selection_assets": {
+    "book_allowlist.json": "007808a0c3c5d4fdf4a35621e6e1b91ec84f5e3d4bfa426213ef1dafce838348",
+    "selected_catalog.json": "5a268153009e418cac30422442db19945f10b6a34bea63ae72cb1e2e0b92777c",
+    "selection_summary.json": "66129486ca7000da5efef2d26de215ef65c76d49c7d604e643f66def71cf9f2b",
+    "source_manifest.json": "f4b1cf08399aa80c9e96057576715fd184a048916412a6a6e19349a368fead3d",
+    "work_id_mapping.json": "f9d23d026d3a2a7990f2de4a130e3703041385d4180e23d7214861848d0aa8f5"
+  }
+}
