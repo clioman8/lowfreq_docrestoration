@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "configuration_frozen": true,
+  "calibration_status": "VALIDATED_AND_FROZEN",
+  "data": {
+    "image_size": 256,
+    "font_size": 22,
+    "margin": 16,
+    "samples_per_split": {
+      "train": 8000,
+      "validation": 1000,
+      "test": 1000
+    },
+    "split_seed": 20261021,
+    "render_seed": 20261022,
+    "max_books": 500,
+    "min_words": 8,
+    "min_english_ratio": 0.85,
+    "language_validation": true,
+    "book_allowlist": "assets/english_selection/book_allowlist.json",
+    "work_id_mapping": "assets/english_selection/work_id_mapping.json",
+    "language_validation_method": "Project Gutenberg catalog Language=en; one named primary author; archived metadata and hashes",
+    "source_split_manifest": "data/development/split_manifest.json"
+  },
+  "degradation": {
+    "n_steps": 8,
+    "h": 1.0,
+    "train": {
+      "kappa": [
+        0.15,
+        0.6
+      ],
+      "alpha": [
+        0,
+        0.08
+      ],
+      "T": 1.0
+    },
+    "severities": [
+      {
+        "id": "S0",
+        "kappa": 0.4,
+        "alpha": 0.04,
+        "T": 1.0
+      },
+      {
+        "id": "S1",
+        "kappa": 0.8,
+        "alpha": 0.08,
+        "T": 1.0
+      },
+      {
+        "id": "S2",
+        "kappa": 1.6,
+        "alpha": 0.12,
+        "T": 1.0
+      },
+      {
+        "id": "S3",
+        "kappa": 2.8,
+        "alpha": 0.2,
+        "T": 1.0
+      },
+      {
+        "id": "S4",
+        "kappa": 4.5,
+        "alpha": 0.35,
+        "T": 1.0
+      }
+    ]
+  },
+  "model": {
+    "channels": [
+      32,
+      64,
+      128,
+      256
+    ]
+  },
+  "loss": {
+    "beta": 0.1,
+    "subspace_dim": 32,
+    "lambda_grid": [
+      0.1,
+      1.0,
+      10.0
+    ]
+  },
+  "training": {
+    "batch_size": 8,
+    "learning_rate": 0.0002,
+    "max_steps": 10000,
+    "eval_every": 1000,
+    "diagnostics_every": 50,
+    "cpu_threads": 4,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "eval_steps": [
+      250,
+      500,
+      1000,
+      2000,
+      4000,
+      6000,
+      8000,
+      10000
+    ]
+  },
+  "ocr": {
+    "expected_engine_version": "5.5.3",
+    "language": "eng",
+    "oem": 1,
+    "psm": 6,
+    "normalization": "NFC + collapse whitespace; preserve case and punctuation",
+    "workers": 16
+  },
+  "analysis": {
+    "shifted_severities": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ],
+    "threshold": 0.1,
+    "example_seed": 0,
+    "threshold_adjacent_interval": [
+      0.08,
+      0.12
+    ]
+  },
+  "notes": [
+    "Frozen after train/validation development; no test images or test OCR inspected.",
+    "Severity path retained after clean/input validation OCR and image inspection.",
+    "Identical three-value lambda budgets for B/C; gradient measurements motivate 0.1, 1, 10.",
+    "Shared checkpoint schedule includes early updates following pilot validation behavior.",
+    "Three matched training seeds; selected seed-0 candidate reused as the first repetition.",
+    "Source author groups and data split are reused unchanged from development."
+  ]
+}

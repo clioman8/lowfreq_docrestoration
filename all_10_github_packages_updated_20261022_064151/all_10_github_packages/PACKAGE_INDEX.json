@@ -1,0 +1,112 @@
+[
+  {
+    "file": "01_data_preparation.zip",
+    "bytes": 47755,
+    "sha256": "6ec54b7f6ddb3d9ff1abdc203daeeb4714ae4ffdbcd209ca03b74b4662da432f",
+    "section": "§3.4·§5.1",
+    "title": "데이터 원천·분할·렌더링",
+    "original_bytes": 35691,
+    "original_sha256": "b938133926c3197fc834669b63785e77f54f19bd5114f5b19a29cedf55ee9259",
+    "entries": 28,
+    "snapshot_kind": "current_code_snapshot_no_main_results"
+  },
+  {
+    "file": "02_degradation_operator.zip",
+    "bytes": 31623,
+    "sha256": "ff2e8c4925b558d114a0aad1c846beff47a698a9de2d5021f6c91ad44cd79a65",
+    "section": "§3.2",
+    "title": "확산–반응 열화 연산자",
+    "original_bytes": 20099,
+    "original_sha256": "8bb8b71283a518dbd4d3db5a4d35670bade98a24b9cd9ad9bc93bf8b5c408fc3",
+    "entries": 25,
+    "snapshot_kind": "current_code_snapshot_no_main_results"
+  },
+  {
+    "file": "03_severity_generation.zip",
+    "bytes": 47636,
+    "sha256": "4262d1fecb6622a61fc94e7af7ed6861bf6d9b014e12476646adac9c0b7920b3",
+    "section": "§3.3",
+    "title": "동일 문서 S0–S4 생성",
+    "original_bytes": 35549,
+    "original_sha256": "9719642fac7160e428c1e3cf60b664c993e4816625d572cca697f518ad7003b2",
+    "entries": 28,
+    "snapshot_kind": "current_code_snapshot_no_main_results"
+  },
+  {
+    "file": "04_restoration_model.zip",
+    "bytes": 29279,
+    "sha256": "d7db217317dae3d11e87d8d93e2d65665c2ab371aeff452436bae5de2d652a71",
+    "section": "§4.1",
+    "title": "공통 U-Net 모델",
+    "original_bytes": 17779,
+    "original_sha256": "010f5a10ba316c02b0db716fc3ab47ce109a51230fc5a1e52b466225c3802645",
+    "entries": 25,
+    "snapshot_kind": "current_code_snapshot_no_main_results"
+  },
+  {
+    "file": "05_consistency_losses.zip",
+    "bytes": 32334,
+    "sha256": "fa5ec7c3465241a121d4be01404463cc966a8c97420ca2d5fd83ebff15fb4031",
+    "section": "§4.2–4.5",
+    "title": "A/B/C 공통·일관성 손실",
+    "original_bytes": 20810,
+    "original_sha256": "e75aad300d583cd2cc8130b161e3e94ed70328d7105ef51910645f84e95091a3",
+    "entries": 25,
+    "snapshot_kind": "current_code_snapshot_no_main_results"
+  },
+  {
+    "file": "06_ocr_diagnostic.zip",
+    "bytes": 40293,
+    "sha256": "1d66b842fd769ab61698384530bab8c052e5c87d0be954eb599c1bc848662261",
+    "section": "§5.2",
+    "title": "학습 전 OCR 사전 검사",
+    "original_bytes": 25014,
+    "original_sha256": "144524fe67930e4f5f6d484e47d994dc7e61b8f855e68a1f6790aade3e56d8c1",
+    "entries": 28,
+    "snapshot_kind": "current_code_snapshot_no_main_results"
+  },
+  {
+    "file": "07_training_and_plan.zip",
+    "bytes": 68510,
+    "sha256": "e4d0a7dc82efa27b8d270aac3d5a6081c5f96d1b48ceda4f0ffd6a297480fca7",
+    "section": "§4.7·§5.3–5.4",
+    "title": "학습·lambda 탐색·체크포인트",
+    "original_bytes": 47042,
+    "original_sha256": "d07c2e7a280afb2f27c9370dacd077390fdf2f9bb0532731bea5e7e617bb521f",
+    "entries": 36,
+    "snapshot_kind": "current_code_snapshot_no_main_results"
+  },
+  {
+    "file": "08_ocr_and_metrics.zip",
+    "bytes": 40262,
+    "sha256": "3dd6e7a82c1f214abff236ab051f83a15e5c1ea423689a45424a487d1160d1f9",
+    "section": "§5.5–5.6",
+    "title": "고정 OCR·CER·영상 지표",
+    "original_bytes": 23091,
+    "original_sha256": "a1f2d8666739f6040b7b0a03232275881e381fefbc7f617f96f08708be162db6",
+    "entries": 28,
+    "snapshot_kind": "current_code_snapshot_no_main_results"
+  },
+  {
+    "file": "09_results_aggregation.zip",
+    "bytes": 44706,
+    "sha256": "9a9ab4849f08f93bac3d7cb4c82c2c36c39e7ac24baa7a711267bdf8120a9aaf",
+    "section": "§5.7–5.9·§6",
+    "title": "severity·seed 결과 집계",
+    "original_bytes": 27477,
+    "original_sha256": "cdc591dad42ce080755a7a76e731b683aa9ee8f8242109ef965a46542ad42ac0",
+    "entries": 29,
+    "snapshot_kind": "current_code_snapshot_no_main_results"
+  },
+  {
+    "file": "10_case_analysis.zip",
+    "bytes": 31826,
+    "sha256": "bf4c0e1a5d0f03f12beee046b13a5792a7c9abac396a555737a9f37af2c75c4e",
+    "section": "§5.10",
+    "title": "대표·심각·C 악화 사례 선정",
+    "original_bytes": 20260,
+    "original_sha256": "5cdbc54530057e8c79e859f212266e4412575909e27a5afdb951949f286d5613",
+    "entries": 26,
+    "snapshot_kind": "current_code_snapshot_no_main_results"
+  }
+]

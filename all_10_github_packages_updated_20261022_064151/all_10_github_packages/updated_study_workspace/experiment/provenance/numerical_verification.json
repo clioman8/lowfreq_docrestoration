@@ -1,0 +1,31 @@
+{
+  "kind": "implementation_verification_not_restoration_results",
+  "seed": 813,
+  "dense_implicit_euler_max_abs_error": 8.881784197001252e-16,
+  "identity_max_abs_error": 3.3306690738754696e-16,
+  "reaction_only_max_abs_error": 3.3306690738754696e-16,
+  "heat_mean_error": 0.0,
+  "main_basis_orthogonality_max_abs_error": 6.661338147750939e-16,
+  "main_projector_idempotence_relative_error": 3.6606847337933993e-16,
+  "random_projected_energy_fraction": 0.0005885784176530436,
+  "main_basis_shape": [
+    65536,
+    32
+  ],
+  "torch_version": "2.10.0+cu128",
+  "cuda_available": true,
+  "cpu_float64_numpy_max_abs_error": 4.440892098500626e-16,
+  "cpu_float64_finite_gradient": true,
+  "cpu_float64_nonzero_gradient": true,
+  "cpu_float32_numpy_max_abs_error": 1.0124364591135304e-07,
+  "cpu_float32_finite_gradient": true,
+  "cpu_float32_nonzero_gradient": true,
+  "cuda_float64_numpy_max_abs_error": 2.220446049250313e-16,
+  "cuda_float64_finite_gradient": true,
+  "cuda_float64_nonzero_gradient": true,
+  "cuda_float32_numpy_max_abs_error": 1.2791605297213238e-07,
+  "cuda_float32_finite_gradient": true,
+  "cuda_float32_nonzero_gradient": true,
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "logical_processors": 24
+}
