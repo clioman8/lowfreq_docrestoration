@@ -1,0 +1,255 @@
+{
+  "snapshot": {
+    "packaged_at_kst": "2026-10-22T07:09:16.579911+09:00",
+    "kind": "current_code_snapshot_no_main_results",
+    "study_status": "running",
+    "current_stage": "A_lambda0_seed2",
+    "tests_run": 45,
+    "main_results_included": false,
+    "final_pdf_included": false,
+    "packaging_basis": "verified_extracted_original_members",
+    "original_code_zip_sha256": null,
+    "historically_recorded_original_code_zip_sha256": "d28c5e6042d6b2276b6d67aca331d2f4d097e8c82ad38112886d8936bb541cd1",
+    "original_code_archive_unchanged": null,
+    "original_members_verified": true,
+    "original_outer_archive_presently_unavailable": true,
+    "original_member_verification": {
+      "input_snapshot_manifest": "C:\\Users\\ParkBS\\Documents\\ChatGPT\\문서 이미지 복원을 위한 저주파 서브스페이스 일관성 정규화 기법의 경험적 비교\\analysis\\input_snapshots\\manifest.json",
+      "input_snapshot_manifest_sha256": "cb8c71ac386450b69246c0ff0ccf377130328ccce6879a22514ea254770a1287",
+      "first_snapshot": "C:\\Users\\ParkBS\\Documents\\ChatGPT\\문서 이미지 복원을 위한 저주파 서브스페이스 일관성 정규화 기법의 경험적 비교\\analysis\\input_snapshots\\supplied_updated_code_snapshot_d767a74d1266df41ec4078af3de0712841cc29b7cc6e1be9648169b59a8cce4c.zip",
+      "first_snapshot_sha256": "d767a74d1266df41ec4078af3de0712841cc29b7cc6e1be9648169b59a8cce4c",
+      "original_index_sha256": "e7a8938aa02d7ee26ea63e335251f3bc080c768017bcf6fe3416a389ff58dfe8",
+      "original_readme_sha256": "a8635939307885ee36af37e4bca5f1d92bdfdf93126a9fafd0787a4cd488f246"
+    },
+    "frozen_config_sha256": "99c88879bacc3d6c11516bfd1f031871469f13946bee371f9c3c558953753a51"
+  },
+  "packages": [
+    {
+      "package": "01_data_preparation.zip",
+      "updated_existing_files": [
+        {
+          "path": "docrestore/data.py",
+          "change": "updated_from_current_workspace",
+          "old_sha256": "66dc3ca9c0702b4d071497d51c44fe025ca12b8961f45ce559fef7739f357c2b",
+          "sha256": "3aacdc5a4b964d91fb193ea8536a1755993892152b2ff062ae699da74e27245b"
+        },
+        {
+          "path": "tests/test_data.py",
+          "change": "updated_from_current_workspace",
+          "old_sha256": "7e3395544681d0d25f42111013e3afb745b713613890a64666e7117a5a1b03e6",
+          "sha256": "749ad45dae99995bbffe12ebda560df1088f2be359b6ec93c2490a3cfd2d7d2d"
+        }
+      ],
+      "current_config_files": [
+        "configs/development.json",
+        "configs/final.template.json",
+        "configs/frozen.json",
+        "configs/pilot.example.json"
+      ],
+      "historical_validation_preserved": true
+    },
+    {
+      "package": "02_degradation_operator.zip",
+      "updated_existing_files": [],
+      "current_config_files": [
+        "configs/development.json",
+        "configs/final.template.json",
+        "configs/frozen.json",
+        "configs/pilot.example.json"
+      ],
+      "historical_validation_preserved": true
+    },
+    {
+      "package": "03_severity_generation.zip",
+      "updated_existing_files": [
+        {
+          "path": "docrestore/data.py",
+          "change": "updated_from_current_workspace",
+          "old_sha256": "66dc3ca9c0702b4d071497d51c44fe025ca12b8961f45ce559fef7739f357c2b",
+          "sha256": "3aacdc5a4b964d91fb193ea8536a1755993892152b2ff062ae699da74e27245b"
+        },
+        {
+          "path": "tests/test_data.py",
+          "change": "updated_from_current_workspace",
+          "old_sha256": "7e3395544681d0d25f42111013e3afb745b713613890a64666e7117a5a1b03e6",
+          "sha256": "749ad45dae99995bbffe12ebda560df1088f2be359b6ec93c2490a3cfd2d7d2d"
+        }
+      ],
+      "current_config_files": [
+        "configs/development.json",
+        "configs/final.template.json",
+        "configs/frozen.json",
+        "configs/pilot.example.json"
+      ],
+      "historical_validation_preserved": true
+    },
+    {
+      "package": "04_restoration_model.zip",
+      "updated_existing_files": [],
+      "current_config_files": [
+        "configs/development.json",
+        "configs/final.template.json",
+        "configs/frozen.json",
+        "configs/pilot.example.json"
+      ],
+      "historical_validation_preserved": true
+    },
+    {
+      "package": "05_consistency_losses.zip",
+      "updated_existing_files": [],
+      "current_config_files": [
+        "configs/development.json",
+        "configs/final.template.json",
+        "configs/frozen.json",
+        "configs/pilot.example.json"
+      ],
+      "historical_validation_preserved": true
+    },
+    {
+      "package": "06_ocr_diagnostic.zip",
+      "updated_existing_files": [
+        {
+          "path": "docrestore/diagnose.py",
+          "change": "updated_from_current_workspace",
+          "old_sha256": "2d576d3c4ed8f55604aae142c9c13eded27636f74745eb6cb52700a80c054652",
+          "sha256": "3742dafdbe8fcb4cbb2b41b42f5f9a14746260943ca1a4d835afe5bcffa16032"
+        },
+        {
+          "path": "docrestore/evaluate.py",
+          "change": "updated_from_current_workspace",
+          "old_sha256": "dbeaa3ab0e6f3fd5aaef6a9fdea33781abefe9abf55599e80be30c5f96c8cd1a",
+          "sha256": "a1b7a7962a02cccd0261108e111a77f17d8830955f1ef4ee98f318c688c24280"
+        },
+        {
+          "path": "tests/test_evaluate_parallel.py",
+          "change": "added_parallel_ocr_test_or_dependency",
+          "sha256": "bd48f5868b6a9c9f9674884325f614c3819834ceee4f86c56b7908c78a0fabdc"
+        }
+      ],
+      "current_config_files": [
+        "configs/development.json",
+        "configs/final.template.json",
+        "configs/frozen.json",
+        "configs/pilot.example.json"
+      ],
+      "historical_validation_preserved": true
+    },
+    {
+      "package": "07_training_and_plan.zip",
+      "updated_existing_files": [
+        {
+          "path": "docrestore/evaluate.py",
+          "change": "updated_from_current_workspace",
+          "old_sha256": "dbeaa3ab0e6f3fd5aaef6a9fdea33781abefe9abf55599e80be30c5f96c8cd1a",
+          "sha256": "a1b7a7962a02cccd0261108e111a77f17d8830955f1ef4ee98f318c688c24280"
+        },
+        {
+          "path": "docrestore/train.py",
+          "change": "updated_from_current_workspace",
+          "old_sha256": "78e9f85c694388cdac5dacfb91dc0db8b0da9cf11db568eb3a806094d79fdb47",
+          "sha256": "2c868fea92ec9b5c86b0220377874cef1d4705af0323c6434cb5b627c09f24c7"
+        },
+        {
+          "path": "tests/test_training.py",
+          "change": "updated_from_current_workspace",
+          "old_sha256": "c252b749551def5e69aac3b4b2f92e9cea2c0016bc469bff658304bf55998851",
+          "sha256": "e156bb45f07d28b2ea47b68eacb1879f8b3df123c6495f7bf189a7855ceeff5b"
+        },
+        {
+          "path": "tests/test_evaluate_parallel.py",
+          "change": "added_parallel_ocr_test_or_dependency",
+          "sha256": "bd48f5868b6a9c9f9674884325f614c3819834ceee4f86c56b7908c78a0fabdc"
+        },
+        {
+          "path": "docrestore/diagnose.py",
+          "change": "added_parallel_ocr_test_or_dependency",
+          "sha256": "3742dafdbe8fcb4cbb2b41b42f5f9a14746260943ca1a4d835afe5bcffa16032"
+        }
+      ],
+      "current_config_files": [
+        "configs/development.json",
+        "configs/final.template.json",
+        "configs/frozen.json",
+        "configs/pilot.example.json"
+      ],
+      "historical_validation_preserved": true
+    },
+    {
+      "package": "08_ocr_and_metrics.zip",
+      "updated_existing_files": [
+        {
+          "path": "docrestore/evaluate.py",
+          "change": "updated_from_current_workspace",
+          "old_sha256": "dbeaa3ab0e6f3fd5aaef6a9fdea33781abefe9abf55599e80be30c5f96c8cd1a",
+          "sha256": "a1b7a7962a02cccd0261108e111a77f17d8830955f1ef4ee98f318c688c24280"
+        },
+        {
+          "path": "tests/test_evaluate_parallel.py",
+          "change": "added_parallel_ocr_test_or_dependency",
+          "sha256": "bd48f5868b6a9c9f9674884325f614c3819834ceee4f86c56b7908c78a0fabdc"
+        },
+        {
+          "path": "docrestore/diagnose.py",
+          "change": "added_parallel_ocr_test_or_dependency",
+          "sha256": "3742dafdbe8fcb4cbb2b41b42f5f9a14746260943ca1a4d835afe5bcffa16032"
+        },
+        {
+          "path": "docrestore/common.py",
+          "change": "added_parallel_ocr_test_or_dependency",
+          "sha256": "54e96ec47e46924fff497603d7d1df2bdb6cb3915601dd7a9e5c9584744524c8"
+        }
+      ],
+      "current_config_files": [
+        "configs/development.json",
+        "configs/final.template.json",
+        "configs/frozen.json",
+        "configs/pilot.example.json"
+      ],
+      "historical_validation_preserved": true
+    },
+    {
+      "package": "09_results_aggregation.zip",
+      "updated_existing_files": [
+        {
+          "path": "docrestore/evaluate.py",
+          "change": "updated_from_current_workspace",
+          "old_sha256": "dbeaa3ab0e6f3fd5aaef6a9fdea33781abefe9abf55599e80be30c5f96c8cd1a",
+          "sha256": "a1b7a7962a02cccd0261108e111a77f17d8830955f1ef4ee98f318c688c24280"
+        },
+        {
+          "path": "tests/test_evaluate_parallel.py",
+          "change": "added_parallel_ocr_test_or_dependency",
+          "sha256": "bd48f5868b6a9c9f9674884325f614c3819834ceee4f86c56b7908c78a0fabdc"
+        },
+        {
+          "path": "docrestore/diagnose.py",
+          "change": "added_parallel_ocr_test_or_dependency",
+          "sha256": "3742dafdbe8fcb4cbb2b41b42f5f9a14746260943ca1a4d835afe5bcffa16032"
+        },
+        {
+          "path": "docrestore/common.py",
+          "change": "added_parallel_ocr_test_or_dependency",
+          "sha256": "54e96ec47e46924fff497603d7d1df2bdb6cb3915601dd7a9e5c9584744524c8"
+        }
+      ],
+      "current_config_files": [
+        "configs/development.json",
+        "configs/final.template.json",
+        "configs/frozen.json",
+        "configs/pilot.example.json"
+      ],
+      "historical_validation_preserved": true
+    },
+    {
+      "package": "10_case_analysis.zip",
+      "updated_existing_files": [],
+      "current_config_files": [
+        "configs/development.json",
+        "configs/final.template.json",
+        "configs/frozen.json",
+        "configs/pilot.example.json"
+      ],
+      "historical_validation_preserved": true
+    }
+  ]
+}

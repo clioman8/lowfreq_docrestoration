@@ -1,0 +1,3512 @@
+{
+  "source_archive": "experiment/assets/librispeech-lm-corpus.tgz",
+  "source_archive_md5": "fb7f9ff25536b60b90bc1d0715c5ec80",
+  "source_archive_sha256": "9d0da0460cf7b1e7413ff8ed5ba4f8f14ae6bee0b3ffb2842c5d234515bd77c9",
+  "books": [
+    {
+      "book_id": "12",
+      "archive_member": "librispeech-lm-corpus/corpus/12/12.txt",
+      "bytes": 160225,
+      "sha256": "e67b711309b6460865923acabd5ca70cd326c0eea7b309eadfbd6950daeed9f6",
+      "extracted_path": "experiment/assets/english_books/12.txt"
+    },
+    {
+      "book_id": "13",
+      "archive_member": "librispeech-lm-corpus/corpus/13/13.txt",
+      "bytes": 27880,
+      "sha256": "4b63ec1fc981ee51ce69c45784ca42458232f589a74b09979ed0745b0885c1a3",
+      "extracted_path": "experiment/assets/english_books/13.txt"
+    },
+    {
+      "book_id": "16",
+      "archive_member": "librispeech-lm-corpus/corpus/16/16.txt",
+      "bytes": 256802,
+      "sha256": "03ee9ff0e9f8192a82bca2f147b4376a5f8560d4ac68ca51afb78cfa2392bd0b",
+      "extracted_path": "experiment/assets/english_books/16.txt"
+    },
+    {
+      "book_id": "23",
+      "archive_member": "librispeech-lm-corpus/corpus/23/23.txt",
+      "bytes": 224215,
+      "sha256": "aab3d608f71bd3f32cd492aea0dde270277008ee3dfc36e805b289f18fc63669",
+      "extracted_path": "experiment/assets/english_books/23.txt"
+    },
+    {
+      "book_id": "32",
+      "archive_member": "librispeech-lm-corpus/corpus/32/32.txt",
+      "bytes": 296653,
+      "sha256": "0b62b318d271f19671cca942add2c0b3a082fd35168a999d4c1b2899a6f255e2",
+      "extracted_path": "experiment/assets/english_books/32.txt"
+    },
+    {
+      "book_id": "35",
+      "archive_member": "librispeech-lm-corpus/corpus/35/35.txt",
+      "bytes": 178984,
+      "sha256": "f30161ed08a076d9efd314a92cfac3342aa21210285d0424f307424d75de5925",
+      "extracted_path": "experiment/assets/english_books/35.txt"
+    },
+    {
+      "book_id": "36",
+      "archive_member": "librispeech-lm-corpus/corpus/36/36.txt",
+      "bytes": 339232,
+      "sha256": "c5c862ec81020a7143601b118f6f1532816053af916a7a946bb1d357e2954fe0",
+      "extracted_path": "experiment/assets/english_books/36.txt"
+    },
+    {
+      "book_id": "41",
+      "archive_member": "librispeech-lm-corpus/corpus/41/41.txt",
+      "bytes": 69690,
+      "sha256": "06cdc098499d8880bf909ae5f5983d6a4acbda0da37dc5d1dd31042d797e73e7",
+      "extracted_path": "experiment/assets/english_books/41.txt"
+    },
+    {
+      "book_id": "43",
+      "archive_member": "librispeech-lm-corpus/corpus/43/43.txt",
+      "bytes": 138602,
+      "sha256": "1d2d42b9a9f6a1e9caeb1a6adafa1386630e32067cafda43dd34bef72fef08ed",
+      "extracted_path": "experiment/assets/english_books/43.txt"
+    },
+    {
+      "book_id": "44",
+      "archive_member": "librispeech-lm-corpus/corpus/44/44.txt",
+      "bytes": 830220,
+      "sha256": "abaea2445a787e63a9bba5de6ca534b2ccdc4bdba6dbc5b8a750fb126e6ef317",
+      "extracted_path": "experiment/assets/english_books/44.txt"
+    },
+    {
+      "book_id": "47",
+      "archive_member": "librispeech-lm-corpus/corpus/47/47.txt",
+      "bytes": 487854,
+      "sha256": "9be56d5867ad52f4cdeddabfef212b3088dc71a9caf7b616c4dcfcc0e3efc295",
+      "extracted_path": "experiment/assets/english_books/47.txt"
+    },
+    {
+      "book_id": "51",
+      "archive_member": "librispeech-lm-corpus/corpus/51/51.txt",
+      "bytes": 426346,
+      "sha256": "c1f62e2a219f4ccb101224ee134ad35f2e60dacce5cfc4e1d0b0419a45b1535e",
+      "extracted_path": "experiment/assets/english_books/51.txt"
+    },
+    {
+      "book_id": "55",
+      "archive_member": "librispeech-lm-corpus/corpus/55/55.txt",
+      "bytes": 208293,
+      "sha256": "f9f9473cedc598a7c273de16e1a32badd4a7b1115cf5f5d57906cd0c0fabdf00",
+      "extracted_path": "experiment/assets/english_books/55.txt"
+    },
+    {
+      "book_id": "58",
+      "archive_member": "librispeech-lm-corpus/corpus/58/58.txt",
+      "bytes": 93349,
+      "sha256": "c151912f38b365cc184605c702b11296c59bf0efdf7af88c96987ccb851f588e",
+      "extracted_path": "experiment/assets/english_books/58.txt"
+    },
+    {
+      "book_id": "60",
+      "archive_member": "librispeech-lm-corpus/corpus/60/60.txt",
+      "bytes": 484283,
+      "sha256": "cf964dc3ad696cb31db8dd78fbd51e4e87da505c4964e5492ed93b7726baa9dc",
+      "extracted_path": "experiment/assets/english_books/60.txt"
+    },
+    {
+      "book_id": "62",
+      "archive_member": "librispeech-lm-corpus/corpus/62/62.txt",
+      "bytes": 372088,
+      "sha256": "adbbb19114925330b04bfce69e58299bb0af4567ba282699450a0a4f5586db28",
+      "extracted_path": "experiment/assets/english_books/62.txt"
+    },
+    {
+      "book_id": "64",
+      "archive_member": "librispeech-lm-corpus/corpus/64/64.txt",
+      "bytes": 452310,
+      "sha256": "f5a8eefd00a66c225d6261b4059b27ab040ffae66f67bd1364f2ea5a4c13c7b0",
+      "extracted_path": "experiment/assets/english_books/64.txt"
+    },
+    {
+      "book_id": "68",
+      "archive_member": "librispeech-lm-corpus/corpus/68/68.txt",
+      "bytes": 312214,
+      "sha256": "fe88ffbffb7bf566b349c21315c99d6baf1d94b72c649bad706f7ceaaba7218e",
+      "extracted_path": "experiment/assets/english_books/68.txt"
+    },
+    {
+      "book_id": "70",
+      "archive_member": "librispeech-lm-corpus/corpus/70/70.txt",
+      "bytes": 531743,
+      "sha256": "9dbd2119f155d2ec21674b65986688c2fc27106543aacf1574614f870f17bbca",
+      "extracted_path": "experiment/assets/english_books/70.txt"
+    },
+    {
+      "book_id": "71",
+      "archive_member": "librispeech-lm-corpus/corpus/71/71.txt",
+      "bytes": 51375,
+      "sha256": "18d4c5cb1aeaa672983d835cfb62a72134d611f4519ebbc1057473d722b1d1a7",
+      "extracted_path": "experiment/assets/english_books/71.txt"
+    },
+    {
+      "book_id": "72",
+      "archive_member": "librispeech-lm-corpus/corpus/72/72.txt",
+      "bytes": 267611,
+      "sha256": "0751eb57f5823c3450fa6710da12a5f825eda650ea2a13db32424e6d3063567c",
+      "extracted_path": "experiment/assets/english_books/72.txt"
+    },
+    {
+      "book_id": "73",
+      "archive_member": "librispeech-lm-corpus/corpus/73/73.txt",
+      "bytes": 260573,
+      "sha256": "a03df378dedc802ecac28ffc2a1cb8885427ded355b3fee42316b5c078ef6189",
+      "extracted_path": "experiment/assets/english_books/73.txt"
+    },
+    {
+      "book_id": "81",
+      "archive_member": "librispeech-lm-corpus/corpus/81/81.txt",
+      "bytes": 496335,
+      "sha256": "7e23436e1e5648f57674285b23c874a2452ac46a17c61546450314d59a2f355b",
+      "extracted_path": "experiment/assets/english_books/81.txt"
+    },
+    {
+      "book_id": "83",
+      "archive_member": "librispeech-lm-corpus/corpus/83/83.txt",
+      "bytes": 547082,
+      "sha256": "c5758b8c6bd43f5ae69a92a379a7ae5d26fd6c15ce1dce8eb0067414870f77b7",
+      "extracted_path": "experiment/assets/english_books/83.txt"
+    },
+    {
+      "book_id": "84",
+      "archive_member": "librispeech-lm-corpus/corpus/84/84.txt",
+      "bytes": 421311,
+      "sha256": "cb606d6837af1ea42ce7f8663760e3d39d135f29f16194c9e336ca8bd9226aad",
+      "extracted_path": "experiment/assets/english_books/84.txt"
+    },
+    {
+      "book_id": "85",
+      "archive_member": "librispeech-lm-corpus/corpus/85/85.txt",
+      "bytes": 353222,
+      "sha256": "ca333feb277fc236c01670fa64b1a45e0d2948858cc46cb0a882d1ec03d79d5f",
+      "extracted_path": "experiment/assets/english_books/85.txt"
+    },
+    {
+      "book_id": "86",
+      "archive_member": "librispeech-lm-corpus/corpus/86/86.txt",
+      "bytes": 641970,
+      "sha256": "c52da11d4cdaa2cb4f67f7d0aef321f7fcf4f8ab47bd95955956a7c11d9426b7",
+      "extracted_path": "experiment/assets/english_books/86.txt"
+    },
+    {
+      "book_id": "90",
+      "archive_member": "librispeech-lm-corpus/corpus/90/90.txt",
+      "bytes": 525359,
+      "sha256": "7eb829787d2babc72eae811a328873060ce30e8832145e540c58d93ac65cf093",
+      "extracted_path": "experiment/assets/english_books/90.txt"
+    },
+    {
+      "book_id": "91",
+      "archive_member": "librispeech-lm-corpus/corpus/91/91.txt",
+      "bytes": 172866,
+      "sha256": "d41697b94cff7027ffff28df841a2d5540ca746d05ad93c1401e468c3f09d12e",
+      "extracted_path": "experiment/assets/english_books/91.txt"
+    },
+    {
+      "book_id": "92",
+      "archive_member": "librispeech-lm-corpus/corpus/92/92.txt",
+      "bytes": 372776,
+      "sha256": "57844086382737a90c940b7141b21e9db653ae0b9952d8cbd15289a9985de0c4",
+      "extracted_path": "experiment/assets/english_books/92.txt"
+    },
+    {
+      "book_id": "93",
+      "archive_member": "librispeech-lm-corpus/corpus/93/93.txt",
+      "bytes": 120607,
+      "sha256": "463dcba8ac0be92802ddfe5e3156890809a8c99092558fdcdb083eaf8418396d",
+      "extracted_path": "experiment/assets/english_books/93.txt"
+    },
+    {
+      "book_id": "95",
+      "archive_member": "librispeech-lm-corpus/corpus/95/95.txt",
+      "bytes": 288306,
+      "sha256": "5bbd7a10f1e6861b9df0b9c186140793b03f7f75235ea996c678b127a924daaa",
+      "extracted_path": "experiment/assets/english_books/95.txt"
+    },
+    {
+      "book_id": "97",
+      "archive_member": "librispeech-lm-corpus/corpus/97/97.txt",
+      "bytes": 193328,
+      "sha256": "d8e7c901aa7c8c05c9bb4764c28d93725e12651df4e8e51d51568cea483924fd",
+      "extracted_path": "experiment/assets/english_books/97.txt"
+    },
+    {
+      "book_id": "98",
+      "archive_member": "librispeech-lm-corpus/corpus/98/98.txt",
+      "bytes": 756887,
+      "sha256": "ed11aa11ca97e0b28ed225556fbe734fcef93ef00aa5c4fbca4e0cc65d50d3de",
+      "extracted_path": "experiment/assets/english_books/98.txt"
+    },
+    {
+      "book_id": "102",
+      "archive_member": "librispeech-lm-corpus/corpus/102/102.txt",
+      "bytes": 291925,
+      "sha256": "fa6f50efa1d042fc467172b42d6b23058fe87f206277f8e669c6003d2714d1a7",
+      "extracted_path": "experiment/assets/english_books/102.txt"
+    },
+    {
+      "book_id": "105",
+      "archive_member": "librispeech-lm-corpus/corpus/105/105.txt",
+      "bytes": 466869,
+      "sha256": "696fd955db2a5dc4377c201c0a8c71b0f3ce3329e076092c0b6a59b8ad939a1c",
+      "extracted_path": "experiment/assets/english_books/105.txt"
+    },
+    {
+      "book_id": "106",
+      "archive_member": "librispeech-lm-corpus/corpus/106/106.txt",
+      "bytes": 415623,
+      "sha256": "93d646eabc2342d887519f41bbfa05dd8486f55e697ecd006c474ad7a4a5c81d",
+      "extracted_path": "experiment/assets/english_books/106.txt"
+    },
+    {
+      "book_id": "109",
+      "archive_member": "librispeech-lm-corpus/corpus/109/109.txt",
+      "bytes": 35594,
+      "sha256": "805fbb08eb25ff112e7692701fc835c9b4247be94ce5891e7bd5b2a12d77a2be",
+      "extracted_path": "experiment/assets/english_books/109.txt"
+    },
+    {
+      "book_id": "110",
+      "archive_member": "librispeech-lm-corpus/corpus/110/110.txt",
+      "bytes": 837023,
+      "sha256": "2e0f1d02bcf1e007c451c4ea374b6098ae78db3fe01170f71271082463931189",
+      "extracted_path": "experiment/assets/english_books/110.txt"
+    },
+    {
+      "book_id": "111",
+      "archive_member": "librispeech-lm-corpus/corpus/111/111.txt",
+      "bytes": 443187,
+      "sha256": "54f8daec50919dfd697cf31a905f810bddd91840879e903c289f774daf9c1241",
+      "extracted_path": "experiment/assets/english_books/111.txt"
+    },
+    {
+      "book_id": "113",
+      "archive_member": "librispeech-lm-corpus/corpus/113/113.txt",
+      "bytes": 431976,
+      "sha256": "e4d1aae1a4ecfe1d3676da6d924be54d7ce85a54d0dfc7a199a32dc8d7891c97",
+      "extracted_path": "experiment/assets/english_books/113.txt"
+    },
+    {
+      "book_id": "121",
+      "archive_member": "librispeech-lm-corpus/corpus/121/121.txt",
+      "bytes": 433382,
+      "sha256": "ca960bc9c9724f5f415232ec6782a94fb3383d07b36a862403ac4153a687d58e",
+      "extracted_path": "experiment/assets/english_books/121.txt"
+    },
+    {
+      "book_id": "122",
+      "archive_member": "librispeech-lm-corpus/corpus/122/122.txt",
+      "bytes": 781959,
+      "sha256": "7c0513287be3f67d698490d6a64cdac0585d603ffaf7f61ee667ddd94554aacb",
+      "extracted_path": "experiment/assets/english_books/122.txt"
+    },
+    {
+      "book_id": "123",
+      "archive_member": "librispeech-lm-corpus/corpus/123/123.txt",
+      "bytes": 269820,
+      "sha256": "495c35bda250ce363e748ec1aefd49a0bd9320930f4fc2a4053821377268d027",
+      "extracted_path": "experiment/assets/english_books/123.txt"
+    },
+    {
+      "book_id": "125",
+      "archive_member": "librispeech-lm-corpus/corpus/125/125.txt",
+      "bytes": 645077,
+      "sha256": "f22bf9fe98b6cb4c9a50e0b2ab5784813d957a92469ed38e8b53f4cfafb2e501",
+      "extracted_path": "experiment/assets/english_books/125.txt"
+    },
+    {
+      "book_id": "126",
+      "archive_member": "librispeech-lm-corpus/corpus/126/126.txt",
+      "bytes": 164351,
+      "sha256": "624c744374d36f98c6da07a733e498e66340e71187751868cb7c4c73cf87be51",
+      "extracted_path": "experiment/assets/english_books/126.txt"
+    },
+    {
+      "book_id": "128",
+      "archive_member": "librispeech-lm-corpus/corpus/128/128.txt",
+      "bytes": 597676,
+      "sha256": "a21813135e488b28b753e5cb61e2682f70660fdee8bfdc1fae1370a8b479b42b",
+      "extracted_path": "experiment/assets/english_books/128.txt"
+    },
+    {
+      "book_id": "130",
+      "archive_member": "librispeech-lm-corpus/corpus/130/130.txt",
+      "bytes": 355252,
+      "sha256": "9161e62b6d133f11209ab6024b79b98bc1433da19ee978e0c8e3e1d1ae98893a",
+      "extracted_path": "experiment/assets/english_books/130.txt"
+    },
+    {
+      "book_id": "133",
+      "archive_member": "librispeech-lm-corpus/corpus/133/133.txt",
+      "bytes": 668440,
+      "sha256": "f18d20e66d681d7e7675b1edf1169ebcde9f0771fe527b087c76810f6563337d",
+      "extracted_path": "experiment/assets/english_books/133.txt"
+    },
+    {
+      "book_id": "134",
+      "archive_member": "librispeech-lm-corpus/corpus/134/134.txt",
+      "bytes": 259477,
+      "sha256": "84b958dd03c3c4d9015d97c3325f79848200cacdd4648b41362fe07d2b65d7c1",
+      "extracted_path": "experiment/assets/english_books/134.txt"
+    },
+    {
+      "book_id": "136",
+      "archive_member": "librispeech-lm-corpus/corpus/136/136.txt",
+      "bytes": 42766,
+      "sha256": "3965ce4f3b56c94658ba821bcf3750f66068c90196af4ddfed9483c5eb94a4c7",
+      "extracted_path": "experiment/assets/english_books/136.txt"
+    },
+    {
+      "book_id": "137",
+      "archive_member": "librispeech-lm-corpus/corpus/137/137.txt",
+      "bytes": 89149,
+      "sha256": "68db76d8902b2ee6d0c8efa4735f57034bd28c02f759c95da55201ceb0538a4d",
+      "extracted_path": "experiment/assets/english_books/137.txt"
+    },
+    {
+      "book_id": "139",
+      "archive_member": "librispeech-lm-corpus/corpus/139/139.txt",
+      "bytes": 422651,
+      "sha256": "2638d841ae8ad2904fd0eca7a5f2f3c5e501d57121e9b1e711e2359a18fa56e6",
+      "extracted_path": "experiment/assets/english_books/139.txt"
+    },
+    {
+      "book_id": "140",
+      "archive_member": "librispeech-lm-corpus/corpus/140/140.txt",
+      "bytes": 809159,
+      "sha256": "3ec29f469d289b76053d73909571bd539dd1b56f336a86547767439f03638510",
+      "extracted_path": "experiment/assets/english_books/140.txt"
+    },
+    {
+      "book_id": "141",
+      "archive_member": "librispeech-lm-corpus/corpus/141/141.txt",
+      "bytes": 883172,
+      "sha256": "a0ad8b837c913c4a9020812f461c1b85eab3b05a4473d77de1c49953e838155c",
+      "extracted_path": "experiment/assets/english_books/141.txt"
+    },
+    {
+      "book_id": "142",
+      "archive_member": "librispeech-lm-corpus/corpus/142/142.txt",
+      "bytes": 522625,
+      "sha256": "6c149dc226c5447229941739ab98f33ffb6b0ef1491e9c9830cd22e2b08096e6",
+      "extracted_path": "experiment/assets/english_books/142.txt"
+    },
+    {
+      "book_id": "143",
+      "archive_member": "librispeech-lm-corpus/corpus/143/143.txt",
+      "bytes": 652386,
+      "sha256": "152d54afced95a182b3cf55863b294b3575dd100e4fea4405300b325bc84b947",
+      "extracted_path": "experiment/assets/english_books/143.txt"
+    },
+    {
+      "book_id": "144",
+      "archive_member": "librispeech-lm-corpus/corpus/144/144.txt",
+      "bytes": 764838,
+      "sha256": "3d514cb5d185ab71b3cbcb24e4d4200a71b3f846b0554fa708b766cfc54c21b6",
+      "extracted_path": "experiment/assets/english_books/144.txt"
+    },
+    {
+      "book_id": "145",
+      "archive_member": "librispeech-lm-corpus/corpus/145/145.txt",
+      "bytes": 1790272,
+      "sha256": "f04d4ed7cb3d53dca97bba58076c522f493854f090b3dc1055d039185bc8e714",
+      "extracted_path": "experiment/assets/english_books/145.txt"
+    },
+    {
+      "book_id": "146",
+      "archive_member": "librispeech-lm-corpus/corpus/146/146.txt",
+      "bytes": 364264,
+      "sha256": "45db12dde544081e91018f6239cea73d200763d0b2ee947dfbf76699dd182c19",
+      "extracted_path": "experiment/assets/english_books/146.txt"
+    },
+    {
+      "book_id": "149",
+      "archive_member": "librispeech-lm-corpus/corpus/149/149.txt",
+      "bytes": 210037,
+      "sha256": "dde0944a63baebb0c0cd3a8c51e6a9b8b31dcb5fd2ef4e2a5dab9acad89195c9",
+      "extracted_path": "experiment/assets/english_books/149.txt"
+    },
+    {
+      "book_id": "151",
+      "archive_member": "librispeech-lm-corpus/corpus/151/151.txt",
+      "bytes": 20401,
+      "sha256": "dd4ba9d18d11394488b0d0de5e1af65ff68aad6d97e91fefe3b883f200cb485b",
+      "extracted_path": "experiment/assets/english_books/151.txt"
+    },
+    {
+      "book_id": "153",
+      "archive_member": "librispeech-lm-corpus/corpus/153/153.txt",
+      "bytes": 803620,
+      "sha256": "79eb30e5d070cfcb66e49db8f2c99462eb4a9cfafe848ca30010d18fa884c2c0",
+      "extracted_path": "experiment/assets/english_books/153.txt"
+    },
+    {
+      "book_id": "154",
+      "archive_member": "librispeech-lm-corpus/corpus/154/154.txt",
+      "bytes": 698850,
+      "sha256": "cb8c59fe5129658244ec4479b40c54770b337c3d5d1a32148d500f94f4601c4c",
+      "extracted_path": "experiment/assets/english_books/154.txt"
+    },
+    {
+      "book_id": "155",
+      "archive_member": "librispeech-lm-corpus/corpus/155/155.txt",
+      "bytes": 1073805,
+      "sha256": "3bc08ab9d635e19dc314189b7cd10ea6637026e04c147763c1edaa7d6ffab4cd",
+      "extracted_path": "experiment/assets/english_books/155.txt"
+    },
+    {
+      "book_id": "157",
+      "archive_member": "librispeech-lm-corpus/corpus/157/157.txt",
+      "bytes": 204272,
+      "sha256": "d454db39047a6460eb18a150d4b257cc3cf87536ea5747d51e2298e0c60c1a8d",
+      "extracted_path": "experiment/assets/english_books/157.txt"
+    },
+    {
+      "book_id": "158",
+      "archive_member": "librispeech-lm-corpus/corpus/158/158.txt",
+      "bytes": 882592,
+      "sha256": "e20284aa6d059d864de67a8f9dc92ec2cc88a7ce63beb0591a18f96c3fe5657f",
+      "extracted_path": "experiment/assets/english_books/158.txt"
+    },
+    {
+      "book_id": "159",
+      "archive_member": "librispeech-lm-corpus/corpus/159/159.txt",
+      "bytes": 242661,
+      "sha256": "42cce70926041be5a422f723c1bef243e663ddf62bd6d5565c36a3ca06c1e66c",
+      "extracted_path": "experiment/assets/english_books/159.txt"
+    },
+    {
+      "book_id": "160",
+      "archive_member": "librispeech-lm-corpus/corpus/160/160.txt",
+      "bytes": 359409,
+      "sha256": "c0e7ac54bd84174da95c0194b0b1a466aa2f9ac00f2541d594d207713c4ca1b8",
+      "extracted_path": "experiment/assets/english_books/160.txt"
+    },
+    {
+      "book_id": "161",
+      "archive_member": "librispeech-lm-corpus/corpus/161/161.txt",
+      "bytes": 672611,
+      "sha256": "8b626f205e3e78f2e581d27a25c66e2cec8840bf31b9dfd24697bb8ae10ff3c5",
+      "extracted_path": "experiment/assets/english_books/161.txt"
+    },
+    {
+      "book_id": "163",
+      "archive_member": "librispeech-lm-corpus/corpus/163/163.txt",
+      "bytes": 187486,
+      "sha256": "05c9c58caa055d62afbdbe5c2a027793248884a275508d60ece55e6ca4253a34",
+      "extracted_path": "experiment/assets/english_books/163.txt"
+    },
+    {
+      "book_id": "165",
+      "archive_member": "librispeech-lm-corpus/corpus/165/165.txt",
+      "bytes": 636574,
+      "sha256": "7f8c98fc897127bb5f7de77c6c274ece2c4491008714cc6cea4b628d217e44d5",
+      "extracted_path": "experiment/assets/english_books/165.txt"
+    },
+    {
+      "book_id": "166",
+      "archive_member": "librispeech-lm-corpus/corpus/166/166.txt",
+      "bytes": 314984,
+      "sha256": "52fab18f2babf22217c45e799c5640df106938b5f43336bb799d84179e429d02",
+      "extracted_path": "experiment/assets/english_books/166.txt"
+    },
+    {
+      "book_id": "169",
+      "archive_member": "librispeech-lm-corpus/corpus/169/169.txt",
+      "bytes": 1160986,
+      "sha256": "bcf6a7cb53472f7681d626c6a44b8c00e20553bb4d4685269c951741a4fe2130",
+      "extracted_path": "experiment/assets/english_books/169.txt"
+    },
+    {
+      "book_id": "170",
+      "archive_member": "librispeech-lm-corpus/corpus/170/170.txt",
+      "bytes": 351231,
+      "sha256": "60374c05dcff9e3193a463d62e2c0f6dd7fc17bdc2bfbf6248a1fbf6dec1369f",
+      "extracted_path": "experiment/assets/english_books/170.txt"
+    },
+    {
+      "book_id": "171",
+      "archive_member": "librispeech-lm-corpus/corpus/171/171.txt",
+      "bytes": 209388,
+      "sha256": "861a561cfe0480be1e73389578b98fbb7e222ffe15b65024aacac0afb1794f8c",
+      "extracted_path": "experiment/assets/english_books/171.txt"
+    },
+    {
+      "book_id": "172",
+      "archive_member": "librispeech-lm-corpus/corpus/172/172.txt",
+      "bytes": 347114,
+      "sha256": "6252ae2913a9f0a40bdb30d2a09b456f4ca461e051c3053c128e102dc58c3b7c",
+      "extracted_path": "experiment/assets/english_books/172.txt"
+    },
+    {
+      "book_id": "173",
+      "archive_member": "librispeech-lm-corpus/corpus/173/173.txt",
+      "bytes": 415870,
+      "sha256": "87c3260745c0df951dd5cc506e150b339963c1d1f9a8a7a72044f32f3e1dc2b9",
+      "extracted_path": "experiment/assets/english_books/173.txt"
+    },
+    {
+      "book_id": "174",
+      "archive_member": "librispeech-lm-corpus/corpus/174/174.txt",
+      "bytes": 433369,
+      "sha256": "c74d4599acf8d30c6bc7275e6c086d216a12387e5d2d2054617ace70ba4992aa",
+      "extracted_path": "experiment/assets/english_books/174.txt"
+    },
+    {
+      "book_id": "175",
+      "archive_member": "librispeech-lm-corpus/corpus/175/175.txt",
+      "bytes": 474139,
+      "sha256": "08716b245ae58e64f44c6b7afdef38b7592d3cf82aebcb8d2c5a3642854b98d6",
+      "extracted_path": "experiment/assets/english_books/175.txt"
+    },
+    {
+      "book_id": "176",
+      "archive_member": "librispeech-lm-corpus/corpus/176/176.txt",
+      "bytes": 736986,
+      "sha256": "fe94996d82ab1fb6ad56cd5f27e255b586331fc69e3511f6aeaa18ddc7db3d9b",
+      "extracted_path": "experiment/assets/english_books/176.txt"
+    },
+    {
+      "book_id": "177",
+      "archive_member": "librispeech-lm-corpus/corpus/177/177.txt",
+      "bytes": 738320,
+      "sha256": "8b870ece3046a5318e292dc5878a9edf8a17ea10f812d4896c1447d9d84fa6de",
+      "extracted_path": "experiment/assets/english_books/177.txt"
+    },
+    {
+      "book_id": "179",
+      "archive_member": "librispeech-lm-corpus/corpus/179/179.txt",
+      "bytes": 334538,
+      "sha256": "f29d94d45148a6787da00c742eeb4bb2bb9b133fa9f0c779bda13da10c869c92",
+      "extracted_path": "experiment/assets/english_books/179.txt"
+    },
+    {
+      "book_id": "203",
+      "archive_member": "librispeech-lm-corpus/corpus/203/203.txt",
+      "bytes": 1004897,
+      "sha256": "10aa151052181e1e43a28f33194c2057f18547cd70fc7f2f9e1dc83e19da6a8a",
+      "extracted_path": "experiment/assets/english_books/203.txt"
+    },
+    {
+      "book_id": "204",
+      "archive_member": "librispeech-lm-corpus/corpus/204/204.txt",
+      "bytes": 440070,
+      "sha256": "373e1a4c919a9897092495614fb99a0742cac98a2132a6a32736757264244935",
+      "extracted_path": "experiment/assets/english_books/204.txt"
+    },
+    {
+      "book_id": "205",
+      "archive_member": "librispeech-lm-corpus/corpus/205/205.txt",
+      "bytes": 633484,
+      "sha256": "295737f1a1b532c1cd871720b905f3894f97288f8a4b43025b9f07833a901061",
+      "extracted_path": "experiment/assets/english_books/205.txt"
+    },
+    {
+      "book_id": "207",
+      "archive_member": "librispeech-lm-corpus/corpus/207/207.txt",
+      "bytes": 70248,
+      "sha256": "2bd46059992cef43cf41bd7ae8eaea97c97c8acdc1ff40a35e15b22c99fd3a19",
+      "extracted_path": "experiment/assets/english_books/207.txt"
+    },
+    {
+      "book_id": "208",
+      "archive_member": "librispeech-lm-corpus/corpus/208/208.txt",
+      "bytes": 122391,
+      "sha256": "e1868e5e1741af94ce640efe66c144c96206c17ce3656fd724e8f6a767e1d3c9",
+      "extracted_path": "experiment/assets/english_books/208.txt"
+    },
+    {
+      "book_id": "210",
+      "archive_member": "librispeech-lm-corpus/corpus/210/210.txt",
+      "bytes": 153890,
+      "sha256": "8fda25f9929493a8215697b058d17276d578b5cfd14a3c7cd5d66a6a250eeab6",
+      "extracted_path": "experiment/assets/english_books/210.txt"
+    },
+    {
+      "book_id": "211",
+      "archive_member": "librispeech-lm-corpus/corpus/211/211.txt",
+      "bytes": 207028,
+      "sha256": "85630e88bfe59d809835ef9d39482fd130fd5505b4bd16cca86dca09abe20563",
+      "extracted_path": "experiment/assets/english_books/211.txt"
+    },
+    {
+      "book_id": "213",
+      "archive_member": "librispeech-lm-corpus/corpus/213/213.txt",
+      "bytes": 128944,
+      "sha256": "30b9b23f0670a3ec56d112405015cffc24d1784f4f780918a04dcf595c947e10",
+      "extracted_path": "experiment/assets/english_books/213.txt"
+    },
+    {
+      "book_id": "215",
+      "archive_member": "librispeech-lm-corpus/corpus/215/215.txt",
+      "bytes": 175615,
+      "sha256": "d635b642ff3a96733f8d98598f89bb12161b466af588c2011dc922c156168779",
+      "extracted_path": "experiment/assets/english_books/215.txt"
+    },
+    {
+      "book_id": "217",
+      "archive_member": "librispeech-lm-corpus/corpus/217/217.txt",
+      "bytes": 881017,
+      "sha256": "d0ece29c643aa9d389c000a1cfcef5cb3ff5ce77938dda81e1a8b47e06725188",
+      "extracted_path": "experiment/assets/english_books/217.txt"
+    },
+    {
+      "book_id": "219",
+      "archive_member": "librispeech-lm-corpus/corpus/219/219.txt",
+      "bytes": 210449,
+      "sha256": "6ca479e9d7960d0aeb0114b5678c8b27402136a9620af67bcebbedab6630e3ed",
+      "extracted_path": "experiment/assets/english_books/219.txt"
+    },
+    {
+      "book_id": "220",
+      "archive_member": "librispeech-lm-corpus/corpus/220/220.txt",
+      "bytes": 88758,
+      "sha256": "ae94de717b26be6fb8633c2da1f0349b80d69b4e72cf837c899cc36756c69959",
+      "extracted_path": "experiment/assets/english_books/220.txt"
+    },
+    {
+      "book_id": "222",
+      "archive_member": "librispeech-lm-corpus/corpus/222/222.txt",
+      "bytes": 407332,
+      "sha256": "a500a80e659f302afdd7f1617e2785d9feb55fc997b07fa08840cd657ccdc09c",
+      "extracted_path": "experiment/assets/english_books/222.txt"
+    },
+    {
+      "book_id": "223",
+      "archive_member": "librispeech-lm-corpus/corpus/223/223.txt",
+      "bytes": 399476,
+      "sha256": "003570fe55bd3d50dbf971efbbe641dc3d2540449d3cba5064e74bfa25fff24b",
+      "extracted_path": "experiment/assets/english_books/223.txt"
+    },
+    {
+      "book_id": "224",
+      "archive_member": "librispeech-lm-corpus/corpus/224/224.txt",
+      "bytes": 734067,
+      "sha256": "bef23431c92da3ce8fb9bc8de674019d147fac824f3c501e0d6ffe88e78b494b",
+      "extracted_path": "experiment/assets/english_books/224.txt"
+    },
+    {
+      "book_id": "225",
+      "archive_member": "librispeech-lm-corpus/corpus/225/225.txt",
+      "bytes": 462744,
+      "sha256": "a3dfdc219bb3ab4c94c0ebd30094b66184af707c84439a9f38afa8b4d14ee58b",
+      "extracted_path": "experiment/assets/english_books/225.txt"
+    },
+    {
+      "book_id": "230",
+      "archive_member": "librispeech-lm-corpus/corpus/230/230.txt",
+      "bytes": 46987,
+      "sha256": "526e23e1c49582b71b6b417da3ad2cc89301078d43f217c847f99dc4748db4e2",
+      "extracted_path": "experiment/assets/english_books/230.txt"
+    },
+    {
+      "book_id": "236",
+      "archive_member": "librispeech-lm-corpus/corpus/236/236.txt",
+      "bytes": 271450,
+      "sha256": "a634dd7370da6df4d222821db92b5e5b79318d71f6620004ff663ee647fb805d",
+      "extracted_path": "experiment/assets/english_books/236.txt"
+    },
+    {
+      "book_id": "238",
+      "archive_member": "librispeech-lm-corpus/corpus/238/238.txt",
+      "bytes": 368949,
+      "sha256": "9552afa776a048e6d1d1b23d4f4e793d1769acd56821083939997386610e3ad1",
+      "extracted_path": "experiment/assets/english_books/238.txt"
+    },
+    {
+      "book_id": "244",
+      "archive_member": "librispeech-lm-corpus/corpus/244/244.txt",
+      "bytes": 241996,
+      "sha256": "08a8a0b95be49de1ee017fd70444aa295c0e3f24ddd6a4a3535c0608846371cf",
+      "extracted_path": "experiment/assets/english_books/244.txt"
+    },
+    {
+      "book_id": "259",
+      "archive_member": "librispeech-lm-corpus/corpus/259/259.txt",
+      "bytes": 100252,
+      "sha256": "1beabf5416f9255fe84329a712177d67dc1f649004625b309475e8c1f3b2bcc9",
+      "extracted_path": "experiment/assets/english_books/259.txt"
+    },
+    {
+      "book_id": "261",
+      "archive_member": "librispeech-lm-corpus/corpus/261/261.txt",
+      "bytes": 74084,
+      "sha256": "04efeada7c7c8ce96a5c5aeae30bc9818737ebfd7bb0066f765edca2d712ebd9",
+      "extracted_path": "experiment/assets/english_books/261.txt"
+    },
+    {
+      "book_id": "263",
+      "archive_member": "librispeech-lm-corpus/corpus/263/263.txt",
+      "bytes": 34117,
+      "sha256": "e1b9f10cfafe0a8096a640d92ac5896e0f42805861a0fe1f0904293e3e9088e0",
+      "extracted_path": "experiment/assets/english_books/263.txt"
+    },
+    {
+      "book_id": "264",
+      "archive_member": "librispeech-lm-corpus/corpus/264/264.txt",
+      "bytes": 38546,
+      "sha256": "5055229f3a4a773ef85aeb92462466a2614593fe6edaaa70938420c918ebe54b",
+      "extracted_path": "experiment/assets/english_books/264.txt"
+    },
+    {
+      "book_id": "267",
+      "archive_member": "librispeech-lm-corpus/corpus/267/267.txt",
+      "bytes": 151646,
+      "sha256": "cf7027a60601e37f9993427e8e285b93f88824e2a035d180e2e6fb7f234832d0",
+      "extracted_path": "experiment/assets/english_books/267.txt"
+    },
+    {
+      "book_id": "268",
+      "archive_member": "librispeech-lm-corpus/corpus/268/268.txt",
+      "bytes": 1116914,
+      "sha256": "dd6f4d13841765592fbda4ea51538c6170b5ab08fb719d942efddb56f1425813",
+      "extracted_path": "experiment/assets/english_books/268.txt"
+    },
+    {
+      "book_id": "270",
+      "archive_member": "librispeech-lm-corpus/corpus/270/270.txt",
+      "bytes": 214179,
+      "sha256": "4afae1ac6a858013278813f07ec9662cde98553044fd3d46f2cf9f2e96bd5315",
+      "extracted_path": "experiment/assets/english_books/270.txt"
+    },
+    {
+      "book_id": "271",
+      "archive_member": "librispeech-lm-corpus/corpus/271/271.txt",
+      "bytes": 303368,
+      "sha256": "e9f36cd315b5e83aacaeb989f78074a467500435d95f09869de41e4c16b3ccf8",
+      "extracted_path": "experiment/assets/english_books/271.txt"
+    },
+    {
+      "book_id": "283",
+      "archive_member": "librispeech-lm-corpus/corpus/283/283.txt",
+      "bytes": 534197,
+      "sha256": "f3f567b714ca2e6c5ac940094b9688dcb0fb1c27514f1b194f9128312fa07d34",
+      "extracted_path": "experiment/assets/english_books/283.txt"
+    },
+    {
+      "book_id": "284",
+      "archive_member": "librispeech-lm-corpus/corpus/284/284.txt",
+      "bytes": 731035,
+      "sha256": "c9c773e6fabe39551d2fb145565593655b5b6143f67d2ce7cf396aa96ca0a74b",
+      "extracted_path": "experiment/assets/english_books/284.txt"
+    },
+    {
+      "book_id": "286",
+      "archive_member": "librispeech-lm-corpus/corpus/286/286.txt",
+      "bytes": 818986,
+      "sha256": "b0ef7f05484e0a29f5b3ba8cefb1de116cb377df28d444cb2fe785dd036d0a6a",
+      "extracted_path": "experiment/assets/english_books/286.txt"
+    },
+    {
+      "book_id": "289",
+      "archive_member": "librispeech-lm-corpus/corpus/289/289.txt",
+      "bytes": 324745,
+      "sha256": "fdbfe4a215f4e8144ee4f6321c6110b938e21b84215f8621f9805829156bf52d",
+      "extracted_path": "experiment/assets/english_books/289.txt"
+    },
+    {
+      "book_id": "291",
+      "archive_member": "librispeech-lm-corpus/corpus/291/291.txt",
+      "bytes": 205656,
+      "sha256": "4cdf8e87f5213b80e0f461ade6cd285b31261ca8ffb04a65bacbfa87ccda413c",
+      "extracted_path": "experiment/assets/english_books/291.txt"
+    },
+    {
+      "book_id": "294",
+      "archive_member": "librispeech-lm-corpus/corpus/294/294.txt",
+      "bytes": 461904,
+      "sha256": "5ace9e717b58101a4985e8fcf5121038c99bd7c30fb8e86eaa96a8ed97082abb",
+      "extracted_path": "experiment/assets/english_books/294.txt"
+    },
+    {
+      "book_id": "308",
+      "archive_member": "librispeech-lm-corpus/corpus/308/308.txt",
+      "bytes": 362289,
+      "sha256": "b9b52ed3a8421705b6eba3160a9b78cd27ea7752c4a6828187ab624dd13523fb",
+      "extracted_path": "experiment/assets/english_books/308.txt"
+    },
+    {
+      "book_id": "309",
+      "archive_member": "librispeech-lm-corpus/corpus/309/309.txt",
+      "bytes": 121841,
+      "sha256": "dc521c96df12f04ab0b3e71ebfcbe845d537c80392755dec9fece2afbf06c3cd",
+      "extracted_path": "experiment/assets/english_books/309.txt"
+    },
+    {
+      "book_id": "311",
+      "archive_member": "librispeech-lm-corpus/corpus/311/311.txt",
+      "bytes": 171723,
+      "sha256": "6e190591ca28cd53eb6e6e2b4a44fb5597e76b79f2deb72294e9a9208e122306",
+      "extracted_path": "experiment/assets/english_books/311.txt"
+    },
+    {
+      "book_id": "312",
+      "archive_member": "librispeech-lm-corpus/corpus/312/312.txt",
+      "bytes": 79908,
+      "sha256": "853327473478650d8bc9005c2daba25396e98176d4b6f79c02977a50b3386fa6",
+      "extracted_path": "experiment/assets/english_books/312.txt"
+    },
+    {
+      "book_id": "316",
+      "archive_member": "librispeech-lm-corpus/corpus/316/316.txt",
+      "bytes": 413126,
+      "sha256": "af52524d1894563e99192bbf97d7179d72e42514d6d01b9224c01cbb5f4d1cc3",
+      "extracted_path": "experiment/assets/english_books/316.txt"
+    },
+    {
+      "book_id": "318",
+      "archive_member": "librispeech-lm-corpus/corpus/318/318.txt",
+      "bytes": 357199,
+      "sha256": "2e151ee09b0f10edc7dc629375ef9c19b7ee1e92beebe62e8e75de050f91c2f3",
+      "extracted_path": "experiment/assets/english_books/318.txt"
+    },
+    {
+      "book_id": "323",
+      "archive_member": "librispeech-lm-corpus/corpus/323/323.txt",
+      "bytes": 298237,
+      "sha256": "8e773dd970d9e5f52a5a3d0fece8066d14ab3c00e42e35dbccc0f647076a1c39",
+      "extracted_path": "experiment/assets/english_books/323.txt"
+    },
+    {
+      "book_id": "327",
+      "archive_member": "librispeech-lm-corpus/corpus/327/327.txt",
+      "bytes": 139965,
+      "sha256": "e075f18ea8969b0e299d714666a4ce6f6de1fdb0e265b78a796238d802c136ee",
+      "extracted_path": "experiment/assets/english_books/327.txt"
+    },
+    {
+      "book_id": "336",
+      "archive_member": "librispeech-lm-corpus/corpus/336/336.txt",
+      "bytes": 220578,
+      "sha256": "97e271eedb06834794ee7ca9db3bc6883c88923e2998bfc280428dffeb4727c5",
+      "extracted_path": "experiment/assets/english_books/336.txt"
+    },
+    {
+      "book_id": "338",
+      "archive_member": "librispeech-lm-corpus/corpus/338/338.txt",
+      "bytes": 98768,
+      "sha256": "ae727ce0a4eb702932bd09c9684a5f4edc366f0bdfe0dca9664ec1d5a6dd0ff5",
+      "extracted_path": "experiment/assets/english_books/338.txt"
+    },
+    {
+      "book_id": "344",
+      "archive_member": "librispeech-lm-corpus/corpus/344/344.txt",
+      "bytes": 436265,
+      "sha256": "bdf13af78f50ad0bfb8f6c492b4f348d2efd7bb106d69691d3ef0a042ef35c68",
+      "extracted_path": "experiment/assets/english_books/344.txt"
+    },
+    {
+      "book_id": "345",
+      "archive_member": "librispeech-lm-corpus/corpus/345/345.txt",
+      "bytes": 845506,
+      "sha256": "033df3ac97fefff65e035fedc9b4ca4c3a4989dc1a1df32b4fadd55e93f02f93",
+      "extracted_path": "experiment/assets/english_books/345.txt"
+    },
+    {
+      "book_id": "350",
+      "archive_member": "librispeech-lm-corpus/corpus/350/350.txt",
+      "bytes": 560976,
+      "sha256": "e0bff8cb36ab5b8bfa743a4793d17d7291bb8d179742c464aa24922e9b26df69",
+      "extracted_path": "experiment/assets/english_books/350.txt"
+    },
+    {
+      "book_id": "351",
+      "archive_member": "librispeech-lm-corpus/corpus/351/351.txt",
+      "bytes": 1409620,
+      "sha256": "2f562569fd4c5dcdc6ceb353f82114430566ef5981af3ba6429eb28c45a06802",
+      "extracted_path": "experiment/assets/english_books/351.txt"
+    },
+    {
+      "book_id": "352",
+      "archive_member": "librispeech-lm-corpus/corpus/352/352.txt",
+      "bytes": 250918,
+      "sha256": "9f7e242847a70c77a1170adafa9073beb4bca463b6c5e13376ec63defcf97a51",
+      "extracted_path": "experiment/assets/english_books/352.txt"
+    },
+    {
+      "book_id": "355",
+      "archive_member": "librispeech-lm-corpus/corpus/355/355.txt",
+      "bytes": 94993,
+      "sha256": "cf2af3e6ee9e25ec2b19a0312a64a5a70ad17a3a0d354f3adf81f59de7c56eb7",
+      "extracted_path": "experiment/assets/english_books/355.txt"
+    },
+    {
+      "book_id": "360",
+      "archive_member": "librispeech-lm-corpus/corpus/360/360.txt",
+      "bytes": 913547,
+      "sha256": "555189cfba57b34ce2b1b66e5a29d045442c680b3ef9eaaca3664630f0de6250",
+      "extracted_path": "experiment/assets/english_books/360.txt"
+    },
+    {
+      "book_id": "361",
+      "archive_member": "librispeech-lm-corpus/corpus/361/361.txt",
+      "bytes": 433685,
+      "sha256": "01d0dd0a6c7b1cbe9278f8428ebf9051b11e7566ed52e3bb869eedbb2532adc4",
+      "extracted_path": "experiment/assets/english_books/361.txt"
+    },
+    {
+      "book_id": "363",
+      "archive_member": "librispeech-lm-corpus/corpus/363/363.txt",
+      "bytes": 231627,
+      "sha256": "2d4ab6f019aa1ba8d9d4dbe694189b024486be66e8c99c22a4b96224a6f427e5",
+      "extracted_path": "experiment/assets/english_books/363.txt"
+    },
+    {
+      "book_id": "364",
+      "archive_member": "librispeech-lm-corpus/corpus/364/364.txt",
+      "bytes": 516661,
+      "sha256": "b15f0df3babd964624cdd5d27553e46bd52ba1dbbfc7e6688596b49fa1b24c1a",
+      "extracted_path": "experiment/assets/english_books/364.txt"
+    },
+    {
+      "book_id": "367",
+      "archive_member": "librispeech-lm-corpus/corpus/367/367.txt",
+      "bytes": 228330,
+      "sha256": "46c289ababfd7571f99915f20e592a8d22c3d1a4311dfbe58f95c266825182eb",
+      "extracted_path": "experiment/assets/english_books/367.txt"
+    },
+    {
+      "book_id": "369",
+      "archive_member": "librispeech-lm-corpus/corpus/369/369.txt",
+      "bytes": 356421,
+      "sha256": "43ddae7e2094250ba38a5d10ab395e7796b8de1ada76c5fe487472eeba2da7cc",
+      "extracted_path": "experiment/assets/english_books/369.txt"
+    },
+    {
+      "book_id": "370",
+      "archive_member": "librispeech-lm-corpus/corpus/370/370.txt",
+      "bytes": 706575,
+      "sha256": "954f0391ad585a060e205fc84bed31622fd254f6ee51eac401a10b4975e647d0",
+      "extracted_path": "experiment/assets/english_books/370.txt"
+    },
+    {
+      "book_id": "384",
+      "archive_member": "librispeech-lm-corpus/corpus/384/384.txt",
+      "bytes": 536031,
+      "sha256": "283e88cb5b4d4bc2ced0a4164d8e3fd6b28fe6810eef0d8b6024cad6cb299d1b",
+      "extracted_path": "experiment/assets/english_books/384.txt"
+    },
+    {
+      "book_id": "389",
+      "archive_member": "librispeech-lm-corpus/corpus/389/389.txt",
+      "bytes": 118394,
+      "sha256": "1f1aa42b97822577d7c8f5e36bbf76352d2c5a2773a8fd3f59aa90bb95cc7089",
+      "extracted_path": "experiment/assets/english_books/389.txt"
+    },
+    {
+      "book_id": "391",
+      "archive_member": "librispeech-lm-corpus/corpus/391/391.txt",
+      "bytes": 179789,
+      "sha256": "1a25d92860529a4e74c73292a0eee424eb30633ee610ecbaeb3c0e6eaa9e6dc9",
+      "extracted_path": "experiment/assets/english_books/391.txt"
+    },
+    {
+      "book_id": "398",
+      "archive_member": "librispeech-lm-corpus/corpus/398/398.txt",
+      "bytes": 176880,
+      "sha256": "93f7f319b6d8fba4c8ef64730d5bbc884304680cdb0d52087eca60398f1763f5",
+      "extracted_path": "experiment/assets/english_books/398.txt"
+    },
+    {
+      "book_id": "402",
+      "archive_member": "librispeech-lm-corpus/corpus/402/402.txt",
+      "bytes": 339766,
+      "sha256": "c876fbbc00605c7fa5475258e9101526e30c0431247e50794a12b64af22d975c",
+      "extracted_path": "experiment/assets/english_books/402.txt"
+    },
+    {
+      "book_id": "408",
+      "archive_member": "librispeech-lm-corpus/corpus/408/408.txt",
+      "bytes": 401492,
+      "sha256": "d6967332f1f53c72a509e8ecf34e4069c341da382de1e4f207718e6a003d4480",
+      "extracted_path": "experiment/assets/english_books/408.txt"
+    },
+    {
+      "book_id": "409",
+      "archive_member": "librispeech-lm-corpus/corpus/409/409.txt",
+      "bytes": 84156,
+      "sha256": "964191556166b6635385a063cfa9d83c934adf58efa979284751c20ce063cf1d",
+      "extracted_path": "experiment/assets/english_books/409.txt"
+    },
+    {
+      "book_id": "416",
+      "archive_member": "librispeech-lm-corpus/corpus/416/416.txt",
+      "bytes": 395557,
+      "sha256": "11a5a33ea2546449573133688eb3c6f5d2c9384fc24f7d521352816f4e1cc149",
+      "extracted_path": "experiment/assets/english_books/416.txt"
+    },
+    {
+      "book_id": "420",
+      "archive_member": "librispeech-lm-corpus/corpus/420/420.txt",
+      "bytes": 230356,
+      "sha256": "a3fcb6294ce0d73af7491525dd54ace5224eb9ecdab00ad70629bdd58ca8ddb9",
+      "extracted_path": "experiment/assets/english_books/420.txt"
+    },
+    {
+      "book_id": "421",
+      "archive_member": "librispeech-lm-corpus/corpus/421/421.txt",
+      "bytes": 422117,
+      "sha256": "562d2ae1369c08f98bcf19c845d7a790a54a0b038bbff0d86858fc77c97a7c6a",
+      "extracted_path": "experiment/assets/english_books/421.txt"
+    },
+    {
+      "book_id": "424",
+      "archive_member": "librispeech-lm-corpus/corpus/424/424.txt",
+      "bytes": 68383,
+      "sha256": "f84a4b9da876c8694afbd5eb8e26193f9ed6c19b4f54b831eab966b2d0cac901",
+      "extracted_path": "experiment/assets/english_books/424.txt"
+    },
+    {
+      "book_id": "432",
+      "archive_member": "librispeech-lm-corpus/corpus/432/432.txt",
+      "bytes": 911077,
+      "sha256": "61412d39e04567d300f4c95ee88f22dca3c2c74ceda19eefef73e6b4dad9ef47",
+      "extracted_path": "experiment/assets/english_books/432.txt"
+    },
+    {
+      "book_id": "436",
+      "archive_member": "librispeech-lm-corpus/corpus/436/436.txt",
+      "bytes": 197845,
+      "sha256": "57a99479c440fa0400a4c59f12fdb7a7bb3279f1edcfdb5b5ec1d5db363963de",
+      "extracted_path": "experiment/assets/english_books/436.txt"
+    },
+    {
+      "book_id": "440",
+      "archive_member": "librispeech-lm-corpus/corpus/440/440.txt",
+      "bytes": 326830,
+      "sha256": "f53f458b074181196b45f4ac4156d51ca9fba431504f2f580e99f595761832e4",
+      "extracted_path": "experiment/assets/english_books/440.txt"
+    },
+    {
+      "book_id": "442",
+      "archive_member": "librispeech-lm-corpus/corpus/442/442.txt",
+      "bytes": 33688,
+      "sha256": "12f9069a5c4dae3f2e383459826c00d933d4207d2e40b42851e7398d4be410fe",
+      "extracted_path": "experiment/assets/english_books/442.txt"
+    },
+    {
+      "book_id": "443",
+      "archive_member": "librispeech-lm-corpus/corpus/443/443.txt",
+      "bytes": 212023,
+      "sha256": "9f3a3597f4a09a5b22cbdb7a056f90f185f8ada4cb96cd3101e5d3fecd4c93de",
+      "extracted_path": "experiment/assets/english_books/443.txt"
+    },
+    {
+      "book_id": "451",
+      "archive_member": "librispeech-lm-corpus/corpus/451/451.txt",
+      "bytes": 215745,
+      "sha256": "7c6d67231307cdd8ebd545c7fcf00fb8b49728e2c4f22a41a096bb25985a9b9d",
+      "extracted_path": "experiment/assets/english_books/451.txt"
+    },
+    {
+      "book_id": "453",
+      "archive_member": "librispeech-lm-corpus/corpus/453/453.txt",
+      "bytes": 240893,
+      "sha256": "1906ea63d37d7d6bd22f07288b642e248ee79e47ee7f67d89e0f13adc629e06b",
+      "extracted_path": "experiment/assets/english_books/453.txt"
+    },
+    {
+      "book_id": "459",
+      "archive_member": "librispeech-lm-corpus/corpus/459/459.txt",
+      "bytes": 111060,
+      "sha256": "f28cdb8d83727b282ba147a62e19ede59bbfc6a2f2e706bb6c6c52f732df1a5b",
+      "extracted_path": "experiment/assets/english_books/459.txt"
+    },
+    {
+      "book_id": "463",
+      "archive_member": "librispeech-lm-corpus/corpus/463/463.txt",
+      "bytes": 260996,
+      "sha256": "50ac0589b59b2351ea043ba03ac627bca56b43d096e59102bb5063d100c798ba",
+      "extracted_path": "experiment/assets/english_books/463.txt"
+    },
+    {
+      "book_id": "470",
+      "archive_member": "librispeech-lm-corpus/corpus/470/470.txt",
+      "bytes": 363079,
+      "sha256": "56e76ba0bf044445fbf8ab3952283f777a4ef7fa2e4f7245371e53a9cef43849",
+      "extracted_path": "experiment/assets/english_books/470.txt"
+    },
+    {
+      "book_id": "472",
+      "archive_member": "librispeech-lm-corpus/corpus/472/472.txt",
+      "bytes": 388612,
+      "sha256": "e6ba88d10f48ba712460856b0c81c49fabadd49850c477cc086f90a5c476d9a0",
+      "extracted_path": "experiment/assets/english_books/472.txt"
+    },
+    {
+      "book_id": "474",
+      "archive_member": "librispeech-lm-corpus/corpus/474/474.txt",
+      "bytes": 309032,
+      "sha256": "2f978377729f35b4660deb891d6d21c4ba8f69a27b424d58d4aeee2517a8d37a",
+      "extracted_path": "experiment/assets/english_books/474.txt"
+    },
+    {
+      "book_id": "479",
+      "archive_member": "librispeech-lm-corpus/corpus/479/479.txt",
+      "bytes": 314503,
+      "sha256": "9a49e194c78e56facca83d2a36e29f64315124936af84c56d3a17ecae56d2f03",
+      "extracted_path": "experiment/assets/english_books/479.txt"
+    },
+    {
+      "book_id": "481",
+      "archive_member": "librispeech-lm-corpus/corpus/481/481.txt",
+      "bytes": 288884,
+      "sha256": "b1628b6e4a74f5f71c98193c5dfc79698802e8597c8aa5f82983b76c5a5f8cb0",
+      "extracted_path": "experiment/assets/english_books/481.txt"
+    },
+    {
+      "book_id": "482",
+      "archive_member": "librispeech-lm-corpus/corpus/482/482.txt",
+      "bytes": 762011,
+      "sha256": "c3f527a8ed47fa0592e139b0dd9af1ea4b319176d46a6da20cf32a4e53191488",
+      "extracted_path": "experiment/assets/english_books/482.txt"
+    },
+    {
+      "book_id": "485",
+      "archive_member": "librispeech-lm-corpus/corpus/485/485.txt",
+      "bytes": 219180,
+      "sha256": "fd2f2a3f95c4f021828b9d89e9dbb717156f085fd661956fb8b0d2175d05e873",
+      "extracted_path": "experiment/assets/english_books/485.txt"
+    },
+    {
+      "book_id": "486",
+      "archive_member": "librispeech-lm-corpus/corpus/486/486.txt",
+      "bytes": 215049,
+      "sha256": "87eac4bed89732804e6483d0400f5a3644eb4ce0d93b904f8631b685f8dad197",
+      "extracted_path": "experiment/assets/english_books/486.txt"
+    },
+    {
+      "book_id": "489",
+      "archive_member": "librispeech-lm-corpus/corpus/489/489.txt",
+      "bytes": 270580,
+      "sha256": "1034672641f065905de042fa34b5eecc6214dac09dfdb9862e7c1287b283d656",
+      "extracted_path": "experiment/assets/english_books/489.txt"
+    },
+    {
+      "book_id": "495",
+      "archive_member": "librispeech-lm-corpus/corpus/495/495.txt",
+      "bytes": 67480,
+      "sha256": "e40e473a00f17f2549f17c3ebe6b43b604b58dea910f11051f2abdd5b11723d8",
+      "extracted_path": "experiment/assets/english_books/495.txt"
+    },
+    {
+      "book_id": "498",
+      "archive_member": "librispeech-lm-corpus/corpus/498/498.txt",
+      "bytes": 409538,
+      "sha256": "6810792ec80e4e8e65e213156090fab201ec7b96b3b062b4dbe7eb9ae5faf6a4",
+      "extracted_path": "experiment/assets/english_books/498.txt"
+    },
+    {
+      "book_id": "499",
+      "archive_member": "librispeech-lm-corpus/corpus/499/499.txt",
+      "bytes": 239394,
+      "sha256": "9578da4ea32630bab128ef6786ef441bea3cf40a7c0289aa501fa57795c0d35a",
+      "extracted_path": "experiment/assets/english_books/499.txt"
+    },
+    {
+      "book_id": "506",
+      "archive_member": "librispeech-lm-corpus/corpus/506/506.txt",
+      "bytes": 1188044,
+      "sha256": "e0b6bfec01b8e50a44ec1c8d884cac168be3812e8eb1ed3819a234a9075f01c4",
+      "extracted_path": "experiment/assets/english_books/506.txt"
+    },
+    {
+      "book_id": "514",
+      "archive_member": "librispeech-lm-corpus/corpus/514/514.txt",
+      "bytes": 1010934,
+      "sha256": "bd3e6bce9a1ded60fea75ec21f05538d6991d97f0ff39ddbd8b11b0992bb2d7d",
+      "extracted_path": "experiment/assets/english_books/514.txt"
+    },
+    {
+      "book_id": "517",
+      "archive_member": "librispeech-lm-corpus/corpus/517/517.txt",
+      "bytes": 298028,
+      "sha256": "c61c546d0e5b31eac33fd881596b03edce1b15f3e64fd71be8d536e93fcfcf25",
+      "extracted_path": "experiment/assets/english_books/517.txt"
+    },
+    {
+      "book_id": "520",
+      "archive_member": "librispeech-lm-corpus/corpus/520/520.txt",
+      "bytes": 164617,
+      "sha256": "4d3e905fb420336b7497c6662867d9fb95268ac97a18c5c1148e8d5f026cfc11",
+      "extracted_path": "experiment/assets/english_books/520.txt"
+    },
+    {
+      "book_id": "524",
+      "archive_member": "librispeech-lm-corpus/corpus/524/524.txt",
+      "bytes": 547644,
+      "sha256": "3ea8dcc8e1a25fb8fdc6111014c5a60182e6446067c5986a1f536b4840b713a2",
+      "extracted_path": "experiment/assets/english_books/524.txt"
+    },
+    {
+      "book_id": "525",
+      "archive_member": "librispeech-lm-corpus/corpus/525/525.txt",
+      "bytes": 71042,
+      "sha256": "3f846d59a644d862083e3880cbc921fe2da91641c9fca99ccbe44672d559b5f5",
+      "extracted_path": "experiment/assets/english_books/525.txt"
+    },
+    {
+      "book_id": "526",
+      "archive_member": "librispeech-lm-corpus/corpus/526/526.txt",
+      "bytes": 210715,
+      "sha256": "4df8dcee823b58de5258ed112d1fd44b4a4bd473aa046788257cc8fd247d66ba",
+      "extracted_path": "experiment/assets/english_books/526.txt"
+    },
+    {
+      "book_id": "533",
+      "archive_member": "librispeech-lm-corpus/corpus/533/533.txt",
+      "bytes": 139490,
+      "sha256": "1e4cd13541746cd4aa35173bbc790eb4654bc42d1ca7b758faee6d23f2f5f9cb",
+      "extracted_path": "experiment/assets/english_books/533.txt"
+    },
+    {
+      "book_id": "537",
+      "archive_member": "librispeech-lm-corpus/corpus/537/537.txt",
+      "bytes": 412694,
+      "sha256": "1971651ad2462f6a0834eaba37b96d26a9d549425a79ac3796edc7f4de484800",
+      "extracted_path": "experiment/assets/english_books/537.txt"
+    },
+    {
+      "book_id": "541",
+      "archive_member": "librispeech-lm-corpus/corpus/541/541.txt",
+      "bytes": 580914,
+      "sha256": "dc91b20c7d7f66fea864c6c43d192507734332b2dd1ed9cb5811f878e4779a35",
+      "extracted_path": "experiment/assets/english_books/541.txt"
+    },
+    {
+      "book_id": "543",
+      "archive_member": "librispeech-lm-corpus/corpus/543/543.txt",
+      "bytes": 947375,
+      "sha256": "3263533419c145054b0abdeb41517d864ce07dbd8c3076d0f9fed2c62e48a11f",
+      "extracted_path": "experiment/assets/english_books/543.txt"
+    },
+    {
+      "book_id": "544",
+      "archive_member": "librispeech-lm-corpus/corpus/544/544.txt",
+      "bytes": 438994,
+      "sha256": "54c664bf4d3525a2aed9ef6cdadc738d54f08a9c39a12e0d6344ba7c5688e7b3",
+      "extracted_path": "experiment/assets/english_books/544.txt"
+    },
+    {
+      "book_id": "546",
+      "archive_member": "librispeech-lm-corpus/corpus/546/546.txt",
+      "bytes": 494611,
+      "sha256": "22c0ed1f71ef2287ff89a2693452bac84f2671b452262d299203fad06fba24ba",
+      "extracted_path": "experiment/assets/english_books/546.txt"
+    },
+    {
+      "book_id": "550",
+      "archive_member": "librispeech-lm-corpus/corpus/550/550.txt",
+      "bytes": 394205,
+      "sha256": "629f5a764ff594e9f9f3a6c61b33052d133cd3a19facac43ae8492c3b47a350d",
+      "extracted_path": "experiment/assets/english_books/550.txt"
+    },
+    {
+      "book_id": "551",
+      "archive_member": "librispeech-lm-corpus/corpus/551/551.txt",
+      "bytes": 201440,
+      "sha256": "ff27dbee9b5d1260b0701e39e9cff5666f5a9548da461a434db104f0252be392",
+      "extracted_path": "experiment/assets/english_books/551.txt"
+    },
+    {
+      "book_id": "552",
+      "archive_member": "librispeech-lm-corpus/corpus/552/552.txt",
+      "bytes": 208446,
+      "sha256": "cfb1ed7d971b5e6b1417e09708eb94437783ecf19e466ba3bfd1c494b63ad89c",
+      "extracted_path": "experiment/assets/english_books/552.txt"
+    },
+    {
+      "book_id": "553",
+      "archive_member": "librispeech-lm-corpus/corpus/553/553.txt",
+      "bytes": 200795,
+      "sha256": "405a7b2f190bac96f470a6361dbb6c812f7a285bc7576a6736c7019a5eaab5d5",
+      "extracted_path": "experiment/assets/english_books/553.txt"
+    },
+    {
+      "book_id": "556",
+      "archive_member": "librispeech-lm-corpus/corpus/556/556.txt",
+      "bytes": 395116,
+      "sha256": "8c47331dae40312ef961c599bd8f7d4ae739bbabe37a0d5e53fb8fdce142e1e4",
+      "extracted_path": "experiment/assets/english_books/556.txt"
+    },
+    {
+      "book_id": "558",
+      "archive_member": "librispeech-lm-corpus/corpus/558/558.txt",
+      "bytes": 216357,
+      "sha256": "57682b455ab36be7283a5cbe7d799599bd683fc7d1f8ca0391578b53da507c59",
+      "extracted_path": "experiment/assets/english_books/558.txt"
+    },
+    {
+      "book_id": "559",
+      "archive_member": "librispeech-lm-corpus/corpus/559/559.txt",
+      "bytes": 525118,
+      "sha256": "2fe5967c2e16e8c6a84f94deef6882a00840ab010d52c6d9aaef325a8abbb213",
+      "extracted_path": "experiment/assets/english_books/559.txt"
+    },
+    {
+      "book_id": "560",
+      "archive_member": "librispeech-lm-corpus/corpus/560/560.txt",
+      "bytes": 680226,
+      "sha256": "70029d91dca0366da530df94bbed34f04f91ca76b02f7a0224d7ad273482110f",
+      "extracted_path": "experiment/assets/english_books/560.txt"
+    },
+    {
+      "book_id": "561",
+      "archive_member": "librispeech-lm-corpus/corpus/561/561.txt",
+      "bytes": 530381,
+      "sha256": "9d6c45564897c263b59066da39509b5fd6ce5c37b928257b42b7431898fb40b4",
+      "extracted_path": "experiment/assets/english_books/561.txt"
+    },
+    {
+      "book_id": "564",
+      "archive_member": "librispeech-lm-corpus/corpus/564/564.txt",
+      "bytes": 542212,
+      "sha256": "4a14c8116001b0baa79ed9027d9bf40d7794927e4b639ae2309c4390c0a6a1d9",
+      "extracted_path": "experiment/assets/english_books/564.txt"
+    },
+    {
+      "book_id": "575",
+      "archive_member": "librispeech-lm-corpus/corpus/575/575.txt",
+      "bytes": 298211,
+      "sha256": "ecd59a5316430f57c9d65fc4908c5ab849eaa0f2a28cc9e3b88a7f269d96c8b3",
+      "extracted_path": "experiment/assets/english_books/575.txt"
+    },
+    {
+      "book_id": "580",
+      "archive_member": "librispeech-lm-corpus/corpus/580/580.txt",
+      "bytes": 1741281,
+      "sha256": "f37eb11b4fbdadd65e3fb050b445726fca17ef1b5c9a30c145a1010bdbe296e4",
+      "extracted_path": "experiment/assets/english_books/580.txt"
+    },
+    {
+      "book_id": "584",
+      "archive_member": "librispeech-lm-corpus/corpus/584/584.txt",
+      "bytes": 142141,
+      "sha256": "d4715109f57be2d19f8b22eeb7f5f76b4f8dedd4d392b3138b45e79f4b5ef316",
+      "extracted_path": "experiment/assets/english_books/584.txt"
+    },
+    {
+      "book_id": "591",
+      "archive_member": "librispeech-lm-corpus/corpus/591/591.txt",
+      "bytes": 41812,
+      "sha256": "21bab86329bcda69be6efe599ed26c6d9bda8563335ef4dbe36c60ff19dcc89a",
+      "extracted_path": "experiment/assets/english_books/591.txt"
+    },
+    {
+      "book_id": "599",
+      "archive_member": "librispeech-lm-corpus/corpus/599/599.txt",
+      "bytes": 1715487,
+      "sha256": "fc18ddcc0057bbccdabf367550956fd09297ef540b7cea46b89b36cd798423f0",
+      "extracted_path": "experiment/assets/english_books/599.txt"
+    },
+    {
+      "book_id": "604",
+      "archive_member": "librispeech-lm-corpus/corpus/604/604.txt",
+      "bytes": 387262,
+      "sha256": "ca29cad4818068fb94437eb1add509a1bf9100947c88496a037e50bdfa90d01f",
+      "extracted_path": "experiment/assets/english_books/604.txt"
+    },
+    {
+      "book_id": "605",
+      "archive_member": "librispeech-lm-corpus/corpus/605/605.txt",
+      "bytes": 313544,
+      "sha256": "8a8adb61e15226bf3abf01d806d61d50c3f3ae3e4b237724c46091c19afefd22",
+      "extracted_path": "experiment/assets/english_books/605.txt"
+    },
+    {
+      "book_id": "606",
+      "archive_member": "librispeech-lm-corpus/corpus/606/606.txt",
+      "bytes": 157932,
+      "sha256": "932a25fc25d47ab0a7cafa718a1ff16b4ade6003530af3ebe39ccd166bbe57fc",
+      "extracted_path": "experiment/assets/english_books/606.txt"
+    },
+    {
+      "book_id": "608",
+      "archive_member": "librispeech-lm-corpus/corpus/608/608.txt",
+      "bytes": 101652,
+      "sha256": "09ceb9616d99a6861bc761cf11c270f7ea1e2421b3b31846c70f279aa2f437c9",
+      "extracted_path": "experiment/assets/english_books/608.txt"
+    },
+    {
+      "book_id": "610",
+      "archive_member": "librispeech-lm-corpus/corpus/610/610.txt",
+      "bytes": 452787,
+      "sha256": "993ac5def18c141a4610a9f9f6524e757959b89a56b4cd5290dd419d4c8a7c03",
+      "extracted_path": "experiment/assets/english_books/610.txt"
+    },
+    {
+      "book_id": "611",
+      "archive_member": "librispeech-lm-corpus/corpus/611/611.txt",
+      "bytes": 401126,
+      "sha256": "0264db382a14e3d4f8d8301982fefe149d6afb0d8c33c7a9d194a9efb02ab077",
+      "extracted_path": "experiment/assets/english_books/611.txt"
+    },
+    {
+      "book_id": "619",
+      "archive_member": "librispeech-lm-corpus/corpus/619/619.txt",
+      "bytes": 398737,
+      "sha256": "e1d9ff225ffd637437d2dedc64d3e4f2c1a460da94f5e415eba9c33faf257005",
+      "extracted_path": "experiment/assets/english_books/619.txt"
+    },
+    {
+      "book_id": "620",
+      "archive_member": "librispeech-lm-corpus/corpus/620/620.txt",
+      "bytes": 363310,
+      "sha256": "d30eac84fe6f934db357711f003967aaa1a714aa070742eaf9940fbfb51632da",
+      "extracted_path": "experiment/assets/english_books/620.txt"
+    },
+    {
+      "book_id": "624",
+      "archive_member": "librispeech-lm-corpus/corpus/624/624.txt",
+      "bytes": 439364,
+      "sha256": "8801ed07c3bf90cf10c450f0a8caba240a892332bc2d7d1c108c26bcc9905afc",
+      "extracted_path": "experiment/assets/english_books/624.txt"
+    },
+    {
+      "book_id": "627",
+      "archive_member": "librispeech-lm-corpus/corpus/627/627.txt",
+      "bytes": 387772,
+      "sha256": "8290118ab2be1fa55ab19659528779771143b99b3c236608e7b58acb21d6b309",
+      "extracted_path": "experiment/assets/english_books/627.txt"
+    },
+    {
+      "book_id": "638",
+      "archive_member": "librispeech-lm-corpus/corpus/638/638.txt",
+      "bytes": 590345,
+      "sha256": "c4922ac445e623a80b36b40df0e27d286906fd76b828493131f7f246ff3362b1",
+      "extracted_path": "experiment/assets/english_books/638.txt"
+    },
+    {
+      "book_id": "641",
+      "archive_member": "librispeech-lm-corpus/corpus/641/641.txt",
+      "bytes": 532316,
+      "sha256": "b06bcd69b2c72b41ede1bc1cee314edc02cf8efd196d73842d6082efcd72e818",
+      "extracted_path": "experiment/assets/english_books/641.txt"
+    },
+    {
+      "book_id": "642",
+      "archive_member": "librispeech-lm-corpus/corpus/642/642.txt",
+      "bytes": 80490,
+      "sha256": "a6a03f860eb96a09bc4412b2d5af8df58bc4fe3d13f636d40f518ee81ce7b310",
+      "extracted_path": "experiment/assets/english_books/642.txt"
+    },
+    {
+      "book_id": "643",
+      "archive_member": "librispeech-lm-corpus/corpus/643/643.txt",
+      "bytes": 81400,
+      "sha256": "3548be03f88dd7d07f94c9c21df1f53ef94eda4cfda4127bbdb94e51e85f2708",
+      "extracted_path": "experiment/assets/english_books/643.txt"
+    },
+    {
+      "book_id": "645",
+      "archive_member": "librispeech-lm-corpus/corpus/645/645.txt",
+      "bytes": 83648,
+      "sha256": "7a395d2e7aa2e35c8d574fbb91aad2ec24362a926e0770fb3eb67b721e499d44",
+      "extracted_path": "experiment/assets/english_books/645.txt"
+    },
+    {
+      "book_id": "677",
+      "archive_member": "librispeech-lm-corpus/corpus/677/677.txt",
+      "bytes": 254343,
+      "sha256": "5ded9d96769764dd605db50fd5be28306d9391ad6b420531e327e265600af8bc",
+      "extracted_path": "experiment/assets/english_books/677.txt"
+    },
+    {
+      "book_id": "683",
+      "archive_member": "librispeech-lm-corpus/corpus/683/683.txt",
+      "bytes": 342812,
+      "sha256": "a3aa51b291d05909877eaafd3da850f335c3f7d1d11c7573eda53930a82f5319",
+      "extracted_path": "experiment/assets/english_books/683.txt"
+    },
+    {
+      "book_id": "700",
+      "archive_member": "librispeech-lm-corpus/corpus/700/700.txt",
+      "bytes": 1214945,
+      "sha256": "da4f7446275cf371486052d8a3753326e01d9a4c5d5abd5ab07e39bfdf78bd05",
+      "extracted_path": "experiment/assets/english_books/700.txt"
+    },
+    {
+      "book_id": "706",
+      "archive_member": "librispeech-lm-corpus/corpus/706/706.txt",
+      "bytes": 281537,
+      "sha256": "3a82681c68272ade5cbeeb39bea1be9ad91849707be5edafb66d9fb8cc726712",
+      "extracted_path": "experiment/assets/english_books/706.txt"
+    },
+    {
+      "book_id": "707",
+      "archive_member": "librispeech-lm-corpus/corpus/707/707.txt",
+      "bytes": 295234,
+      "sha256": "6180bcb8225f055dee6931d18fa30b4a5057acaa8e6aa934e5ed676944a70d31",
+      "extracted_path": "experiment/assets/english_books/707.txt"
+    },
+    {
+      "book_id": "708",
+      "archive_member": "librispeech-lm-corpus/corpus/708/708.txt",
+      "bytes": 274930,
+      "sha256": "7bb3ca0664bcf40f06121bc69ae0afce5a01d30d027ccd380d276344e6947579",
+      "extracted_path": "experiment/assets/english_books/708.txt"
+    },
+    {
+      "book_id": "709",
+      "archive_member": "librispeech-lm-corpus/corpus/709/709.txt",
+      "bytes": 299465,
+      "sha256": "4ed3261838e14c8144a1781298ec809629bfe96c09a28b27c1434f917bfc3645",
+      "extracted_path": "experiment/assets/english_books/709.txt"
+    },
+    {
+      "book_id": "711",
+      "archive_member": "librispeech-lm-corpus/corpus/711/711.txt",
+      "bytes": 575645,
+      "sha256": "c31017c589327b4e5e47fa6ced7c202fd957c3195ccb0d73e46e81be04319ce5",
+      "extracted_path": "experiment/assets/english_books/711.txt"
+    },
+    {
+      "book_id": "714",
+      "archive_member": "librispeech-lm-corpus/corpus/714/714.txt",
+      "bytes": 220080,
+      "sha256": "e1025514b3348816ca32873b3a628bfe02a6db623a1f3892fd725063771f7748",
+      "extracted_path": "experiment/assets/english_books/714.txt"
+    },
+    {
+      "book_id": "718",
+      "archive_member": "librispeech-lm-corpus/corpus/718/718.txt",
+      "bytes": 753092,
+      "sha256": "6e56000ace4a6468966ef56f1b50ce420ac445aac7769a0eae0f4f00e00132aa",
+      "extracted_path": "experiment/assets/english_books/718.txt"
+    },
+    {
+      "book_id": "720",
+      "archive_member": "librispeech-lm-corpus/corpus/720/720.txt",
+      "bytes": 354795,
+      "sha256": "cfdb9a5d05d29bb4992d95c02eb3c034879d7e451bdf445af78c4732e8fc7652",
+      "extracted_path": "experiment/assets/english_books/720.txt"
+    },
+    {
+      "book_id": "721",
+      "archive_member": "librispeech-lm-corpus/corpus/721/721.txt",
+      "bytes": 65564,
+      "sha256": "f19e1c3c721021641b101aa5cf515e270a93d688c6e416b14adf4185c5eef1f7",
+      "extracted_path": "experiment/assets/english_books/721.txt"
+    },
+    {
+      "book_id": "730",
+      "archive_member": "librispeech-lm-corpus/corpus/730/730.txt",
+      "bytes": 896940,
+      "sha256": "30031bf813ab842aa39a1f10a19d038e8fab81e0e5b6bc0ed735e0e4d73ff905",
+      "extracted_path": "experiment/assets/english_books/730.txt"
+    },
+    {
+      "book_id": "746",
+      "archive_member": "librispeech-lm-corpus/corpus/746/746.txt",
+      "bytes": 630342,
+      "sha256": "08cdfdd06435c1b75e043bd104d5d5287da781cd1ca3acac8c010625f8b4a841",
+      "extracted_path": "experiment/assets/english_books/746.txt"
+    },
+    {
+      "book_id": "755",
+      "archive_member": "librispeech-lm-corpus/corpus/755/755.txt",
+      "bytes": 411528,
+      "sha256": "67203725b7af53c04d1fc509b24d676883fc955ae58718d29aa0efdca08d9505",
+      "extracted_path": "experiment/assets/english_books/755.txt"
+    },
+    {
+      "book_id": "756",
+      "archive_member": "librispeech-lm-corpus/corpus/756/756.txt",
+      "bytes": 209191,
+      "sha256": "29eebfee3aee8e8a8dc3664f5004959cf2a891c2fb238530e0038820a0805c73",
+      "extracted_path": "experiment/assets/english_books/756.txt"
+    },
+    {
+      "book_id": "764",
+      "archive_member": "librispeech-lm-corpus/corpus/764/764.txt",
+      "bytes": 469982,
+      "sha256": "2d70189ee037557565866dae950df2e3015a95acd471c45586c768f5edbfed62",
+      "extracted_path": "experiment/assets/english_books/764.txt"
+    },
+    {
+      "book_id": "765",
+      "archive_member": "librispeech-lm-corpus/corpus/765/765.txt",
+      "bytes": 559409,
+      "sha256": "d2b16cd978bfb0bddbca2e5ca9e7f16db80f2c20b3b9c06be91c9b325e76f1c3",
+      "extracted_path": "experiment/assets/english_books/765.txt"
+    },
+    {
+      "book_id": "766",
+      "archive_member": "librispeech-lm-corpus/corpus/766/766.txt",
+      "bytes": 1933194,
+      "sha256": "9712d1877a3f3a6e88e169bdd8dfbca54f600082573d5305f28337e62864387d",
+      "extracted_path": "experiment/assets/english_books/766.txt"
+    },
+    {
+      "book_id": "767",
+      "archive_member": "librispeech-lm-corpus/corpus/767/767.txt",
+      "bytes": 375954,
+      "sha256": "6079443b511860d776fcdcd6d42523afa956e2cc9360d76616a3ab7ce915ca99",
+      "extracted_path": "experiment/assets/english_books/767.txt"
+    },
+    {
+      "book_id": "768",
+      "archive_member": "librispeech-lm-corpus/corpus/768/768.txt",
+      "bytes": 649800,
+      "sha256": "892c8e1a1f352932a7a2b39352c3261e6eab810c93d0efef7fc70b51a34142f6",
+      "extracted_path": "experiment/assets/english_books/768.txt"
+    },
+    {
+      "book_id": "769",
+      "archive_member": "librispeech-lm-corpus/corpus/769/769.txt",
+      "bytes": 104926,
+      "sha256": "f0f685ed775b213a6701fa608c0eca4e06c080d17a878951e1294eb90f80f7f8",
+      "extracted_path": "experiment/assets/english_books/769.txt"
+    },
+    {
+      "book_id": "770",
+      "archive_member": "librispeech-lm-corpus/corpus/770/770.txt",
+      "bytes": 274449,
+      "sha256": "52a5185a5881b7528b06723611ffd22ea61324f37d079e529d1af3d4761eb10b",
+      "extracted_path": "experiment/assets/english_books/770.txt"
+    },
+    {
+      "book_id": "780",
+      "archive_member": "librispeech-lm-corpus/corpus/780/780.txt",
+      "bytes": 559732,
+      "sha256": "12a05f0805c86f79c6d5cc885715cd167954d612468bd8500c55b7a5db062b18",
+      "extracted_path": "experiment/assets/english_books/780.txt"
+    },
+    {
+      "book_id": "783",
+      "archive_member": "librispeech-lm-corpus/corpus/783/783.txt",
+      "bytes": 335122,
+      "sha256": "a9e5addbe1888eee7b1c80d54eee333b788b87ca5a350af2bbc293436a568158",
+      "extracted_path": "experiment/assets/english_books/783.txt"
+    },
+    {
+      "book_id": "791",
+      "archive_member": "librispeech-lm-corpus/corpus/791/791.txt",
+      "bytes": 144867,
+      "sha256": "9cb4c7c3aaad1c19e0dec99219dc3d6983a3c9a166699c14723734248842f17c",
+      "extracted_path": "experiment/assets/english_books/791.txt"
+    },
+    {
+      "book_id": "804",
+      "archive_member": "librispeech-lm-corpus/corpus/804/804.txt",
+      "bytes": 215600,
+      "sha256": "385a729b4bd38433f10cf965ee658b1da41206e6224f531d9ef8a08e1e5de4e8",
+      "extracted_path": "experiment/assets/english_books/804.txt"
+    },
+    {
+      "book_id": "805",
+      "archive_member": "librispeech-lm-corpus/corpus/805/805.txt",
+      "bytes": 470127,
+      "sha256": "3b7c0fae14c8046c35197e69baa9bcf781e94f5f767aeae15ab5ae67bb879ce7",
+      "extracted_path": "experiment/assets/english_books/805.txt"
+    },
+    {
+      "book_id": "821",
+      "archive_member": "librispeech-lm-corpus/corpus/821/821.txt",
+      "bytes": 1992771,
+      "sha256": "d0aea500b928bb410dd475187c49450c14bbffc8bc220f784a8103f9636252e0",
+      "extracted_path": "experiment/assets/english_books/821.txt"
+    },
+    {
+      "book_id": "834",
+      "archive_member": "librispeech-lm-corpus/corpus/834/834.txt",
+      "bytes": 473105,
+      "sha256": "cf4b5d1903a0f52d2cee55d5f5494293b084b7f528256bb20fad8caff1322e85",
+      "extracted_path": "experiment/assets/english_books/834.txt"
+    },
+    {
+      "book_id": "836",
+      "archive_member": "librispeech-lm-corpus/corpus/836/836.txt",
+      "bytes": 338729,
+      "sha256": "55fde170bdc56cdbbb8a11d401797faab8a59d4e25e6291381137f4537f5646b",
+      "extracted_path": "experiment/assets/english_books/836.txt"
+    },
+    {
+      "book_id": "840",
+      "archive_member": "librispeech-lm-corpus/corpus/840/840.txt",
+      "bytes": 1431796,
+      "sha256": "acdc624434e993b077569e3bc35adc3676d4e50f476972843cd742594f9f1f80",
+      "extracted_path": "experiment/assets/english_books/840.txt"
+    },
+    {
+      "book_id": "847",
+      "archive_member": "librispeech-lm-corpus/corpus/847/847.txt",
+      "bytes": 141334,
+      "sha256": "4ce05991a6f2af42f8e470c3027b2a45f17cce7b668c0989350e1e6cf8dcd8f5",
+      "extracted_path": "experiment/assets/english_books/847.txt"
+    },
+    {
+      "book_id": "848",
+      "archive_member": "librispeech-lm-corpus/corpus/848/848.txt",
+      "bytes": 437017,
+      "sha256": "69b5d8daf6fd926c60408a75f052fa86945ef2ee30cd1bf6db98f320a8410899",
+      "extracted_path": "experiment/assets/english_books/848.txt"
+    },
+    {
+      "book_id": "849",
+      "archive_member": "librispeech-lm-corpus/corpus/849/849.txt",
+      "bytes": 228095,
+      "sha256": "8f484f31b724884119eb1b8480123a1e066343d61ba763b2a68b1917273213e4",
+      "extracted_path": "experiment/assets/english_books/849.txt"
+    },
+    {
+      "book_id": "851",
+      "archive_member": "librispeech-lm-corpus/corpus/851/851.txt",
+      "bytes": 104412,
+      "sha256": "d75287edd4881fbdb2eb41698a45bf2fb37e062c157943e172450aa231c00cc6",
+      "extracted_path": "experiment/assets/english_books/851.txt"
+    },
+    {
+      "book_id": "852",
+      "archive_member": "librispeech-lm-corpus/corpus/852/852.txt",
+      "bytes": 826926,
+      "sha256": "c6d8adfb75d8468ecc31a0aa07e55fd3b9d24f979f5d7bd448733d1af8063b9f",
+      "extracted_path": "experiment/assets/english_books/852.txt"
+    },
+    {
+      "book_id": "862",
+      "archive_member": "librispeech-lm-corpus/corpus/862/862.txt",
+      "bytes": 64777,
+      "sha256": "619fa25ec8bfffa75b0e0b637388c1cd3d34bf971f2251a0897efa488c17133b",
+      "extracted_path": "experiment/assets/english_books/862.txt"
+    },
+    {
+      "book_id": "873",
+      "archive_member": "librispeech-lm-corpus/corpus/873/873.txt",
+      "bytes": 174049,
+      "sha256": "7ac456b1b7cfe9699b9a0bda0be042fa70ba5711fbf9e976ea66a2943261a174",
+      "extracted_path": "experiment/assets/english_books/873.txt"
+    },
+    {
+      "book_id": "876",
+      "archive_member": "librispeech-lm-corpus/corpus/876/876.txt",
+      "bytes": 81771,
+      "sha256": "0b94edcf4e64a8aee24d1fa84c295d4a3294de125d207ae3a2afbf0dbb7b3a8a",
+      "extracted_path": "experiment/assets/english_books/876.txt"
+    },
+    {
+      "book_id": "883",
+      "archive_member": "librispeech-lm-corpus/corpus/883/883.txt",
+      "bytes": 1811752,
+      "sha256": "627972afbbc7667b1350ca8940f44cb36c4a7cbaa94392cd0a022261ef24e295",
+      "extracted_path": "experiment/assets/english_books/883.txt"
+    },
+    {
+      "book_id": "889",
+      "archive_member": "librispeech-lm-corpus/corpus/889/889.txt",
+      "bytes": 490210,
+      "sha256": "339f138a3b9165877c11b35ba3d5a085b8430a353ed718d3c7c895e6247bb34e",
+      "extracted_path": "experiment/assets/english_books/889.txt"
+    },
+    {
+      "book_id": "898",
+      "archive_member": "librispeech-lm-corpus/corpus/898/898.txt",
+      "bytes": 138071,
+      "sha256": "6ae158345c7deeabdbe0f00ef72ed9137ecf44c41b0d7c4e47dfee4ec64d496e",
+      "extracted_path": "experiment/assets/english_books/898.txt"
+    },
+    {
+      "book_id": "902",
+      "archive_member": "librispeech-lm-corpus/corpus/902/902.txt",
+      "bytes": 86255,
+      "sha256": "c662d123aa5d2f4eb9dbd59f7f56e1b61864c3d97dc118667d66ffd2eb6db871",
+      "extracted_path": "experiment/assets/english_books/902.txt"
+    },
+    {
+      "book_id": "903",
+      "archive_member": "librispeech-lm-corpus/corpus/903/903.txt",
+      "bytes": 811631,
+      "sha256": "760aa3ebd8c30aa4e0215efcc74cbb2c65b38dd32011eed586e77c18a91123b5",
+      "extracted_path": "experiment/assets/english_books/903.txt"
+    },
+    {
+      "book_id": "910",
+      "archive_member": "librispeech-lm-corpus/corpus/910/910.txt",
+      "bytes": 400363,
+      "sha256": "b08fdf2acab7b5ffc9bf0f123e5596ff259752c342e153b713bb3294c432cee5",
+      "extracted_path": "experiment/assets/english_books/910.txt"
+    },
+    {
+      "book_id": "912",
+      "archive_member": "librispeech-lm-corpus/corpus/912/912.txt",
+      "bytes": 182191,
+      "sha256": "5fa96cfe7ced6e2ad648519a217ca34e6640df7b0d8209a7598f864907c2a0e6",
+      "extracted_path": "experiment/assets/english_books/912.txt"
+    },
+    {
+      "book_id": "914",
+      "archive_member": "librispeech-lm-corpus/corpus/914/914.txt",
+      "bytes": 810189,
+      "sha256": "a398d7c61d8969b3c5fb0a7554d8f268ac39dfa42947f75c8e14cabe501db82e",
+      "extracted_path": "experiment/assets/english_books/914.txt"
+    },
+    {
+      "book_id": "917",
+      "archive_member": "librispeech-lm-corpus/corpus/917/917.txt",
+      "bytes": 1418674,
+      "sha256": "6f15c55a85aaecb496ae002577ab091b6be1791d52e1df19824a696de15d9e34",
+      "extracted_path": "experiment/assets/english_books/917.txt"
+    },
+    {
+      "book_id": "921",
+      "archive_member": "librispeech-lm-corpus/corpus/921/921.txt",
+      "bytes": 94210,
+      "sha256": "0bb74c6b17ac3615c44d016931043055d8431f977cb588b72ce450ce033e4a54",
+      "extracted_path": "experiment/assets/english_books/921.txt"
+    },
+    {
+      "book_id": "931",
+      "archive_member": "librispeech-lm-corpus/corpus/931/931.txt",
+      "bytes": 114404,
+      "sha256": "298105a66b97f74f5f568e19f6e8f41f3e00a6eab3e44d46320d7febf641ffc2",
+      "extracted_path": "experiment/assets/english_books/931.txt"
+    },
+    {
+      "book_id": "933",
+      "archive_member": "librispeech-lm-corpus/corpus/933/933.txt",
+      "bytes": 129061,
+      "sha256": "d90cb5e88edfcd61244cac5a609f29acbab5df1e17ac77c7f490e2563275d377",
+      "extracted_path": "experiment/assets/english_books/933.txt"
+    },
+    {
+      "book_id": "942",
+      "archive_member": "librispeech-lm-corpus/corpus/942/942.txt",
+      "bytes": 482964,
+      "sha256": "0e3a8144156305b9630da46b64d41ecdc72d7a0e85f389b048df0fab95d19802",
+      "extracted_path": "experiment/assets/english_books/942.txt"
+    },
+    {
+      "book_id": "946",
+      "archive_member": "librispeech-lm-corpus/corpus/946/946.txt",
+      "bytes": 127300,
+      "sha256": "e46ca18b37dde64162e8fee7aea6c87bb5c069d6edd52c7fa34e1fbe9bb6fb89",
+      "extracted_path": "experiment/assets/english_books/946.txt"
+    },
+    {
+      "book_id": "950",
+      "archive_member": "librispeech-lm-corpus/corpus/950/950.txt",
+      "bytes": 230693,
+      "sha256": "02f9aa09b08f2530528adb448b1f611c89e3d02f15afa0ba337fb9fa1713ac2d",
+      "extracted_path": "experiment/assets/english_books/950.txt"
+    },
+    {
+      "book_id": "951",
+      "archive_member": "librispeech-lm-corpus/corpus/951/951.txt",
+      "bytes": 220053,
+      "sha256": "f9efd571ef224f27fff81f3883b7795bed3623e20de731a04d66a2df7e8fd669",
+      "extracted_path": "experiment/assets/english_books/951.txt"
+    },
+    {
+      "book_id": "953",
+      "archive_member": "librispeech-lm-corpus/corpus/953/953.txt",
+      "bytes": 244477,
+      "sha256": "fceea6127c9782b53c5375621ddc7bd250b9cb1d7d98adfdbe4c7a224be72072",
+      "extracted_path": "experiment/assets/english_books/953.txt"
+    },
+    {
+      "book_id": "954",
+      "archive_member": "librispeech-lm-corpus/corpus/954/954.txt",
+      "bytes": 239670,
+      "sha256": "5a63dba22d7e6b426a3efd424a6666f3ad1acffb05611d31c367c28183a3342a",
+      "extracted_path": "experiment/assets/english_books/954.txt"
+    },
+    {
+      "book_id": "958",
+      "archive_member": "librispeech-lm-corpus/corpus/958/958.txt",
+      "bytes": 268461,
+      "sha256": "0693615f616614fbc4f473be4987b10071acb53c222291b1a9e5073dfc14c5a6",
+      "extracted_path": "experiment/assets/english_books/958.txt"
+    },
+    {
+      "book_id": "959",
+      "archive_member": "librispeech-lm-corpus/corpus/959/959.txt",
+      "bytes": 258132,
+      "sha256": "2392d742f139bc74b6941fef849bb7be38d343b541c7ff1298adba6fa35a4947",
+      "extracted_path": "experiment/assets/english_books/959.txt"
+    },
+    {
+      "book_id": "960",
+      "archive_member": "librispeech-lm-corpus/corpus/960/960.txt",
+      "bytes": 240870,
+      "sha256": "8abc6328ec8daf8314ffdfdbd957e96cb14ca5fd7704c3dd5b835f0f69e1d28a",
+      "extracted_path": "experiment/assets/english_books/960.txt"
+    },
+    {
+      "book_id": "961",
+      "archive_member": "librispeech-lm-corpus/corpus/961/961.txt",
+      "bytes": 217921,
+      "sha256": "23145b130060df23c45e433ef2d5eff14ec9f0b036629f3453a2479056f2ee66",
+      "extracted_path": "experiment/assets/english_books/961.txt"
+    },
+    {
+      "book_id": "963",
+      "archive_member": "librispeech-lm-corpus/corpus/963/963.txt",
+      "bytes": 1879228,
+      "sha256": "aec13b720b1d42c7543771b18cdb705bdb89bde9b07075eedfd8fb0ea3a5ea45",
+      "extracted_path": "experiment/assets/english_books/963.txt"
+    },
+    {
+      "book_id": "964",
+      "archive_member": "librispeech-lm-corpus/corpus/964/964.txt",
+      "bytes": 587010,
+      "sha256": "c44524e1e261ffc31171e8921ad5b9d09825fcc09f79581cf2c53d0e5e7d1cde",
+      "extracted_path": "experiment/assets/english_books/964.txt"
+    },
+    {
+      "book_id": "967",
+      "archive_member": "librispeech-lm-corpus/corpus/967/967.txt",
+      "bytes": 1845810,
+      "sha256": "6f2e07d387b9291593b6714831372cd2f09802259745c6ca3e109b643d12ec3f",
+      "extracted_path": "experiment/assets/english_books/967.txt"
+    },
+    {
+      "book_id": "968",
+      "archive_member": "librispeech-lm-corpus/corpus/968/968.txt",
+      "bytes": 1880119,
+      "sha256": "7de2a1a84015ca8f2a8e9b51827193d7303aebce4956c055fed9f3ec1555e2bd",
+      "extracted_path": "experiment/assets/english_books/968.txt"
+    },
+    {
+      "book_id": "972",
+      "archive_member": "librispeech-lm-corpus/corpus/972/972.txt",
+      "bytes": 356542,
+      "sha256": "3a58eb77e9ad3c3acbc95325fd7bcd183e3754097e47b78c7fa86570b348e6cc",
+      "extracted_path": "experiment/assets/english_books/972.txt"
+    },
+    {
+      "book_id": "976",
+      "archive_member": "librispeech-lm-corpus/corpus/976/976.txt",
+      "bytes": 360154,
+      "sha256": "f38ac36ef3ca1f1be48f0d15cb2a805a67a0e291033f9e890f4bf200e012c962",
+      "extracted_path": "experiment/assets/english_books/976.txt"
+    },
+    {
+      "book_id": "977",
+      "archive_member": "librispeech-lm-corpus/corpus/977/977.txt",
+      "bytes": 147743,
+      "sha256": "45fe9c99c1fddaa6fb9c6008a290fac8651815b144d290adbd4546ac7d44e134",
+      "extracted_path": "experiment/assets/english_books/977.txt"
+    },
+    {
+      "book_id": "980",
+      "archive_member": "librispeech-lm-corpus/corpus/980/980.txt",
+      "bytes": 469724,
+      "sha256": "420cdb6b53a0cb54a8522421e0fce24abe4ed798d8ad44a840256596e976ccd3",
+      "extracted_path": "experiment/assets/english_books/980.txt"
+    },
+    {
+      "book_id": "981",
+      "archive_member": "librispeech-lm-corpus/corpus/981/981.txt",
+      "bytes": 147207,
+      "sha256": "d07c6fa85ebba7801f808bbbc774edac3b17577238b40180ec8b50dab8e6069f",
+      "extracted_path": "experiment/assets/english_books/981.txt"
+    },
+    {
+      "book_id": "1013",
+      "archive_member": "librispeech-lm-corpus/corpus/1013/1013.txt",
+      "bytes": 379151,
+      "sha256": "d24a8f2cc7e31318f107c76b7ad2015426ece8028ffc7215ea228c2b093a32ac",
+      "extracted_path": "experiment/assets/english_books/1013.txt"
+    },
+    {
+      "book_id": "1014",
+      "archive_member": "librispeech-lm-corpus/corpus/1014/1014.txt",
+      "bytes": 159717,
+      "sha256": "b3c054c673eda4ab0e9c67e36227cc74a17df940964f40281813ad2821757969",
+      "extracted_path": "experiment/assets/english_books/1014.txt"
+    },
+    {
+      "book_id": "1015",
+      "archive_member": "librispeech-lm-corpus/corpus/1015/1015.txt",
+      "bytes": 722050,
+      "sha256": "cbeaae840e6d7b2d229191fb97d673f0005c7e86d9f102f6782c545b6b256dba",
+      "extracted_path": "experiment/assets/english_books/1015.txt"
+    },
+    {
+      "book_id": "1017",
+      "archive_member": "librispeech-lm-corpus/corpus/1017/1017.txt",
+      "bytes": 81569,
+      "sha256": "ca62abb78edc10dc1ce069039317a8423599af99942d498ad95c1a51913baef4",
+      "extracted_path": "experiment/assets/english_books/1017.txt"
+    },
+    {
+      "book_id": "1018",
+      "archive_member": "librispeech-lm-corpus/corpus/1018/1018.txt",
+      "bytes": 362459,
+      "sha256": "80f0beb16dd00de50d0fade26098909235c3e7163de45e234b98a64903d42315",
+      "extracted_path": "experiment/assets/english_books/1018.txt"
+    },
+    {
+      "book_id": "1022",
+      "archive_member": "librispeech-lm-corpus/corpus/1022/1022.txt",
+      "bytes": 67128,
+      "sha256": "fd1ebb44b46691b5a05be9130411081a97fcf1572f39b40fac2ad11d062ecd87",
+      "extracted_path": "experiment/assets/english_books/1022.txt"
+    },
+    {
+      "book_id": "1027",
+      "archive_member": "librispeech-lm-corpus/corpus/1027/1027.txt",
+      "bytes": 527030,
+      "sha256": "b2ace75e01c8f60d97835394e8f2b7e8fada1bb1f90ede22a5e993c0aea00fc8",
+      "extracted_path": "experiment/assets/english_books/1027.txt"
+    },
+    {
+      "book_id": "1028",
+      "archive_member": "librispeech-lm-corpus/corpus/1028/1028.txt",
+      "bytes": 500224,
+      "sha256": "b37051b4bc3c7fcf37b4f7e097e736006a7e36f1176d2ca37565044430ab8c81",
+      "extracted_path": "experiment/assets/english_books/1028.txt"
+    },
+    {
+      "book_id": "1032",
+      "archive_member": "librispeech-lm-corpus/corpus/1032/1032.txt",
+      "bytes": 98841,
+      "sha256": "b90da177d059863fa2a8be08a6b29b7528e0687d00a93a8c528d0e224260dad7",
+      "extracted_path": "experiment/assets/english_books/1032.txt"
+    },
+    {
+      "book_id": "1046",
+      "archive_member": "librispeech-lm-corpus/corpus/1046/1046.txt",
+      "bytes": 228231,
+      "sha256": "8c887fe476e76238156a822bbd931394e14f69337c3a841083532b4a6a32f2ec",
+      "extracted_path": "experiment/assets/english_books/1046.txt"
+    },
+    {
+      "book_id": "1056",
+      "archive_member": "librispeech-lm-corpus/corpus/1056/1056.txt",
+      "bytes": 775917,
+      "sha256": "b9c8423ef3dd444b993f7dec9976424cf6b23a9f432c85b2b7647fa79dd80ff9",
+      "extracted_path": "experiment/assets/english_books/1056.txt"
+    },
+    {
+      "book_id": "1058",
+      "archive_member": "librispeech-lm-corpus/corpus/1058/1058.txt",
+      "bytes": 339195,
+      "sha256": "6081aa4d5fad0741c1bb9c81b8cdb589a9e6cb99ccf3f4dd7de579dae3c79d03",
+      "extracted_path": "experiment/assets/english_books/1058.txt"
+    },
+    {
+      "book_id": "1059",
+      "archive_member": "librispeech-lm-corpus/corpus/1059/1059.txt",
+      "bytes": 376609,
+      "sha256": "a3d147bb914fe3425b175d3e798ee1f8866361c1c914c81e8aa5c09add3795e6",
+      "extracted_path": "experiment/assets/english_books/1059.txt"
+    },
+    {
+      "book_id": "1074",
+      "archive_member": "librispeech-lm-corpus/corpus/1074/1074.txt",
+      "bytes": 579650,
+      "sha256": "f6771e8a063467e9723130da44e85f4db2f327c4ec3e923f01bd189979ca5e01",
+      "extracted_path": "experiment/assets/english_books/1074.txt"
+    },
+    {
+      "book_id": "1080",
+      "archive_member": "librispeech-lm-corpus/corpus/1080/1080.txt",
+      "bytes": 19448,
+      "sha256": "1682b280f1bd4c6f46c5721fc7d2aa4f6c9b856d8eeea1c2274882adeac25d65",
+      "extracted_path": "experiment/assets/english_books/1080.txt"
+    },
+    {
+      "book_id": "1086",
+      "archive_member": "librispeech-lm-corpus/corpus/1086/1086.txt",
+      "bytes": 92485,
+      "sha256": "9bcd2ab4674f87701e4678a389ee4778ba35f614afc3867ca3048f339c9495d9",
+      "extracted_path": "experiment/assets/english_books/1086.txt"
+    },
+    {
+      "book_id": "1093",
+      "archive_member": "librispeech-lm-corpus/corpus/1093/1093.txt",
+      "bytes": 101833,
+      "sha256": "4cd7334a5883370f358c1e0e917e1f54c0bee04c16613e0022b728c30bab7698",
+      "extracted_path": "experiment/assets/english_books/1093.txt"
+    },
+    {
+      "book_id": "1098",
+      "archive_member": "librispeech-lm-corpus/corpus/1098/1098.txt",
+      "bytes": 496512,
+      "sha256": "074f42654bc869c1e2e53ad3b5eac39af156e74728c614d509894aabe6145d4b",
+      "extracted_path": "experiment/assets/english_books/1098.txt"
+    },
+    {
+      "book_id": "1142",
+      "archive_member": "librispeech-lm-corpus/corpus/1142/1142.txt",
+      "bytes": 174362,
+      "sha256": "1cc628a31ad94bc9fee9921e008dff18c5cedb5fcba020f4bd65065c7f0945c2",
+      "extracted_path": "experiment/assets/english_books/1142.txt"
+    },
+    {
+      "book_id": "1144",
+      "archive_member": "librispeech-lm-corpus/corpus/1144/1144.txt",
+      "bytes": 195648,
+      "sha256": "e448eedcd96981a1c28f43afb32571a08e7d16f449955fb90bc2d9b2bbd23802",
+      "extracted_path": "experiment/assets/english_books/1144.txt"
+    },
+    {
+      "book_id": "1145",
+      "archive_member": "librispeech-lm-corpus/corpus/1145/1145.txt",
+      "bytes": 451502,
+      "sha256": "2b34f0e9445988a2d163ee30ca7a99c15a74543063ab1ad02928f24c0f7f1365",
+      "extracted_path": "experiment/assets/english_books/1145.txt"
+    },
+    {
+      "book_id": "1146",
+      "archive_member": "librispeech-lm-corpus/corpus/1146/1146.txt",
+      "bytes": 251065,
+      "sha256": "dff7fb436852afd8a6bec22a0292781af6f1a716ee658833cc0cf3b2aaaa01f2",
+      "extracted_path": "experiment/assets/english_books/1146.txt"
+    },
+    {
+      "book_id": "1153",
+      "archive_member": "librispeech-lm-corpus/corpus/1153/1153.txt",
+      "bytes": 486092,
+      "sha256": "a70cbebbcc7fb4bc006199a059a74f11d6b9dbb7177a6365d3b1b77d0b53383b",
+      "extracted_path": "experiment/assets/english_books/1153.txt"
+    },
+    {
+      "book_id": "1154",
+      "archive_member": "librispeech-lm-corpus/corpus/1154/1154.txt",
+      "bytes": 392422,
+      "sha256": "d6e6e1a3c61b8ec7720b5b3890cc1bcffbb81b101141a444779931a4a2c07596",
+      "extracted_path": "experiment/assets/english_books/1154.txt"
+    },
+    {
+      "book_id": "1156",
+      "archive_member": "librispeech-lm-corpus/corpus/1156/1156.txt",
+      "bytes": 700566,
+      "sha256": "24d39a9f2147283eefd7209f03471241f2a4bbb56fdaa2c4463b1bfe08a2f247",
+      "extracted_path": "experiment/assets/english_books/1156.txt"
+    },
+    {
+      "book_id": "1158",
+      "archive_member": "librispeech-lm-corpus/corpus/1158/1158.txt",
+      "bytes": 382367,
+      "sha256": "71797c435d66a061a3e50adb69068cae7e4f0e1114fba4a408f3bf80a1a2b150",
+      "extracted_path": "experiment/assets/english_books/1158.txt"
+    },
+    {
+      "book_id": "1160",
+      "archive_member": "librispeech-lm-corpus/corpus/1160/1160.txt",
+      "bytes": 85595,
+      "sha256": "974f26bef94bfcc82112246d35e790156d94707d6d853c15fe55067b40435c5a",
+      "extracted_path": "experiment/assets/english_books/1160.txt"
+    },
+    {
+      "book_id": "1162",
+      "archive_member": "librispeech-lm-corpus/corpus/1162/1162.txt",
+      "bytes": 567064,
+      "sha256": "d0ab71129d372368188b4407fba32687369bc161fedfc6e6c12d1dd94c567ade",
+      "extracted_path": "experiment/assets/english_books/1162.txt"
+    },
+    {
+      "book_id": "1164",
+      "archive_member": "librispeech-lm-corpus/corpus/1164/1164.txt",
+      "bytes": 499307,
+      "sha256": "963f01cf9ad29e66258c8c62b11a87bf675a090dc925ad1402f143e4e8b1ca0c",
+      "extracted_path": "experiment/assets/english_books/1164.txt"
+    },
+    {
+      "book_id": "1167",
+      "archive_member": "librispeech-lm-corpus/corpus/1167/1167.txt",
+      "bytes": 276644,
+      "sha256": "457b4a79a9a8c9ed3b0e41715b4b7e804920dec181b6bf008687e2751715298a",
+      "extracted_path": "experiment/assets/english_books/1167.txt"
+    },
+    {
+      "book_id": "1183",
+      "archive_member": "librispeech-lm-corpus/corpus/1183/1183.txt",
+      "bytes": 414408,
+      "sha256": "b90b16f9abba81374e140c02abceeb6889c47d4b3a3cf5437114b38678d6607d",
+      "extracted_path": "experiment/assets/english_books/1183.txt"
+    },
+    {
+      "book_id": "1188",
+      "archive_member": "librispeech-lm-corpus/corpus/1188/1188.txt",
+      "bytes": 307689,
+      "sha256": "02646dd224bea24b3e735bd7beec4617e803cb5bb01a65bbf0c98e72098c6615",
+      "extracted_path": "experiment/assets/english_books/1188.txt"
+    },
+    {
+      "book_id": "1190",
+      "archive_member": "librispeech-lm-corpus/corpus/1190/1190.txt",
+      "bytes": 79672,
+      "sha256": "1c0a7d8bdfb66ea01efcbb8f1fd95f7a3083c92863f454613e80bb1aed0f530c",
+      "extracted_path": "experiment/assets/english_books/1190.txt"
+    },
+    {
+      "book_id": "1198",
+      "archive_member": "librispeech-lm-corpus/corpus/1198/1198.txt",
+      "bytes": 1082550,
+      "sha256": "da091f1b0b9ffc5663452c95e37185088a945dc42e99e7939637bb29b8627843",
+      "extracted_path": "experiment/assets/english_books/1198.txt"
+    },
+    {
+      "book_id": "1202",
+      "archive_member": "librispeech-lm-corpus/corpus/1202/1202.txt",
+      "bytes": 349703,
+      "sha256": "c40dce286f60e676a5f683ad936596083a76242ab1d18b9a96a571dccd78ee0f",
+      "extracted_path": "experiment/assets/english_books/1202.txt"
+    },
+    {
+      "book_id": "1210",
+      "archive_member": "librispeech-lm-corpus/corpus/1210/1210.txt",
+      "bytes": 211680,
+      "sha256": "27d7b055af248d9e5f6d760b219ed4703f775dd0a29ed15a3053eeefa3b9ad48",
+      "extracted_path": "experiment/assets/english_books/1210.txt"
+    },
+    {
+      "book_id": "1212",
+      "archive_member": "librispeech-lm-corpus/corpus/1212/1212.txt",
+      "bytes": 184964,
+      "sha256": "fbb5b1696e82bc4cb863c159f6e1ff1f75c5cc93bd9a60bb1c51565eb475a3c4",
+      "extracted_path": "experiment/assets/english_books/1212.txt"
+    },
+    {
+      "book_id": "1213",
+      "archive_member": "librispeech-lm-corpus/corpus/1213/1213.txt",
+      "bytes": 100660,
+      "sha256": "d9a0bf4380b8aed0f3b3626019704b18e32cd60788c432ec8a1eebf6a73db5ef",
+      "extracted_path": "experiment/assets/english_books/1213.txt"
+    },
+    {
+      "book_id": "1214",
+      "archive_member": "librispeech-lm-corpus/corpus/1214/1214.txt",
+      "bytes": 425082,
+      "sha256": "9089162ed1d3c55006aff51c17f5c8446a483c1f1fb705b677622b372382e1c4",
+      "extracted_path": "experiment/assets/english_books/1214.txt"
+    },
+    {
+      "book_id": "1218",
+      "archive_member": "librispeech-lm-corpus/corpus/1218/1218.txt",
+      "bytes": 884933,
+      "sha256": "a212c38fbe990242ba6066555b8ec54d53c46d6812dcbd3f0821fa4c9e8ab300",
+      "extracted_path": "experiment/assets/english_books/1218.txt"
+    },
+    {
+      "book_id": "1222",
+      "archive_member": "librispeech-lm-corpus/corpus/1222/1222.txt",
+      "bytes": 95875,
+      "sha256": "307e222ea8cd991037e72d2b98351f52705ae909927ee10a52b9346abd76301f",
+      "extracted_path": "experiment/assets/english_books/1222.txt"
+    },
+    {
+      "book_id": "1239",
+      "archive_member": "librispeech-lm-corpus/corpus/1239/1239.txt",
+      "bytes": 498047,
+      "sha256": "5feaffa14e4a1f7e97c8d1f47cc22a64f657e298e3d2ff8b8d9ee3b14528d9b3",
+      "extracted_path": "experiment/assets/english_books/1239.txt"
+    },
+    {
+      "book_id": "1245",
+      "archive_member": "librispeech-lm-corpus/corpus/1245/1245.txt",
+      "bytes": 946135,
+      "sha256": "721db4cff41e8ed9f20d6441bd0817db08df544613259dcaaf1722c1faf5d180",
+      "extracted_path": "experiment/assets/english_books/1245.txt"
+    },
+    {
+      "book_id": "1246",
+      "archive_member": "librispeech-lm-corpus/corpus/1246/1246.txt",
+      "bytes": 123502,
+      "sha256": "f53e19d85daaa5ab4bec1a3155c14222fb87b54c06f11e059a4a4946204853be",
+      "extracted_path": "experiment/assets/english_books/1246.txt"
+    },
+    {
+      "book_id": "1247",
+      "archive_member": "librispeech-lm-corpus/corpus/1247/1247.txt",
+      "bytes": 43954,
+      "sha256": "19313691ee69545c400eea8ad11428963c7851ea470eea6de80d7473369e2575",
+      "extracted_path": "experiment/assets/english_books/1247.txt"
+    },
+    {
+      "book_id": "1250",
+      "archive_member": "librispeech-lm-corpus/corpus/1250/1250.txt",
+      "bytes": 97590,
+      "sha256": "5be1bd286c58263089e194b302e8985c615ed5111ce8a7fdcd07959e14aa82c0",
+      "extracted_path": "experiment/assets/english_books/1250.txt"
+    },
+    {
+      "book_id": "1251",
+      "archive_member": "librispeech-lm-corpus/corpus/1251/1251.txt",
+      "bytes": 880775,
+      "sha256": "ffeeaae743971b0d043bca43606e611d524698a88fe618135330c8230d5079df",
+      "extracted_path": "experiment/assets/english_books/1251.txt"
+    },
+    {
+      "book_id": "1262",
+      "archive_member": "librispeech-lm-corpus/corpus/1262/1262.txt",
+      "bytes": 447598,
+      "sha256": "ac74a1ad2440a3c9218015e44be9226b0204827fe68e36d921354c39ee7786c0",
+      "extracted_path": "experiment/assets/english_books/1262.txt"
+    },
+    {
+      "book_id": "1263",
+      "archive_member": "librispeech-lm-corpus/corpus/1263/1263.txt",
+      "bytes": 465470,
+      "sha256": "38d53c82b96f3c176db79ac32199bcc68010ead637f9aa67203c2290ed5f09cc",
+      "extracted_path": "experiment/assets/english_books/1263.txt"
+    },
+    {
+      "book_id": "1264",
+      "archive_member": "librispeech-lm-corpus/corpus/1264/1264.txt",
+      "bytes": 318381,
+      "sha256": "65be445db49dea132e3cb40b6bf2e096bc0be5016f2963e59bfb956beeb49b02",
+      "extracted_path": "experiment/assets/english_books/1264.txt"
+    },
+    {
+      "book_id": "1265",
+      "archive_member": "librispeech-lm-corpus/corpus/1265/1265.txt",
+      "bytes": 520306,
+      "sha256": "da8d5ddd303858bbd2a08a4f3464f5b50b70282c72e2eebea2a59460107d1756",
+      "extracted_path": "experiment/assets/english_books/1265.txt"
+    },
+    {
+      "book_id": "1266",
+      "archive_member": "librispeech-lm-corpus/corpus/1266/1266.txt",
+      "bytes": 266710,
+      "sha256": "76bd594c6bde86d147ab1f6c1ed98d81ad37041c3fab1237a9e647168603d469",
+      "extracted_path": "experiment/assets/english_books/1266.txt"
+    },
+    {
+      "book_id": "1270",
+      "archive_member": "librispeech-lm-corpus/corpus/1270/1270.txt",
+      "bytes": 242776,
+      "sha256": "c490c0433bb9c0398b1ba7dfc01d4ab4e53c31545e8e160ba3ba468e915af411",
+      "extracted_path": "experiment/assets/english_books/1270.txt"
+    },
+    {
+      "book_id": "1273",
+      "archive_member": "librispeech-lm-corpus/corpus/1273/1273.txt",
+      "bytes": 79374,
+      "sha256": "e91b2a1a48d2fc3e10c326bd2a83c1bcef5fd0c39030941618bb409573582ccf",
+      "extracted_path": "experiment/assets/english_books/1273.txt"
+    },
+    {
+      "book_id": "1278",
+      "archive_member": "librispeech-lm-corpus/corpus/1278/1278.txt",
+      "bytes": 174619,
+      "sha256": "0e715a492aa6818794dbaef968889c8417dff804bba735d83fa11bb65cf81323",
+      "extracted_path": "experiment/assets/english_books/1278.txt"
+    },
+    {
+      "book_id": "1282",
+      "archive_member": "librispeech-lm-corpus/corpus/1282/1282.txt",
+      "bytes": 230224,
+      "sha256": "60d5bd102e582f2a7e9e06fc50dc7c10c5db45c7a696edf10f7931c11bcef5e7",
+      "extracted_path": "experiment/assets/english_books/1282.txt"
+    },
+    {
+      "book_id": "1290",
+      "archive_member": "librispeech-lm-corpus/corpus/1290/1290.txt",
+      "bytes": 610437,
+      "sha256": "6142063048b1743de79a3be10d7a0c3cca3b32e1dcb40526a6e4ca684d769944",
+      "extracted_path": "experiment/assets/english_books/1290.txt"
+    },
+    {
+      "book_id": "1298",
+      "archive_member": "librispeech-lm-corpus/corpus/1298/1298.txt",
+      "bytes": 711434,
+      "sha256": "8ebf2de8918cd2bea9a57c15884ba159ee15838c7fcc5671e468179b69f1d9d5",
+      "extracted_path": "experiment/assets/english_books/1298.txt"
+    },
+    {
+      "book_id": "1300",
+      "archive_member": "librispeech-lm-corpus/corpus/1300/1300.txt",
+      "bytes": 579086,
+      "sha256": "28bc7bb7b93930b1296287bec7741c6456dc8a51a1387fa1514caf1ca95f9a3e",
+      "extracted_path": "experiment/assets/english_books/1300.txt"
+    },
+    {
+      "book_id": "1312",
+      "archive_member": "librispeech-lm-corpus/corpus/1312/1312.txt",
+      "bytes": 685711,
+      "sha256": "50fb72435dbb44cf063cdec27c898768fc87b5cc617c475a9fd11344297c5742",
+      "extracted_path": "experiment/assets/english_books/1312.txt"
+    },
+    {
+      "book_id": "1322",
+      "archive_member": "librispeech-lm-corpus/corpus/1322/1322.txt",
+      "bytes": 697546,
+      "sha256": "46397210d17f41491df3c7962906002a8d214631f47cd2a9f4b8b7e6117f8576",
+      "extracted_path": "experiment/assets/english_books/1322.txt"
+    },
+    {
+      "book_id": "1329",
+      "archive_member": "librispeech-lm-corpus/corpus/1329/1329.txt",
+      "bytes": 528582,
+      "sha256": "a1ac8d6901b7b0726be7131989653f29f27ab625a81f8f9817755bba284967f2",
+      "extracted_path": "experiment/assets/english_books/1329.txt"
+    },
+    {
+      "book_id": "1342",
+      "archive_member": "librispeech-lm-corpus/corpus/1342/1342.txt",
+      "bytes": 684616,
+      "sha256": "c43543c6dbd494f6cd77ecbdcca9d9846b3510ee77da10d0d91a1f726e721e77",
+      "extracted_path": "experiment/assets/english_books/1342.txt"
+    },
+    {
+      "book_id": "1354",
+      "archive_member": "librispeech-lm-corpus/corpus/1354/1354.txt",
+      "bytes": 363038,
+      "sha256": "9401a1507959ff9daf9d0474aed8b9faff69f1390e84bd737c7bf2ecf88ca93c",
+      "extracted_path": "experiment/assets/english_books/1354.txt"
+    },
+    {
+      "book_id": "1355",
+      "archive_member": "librispeech-lm-corpus/corpus/1355/1355.txt",
+      "bytes": 246388,
+      "sha256": "9c3591868eb3f9ba8cf6a3c82d1f7b6e5f158792b52b2c29dacbba07176a5341",
+      "extracted_path": "experiment/assets/english_books/1355.txt"
+    },
+    {
+      "book_id": "1365",
+      "archive_member": "librispeech-lm-corpus/corpus/1365/1365.txt",
+      "bytes": 1838441,
+      "sha256": "01fab6e73c83517a0aeb2d25479134f182a19ed36253045b06dbfdb11ec98972",
+      "extracted_path": "experiment/assets/english_books/1365.txt"
+    },
+    {
+      "book_id": "1375",
+      "archive_member": "librispeech-lm-corpus/corpus/1375/1375.txt",
+      "bytes": 339967,
+      "sha256": "24e11267b7d05da36abf5c1040c95589f7c9c672feaa692377b17ce36d3aab2a",
+      "extracted_path": "experiment/assets/english_books/1375.txt"
+    },
+    {
+      "book_id": "1377",
+      "archive_member": "librispeech-lm-corpus/corpus/1377/1377.txt",
+      "bytes": 739773,
+      "sha256": "a0c68a10e958d18554437b9159ff8c86638b4e2a43b1ee34406419c4fc17ce9b",
+      "extracted_path": "experiment/assets/english_books/1377.txt"
+    },
+    {
+      "book_id": "1385",
+      "archive_member": "librispeech-lm-corpus/corpus/1385/1385.txt",
+      "bytes": 397902,
+      "sha256": "70db3de8ebebf90e48a8a265b7d3c84ed6a357b42f7a0facdf18abf42a4df236",
+      "extracted_path": "experiment/assets/english_books/1385.txt"
+    },
+    {
+      "book_id": "1386",
+      "archive_member": "librispeech-lm-corpus/corpus/1386/1386.txt",
+      "bytes": 526980,
+      "sha256": "de6a5e8394d5d922bb259387c73137e75c6c4509bcece28838dcf648e2066221",
+      "extracted_path": "experiment/assets/english_books/1386.txt"
+    },
+    {
+      "book_id": "1388",
+      "archive_member": "librispeech-lm-corpus/corpus/1388/1388.txt",
+      "bytes": 53100,
+      "sha256": "46deae92518d9289d8ffbe0c773f38b43d02f44f5fd3d68dca7c213c5567235a",
+      "extracted_path": "experiment/assets/english_books/1388.txt"
+    },
+    {
+      "book_id": "1390",
+      "archive_member": "librispeech-lm-corpus/corpus/1390/1390.txt",
+      "bytes": 366024,
+      "sha256": "a59373d2f00729105d0c11fbaa769e2229ccd3b18c43849c33295ab9040bfba7",
+      "extracted_path": "experiment/assets/english_books/1390.txt"
+    },
+    {
+      "book_id": "1392",
+      "archive_member": "librispeech-lm-corpus/corpus/1392/1392.txt",
+      "bytes": 56180,
+      "sha256": "77c60f225096f757bb6e911a09ccd2fdea3162da1e44ee5621e84e8815c1a861",
+      "extracted_path": "experiment/assets/english_books/1392.txt"
+    },
+    {
+      "book_id": "1400",
+      "archive_member": "librispeech-lm-corpus/corpus/1400/1400.txt",
+      "bytes": 993761,
+      "sha256": "d794985c33eb8075403f95755112e09f03a9f73772465bccfc6a8cc5b4ea018c",
+      "extracted_path": "experiment/assets/english_books/1400.txt"
+    },
+    {
+      "book_id": "1401",
+      "archive_member": "librispeech-lm-corpus/corpus/1401/1401.txt",
+      "bytes": 604382,
+      "sha256": "8ef558a958f51784526a1d185a54db1b704d92a24b7338175946516969a2dd1f",
+      "extracted_path": "experiment/assets/english_books/1401.txt"
+    },
+    {
+      "book_id": "1429",
+      "archive_member": "librispeech-lm-corpus/corpus/1429/1429.txt",
+      "bytes": 319294,
+      "sha256": "d732af56f7f3c1550294d7ba91af597208b4139ce312893f5f4c96f564404e07",
+      "extracted_path": "experiment/assets/english_books/1429.txt"
+    },
+    {
+      "book_id": "1438",
+      "archive_member": "librispeech-lm-corpus/corpus/1438/1438.txt",
+      "bytes": 1490555,
+      "sha256": "3f25766d065ba63f4895b21457cd9c297c472b05ca64b625ebd44a747300a0cc",
+      "extracted_path": "experiment/assets/english_books/1438.txt"
+    },
+    {
+      "book_id": "1441",
+      "archive_member": "librispeech-lm-corpus/corpus/1441/1441.txt",
+      "bytes": 541234,
+      "sha256": "4200ec0d17023dac56d6d6bb2eb865cb5cd85a6eb3c8761c0a33e2f99105139b",
+      "extracted_path": "experiment/assets/english_books/1441.txt"
+    },
+    {
+      "book_id": "1449",
+      "archive_member": "librispeech-lm-corpus/corpus/1449/1449.txt",
+      "bytes": 920332,
+      "sha256": "077f5471ab96b58b456e7b548e8bc6d5da80491fbe048fca33cd6e2bd341911a",
+      "extracted_path": "experiment/assets/english_books/1449.txt"
+    },
+    {
+      "book_id": "1450",
+      "archive_member": "librispeech-lm-corpus/corpus/1450/1450.txt",
+      "bytes": 314225,
+      "sha256": "ecab3ee4d240ddc9955a4f08a92970e6cebd2921a1441b95b6a36fb29b310478",
+      "extracted_path": "experiment/assets/english_books/1450.txt"
+    },
+    {
+      "book_id": "1465",
+      "archive_member": "librispeech-lm-corpus/corpus/1465/1465.txt",
+      "bytes": 66806,
+      "sha256": "92b26a4f307ab5f5edc472c96d286415c877d04946dbfe2550185a0b8a46fc40",
+      "extracted_path": "experiment/assets/english_books/1465.txt"
+    },
+    {
+      "book_id": "1472",
+      "archive_member": "librispeech-lm-corpus/corpus/1472/1472.txt",
+      "bytes": 170141,
+      "sha256": "68cdcf5a147bd6b556a2bcabdc96d22f9cefd697cea23e22731572bf6314c8d4",
+      "extracted_path": "experiment/assets/english_books/1472.txt"
+    },
+    {
+      "book_id": "1476",
+      "archive_member": "librispeech-lm-corpus/corpus/1476/1476.txt",
+      "bytes": 764556,
+      "sha256": "5e7ee1eaa51114913b038f37f117e985d3beff2f5c4bf836394ab814f0e0143e",
+      "extracted_path": "experiment/assets/english_books/1476.txt"
+    },
+    {
+      "book_id": "1480",
+      "archive_member": "librispeech-lm-corpus/corpus/1480/1480.txt",
+      "bytes": 574410,
+      "sha256": "af3062edc4bf23579202ace4f3640591c817038488536de6fca9e1edf8f5c12b",
+      "extracted_path": "experiment/assets/english_books/1480.txt"
+    },
+    {
+      "book_id": "1487",
+      "archive_member": "librispeech-lm-corpus/corpus/1487/1487.txt",
+      "bytes": 236327,
+      "sha256": "e463a65a978db92b6edc371c0d3f272f682bf9adff572366b4ac04ff1584066c",
+      "extracted_path": "experiment/assets/english_books/1487.txt"
+    },
+    {
+      "book_id": "1550",
+      "archive_member": "librispeech-lm-corpus/corpus/1550/1550.txt",
+      "bytes": 451097,
+      "sha256": "f604193666202557649fe64fab6ab2461b7c1a896d0aa5232259a02a1b78b069",
+      "extracted_path": "experiment/assets/english_books/1550.txt"
+    },
+    {
+      "book_id": "1557",
+      "archive_member": "librispeech-lm-corpus/corpus/1557/1557.txt",
+      "bytes": 373679,
+      "sha256": "96078033f9f1e288448e03428d6c802b0365f9e37183aded746f24b853aca9f2",
+      "extracted_path": "experiment/assets/english_books/1557.txt"
+    },
+    {
+      "book_id": "1563",
+      "archive_member": "librispeech-lm-corpus/corpus/1563/1563.txt",
+      "bytes": 418188,
+      "sha256": "d410a42fa66369d4fe85b15473d2a88fd5eff558abe215e709c6e1382a598aec",
+      "extracted_path": "experiment/assets/english_books/1563.txt"
+    },
+    {
+      "book_id": "1565",
+      "archive_member": "librispeech-lm-corpus/corpus/1565/1565.txt",
+      "bytes": 861180,
+      "sha256": "ec004b2e5e3a8996d78374d9b23df83231c2029299b95a2002ed025e9a72bd2e",
+      "extracted_path": "experiment/assets/english_books/1565.txt"
+    },
+    {
+      "book_id": "1574",
+      "archive_member": "librispeech-lm-corpus/corpus/1574/1574.txt",
+      "bytes": 257400,
+      "sha256": "793d24ca350d93906921736d9dabecbac83639df1657e62144053ff19327f3ba",
+      "extracted_path": "experiment/assets/english_books/1574.txt"
+    },
+    {
+      "book_id": "1578",
+      "archive_member": "librispeech-lm-corpus/corpus/1578/1578.txt",
+      "bytes": 73820,
+      "sha256": "76bac244e1dd804ace2c9a3b3d51db680f0ddce2cb765c9e283ebd8c26b3bad1",
+      "extracted_path": "experiment/assets/english_books/1578.txt"
+    },
+    {
+      "book_id": "1587",
+      "archive_member": "librispeech-lm-corpus/corpus/1587/1587.txt",
+      "bytes": 602523,
+      "sha256": "4eb451774f5cae8a1035d2843a36f9466a60e8d8bc1d030a8377545e597a68fc",
+      "extracted_path": "experiment/assets/english_books/1587.txt"
+    },
+    {
+      "book_id": "1601",
+      "archive_member": "librispeech-lm-corpus/corpus/1601/1601.txt",
+      "bytes": 620103,
+      "sha256": "84ff2116bc2c6221d40e027a2ece682404a05ec3f957754b7f4fccea400267df",
+      "extracted_path": "experiment/assets/english_books/1601.txt"
+    },
+    {
+      "book_id": "1602",
+      "archive_member": "librispeech-lm-corpus/corpus/1602/1602.txt",
+      "bytes": 335251,
+      "sha256": "8b9d9d0a016b6556680c7ea614c699a69303ee8714d9b09abd36aaa066c5b365",
+      "extracted_path": "experiment/assets/english_books/1602.txt"
+    },
+    {
+      "book_id": "1603",
+      "archive_member": "librispeech-lm-corpus/corpus/1603/1603.txt",
+      "bytes": 282953,
+      "sha256": "5ccdc7a6d2327e07ba030f013b2b56120291500784f7cf4b66471efedc250fa8",
+      "extracted_path": "experiment/assets/english_books/1603.txt"
+    },
+    {
+      "book_id": "1606",
+      "archive_member": "librispeech-lm-corpus/corpus/1606/1606.txt",
+      "bytes": 1070231,
+      "sha256": "465c7e3da575ca3bdf150fc2d8dc6d48d32ec302a6f6fd45104277e82c2c73a8",
+      "extracted_path": "experiment/assets/english_books/1606.txt"
+    },
+    {
+      "book_id": "1607",
+      "archive_member": "librispeech-lm-corpus/corpus/1607/1607.txt",
+      "bytes": 523495,
+      "sha256": "179862a63478493fb5a2da2892ec4fce7bbfb4a1018dc7f20e1b5e43c912a95d",
+      "extracted_path": "experiment/assets/english_books/1607.txt"
+    },
+    {
+      "book_id": "1611",
+      "archive_member": "librispeech-lm-corpus/corpus/1611/1611.txt",
+      "bytes": 382235,
+      "sha256": "6f2ed79ef177ebb249053e3ab6ba7182c7f1232e84ff09df9a33adabe875dff5",
+      "extracted_path": "experiment/assets/english_books/1611.txt"
+    },
+    {
+      "book_id": "1620",
+      "archive_member": "librispeech-lm-corpus/corpus/1620/1620.txt",
+      "bytes": 207907,
+      "sha256": "9860e733c4635c92ba33395e41a84090a82515ceee72b9aab08cbd46b3fda9c9",
+      "extracted_path": "experiment/assets/english_books/1620.txt"
+    },
+    {
+      "book_id": "1621",
+      "archive_member": "librispeech-lm-corpus/corpus/1621/1621.txt",
+      "bytes": 175485,
+      "sha256": "55dff33b380b05ff9e162d2436a3c60b97c6c08ba35e4a2124ee12312752d05a",
+      "extracted_path": "experiment/assets/english_books/1621.txt"
+    },
+    {
+      "book_id": "1622",
+      "archive_member": "librispeech-lm-corpus/corpus/1622/1622.txt",
+      "bytes": 768104,
+      "sha256": "6e00045271c3c902457fd7360b62b200f85ddf7673522417cc360166f19f673f",
+      "extracted_path": "experiment/assets/english_books/1622.txt"
+    },
+    {
+      "book_id": "1625",
+      "archive_member": "librispeech-lm-corpus/corpus/1625/1625.txt",
+      "bytes": 157989,
+      "sha256": "019626907bc939dc448723f7a13972cb072ae316222933edd272a1a7d6bf3764",
+      "extracted_path": "experiment/assets/english_books/1625.txt"
+    },
+    {
+      "book_id": "1629",
+      "archive_member": "librispeech-lm-corpus/corpus/1629/1629.txt",
+      "bytes": 664366,
+      "sha256": "84ffbb80a807c14445b964c4535d778231afcbfccfc8891c4076fc14cac9693a",
+      "extracted_path": "experiment/assets/english_books/1629.txt"
+    },
+    {
+      "book_id": "1640",
+      "archive_member": "librispeech-lm-corpus/corpus/1640/1640.txt",
+      "bytes": 500514,
+      "sha256": "d1ee6ef14fd6c41231c14ea7d353b71c444beebfc804d8caf67788ab493298ef",
+      "extracted_path": "experiment/assets/english_books/1640.txt"
+    },
+    {
+      "book_id": "1644",
+      "archive_member": "librispeech-lm-corpus/corpus/1644/1644.txt",
+      "bytes": 351544,
+      "sha256": "ba7601b155dc75c31c41171c59897dbc5b38fba66cddc03a5f8bba744480fbcb",
+      "extracted_path": "experiment/assets/english_books/1644.txt"
+    },
+    {
+      "book_id": "1661",
+      "archive_member": "librispeech-lm-corpus/corpus/1661/1661.txt",
+      "bytes": 562086,
+      "sha256": "362d34fede0ce513ab1e64452d36eb9b300bd74b7eea4784d8a5d64e97d6f09f",
+      "extracted_path": "experiment/assets/english_books/1661.txt"
+    },
+    {
+      "book_id": "1676",
+      "archive_member": "librispeech-lm-corpus/corpus/1676/1676.txt",
+      "bytes": 106657,
+      "sha256": "14437c896078bad5d99eda912ea231119a4df3a8825b86bd092fd63fe111fead",
+      "extracted_path": "experiment/assets/english_books/1676.txt"
+    },
+    {
+      "book_id": "1684",
+      "archive_member": "librispeech-lm-corpus/corpus/1684/1684.txt",
+      "bytes": 1049867,
+      "sha256": "f6f781a390f3501bae7d4bac8ef72e395bf18bf451276500fb23979605921712",
+      "extracted_path": "experiment/assets/english_books/1684.txt"
+    },
+    {
+      "book_id": "1686",
+      "archive_member": "librispeech-lm-corpus/corpus/1686/1686.txt",
+      "bytes": 550201,
+      "sha256": "c84eb8ec0289401f75f3166981944f35efefccd7ab7956f7a1afd410c1c2fe72",
+      "extracted_path": "experiment/assets/english_books/1686.txt"
+    },
+    {
+      "book_id": "1688",
+      "archive_member": "librispeech-lm-corpus/corpus/1688/1688.txt",
+      "bytes": 347369,
+      "sha256": "45ef0cb679dca71504d5e844643bf63510deb4dc3514fd844df948908fd26968",
+      "extracted_path": "experiment/assets/english_books/1688.txt"
+    },
+    {
+      "book_id": "1693",
+      "archive_member": "librispeech-lm-corpus/corpus/1693/1693.txt",
+      "bytes": 658140,
+      "sha256": "7d887ee89958ce9f686d757883f739bd0c1e5c268f15874a57048411fdc52e0b",
+      "extracted_path": "experiment/assets/english_books/1693.txt"
+    },
+    {
+      "book_id": "1695",
+      "archive_member": "librispeech-lm-corpus/corpus/1695/1695.txt",
+      "bytes": 321515,
+      "sha256": "7c0e5f3311ec240e907fa68d6e2c5044222be7f9a3125c3b8da3181776b64b35",
+      "extracted_path": "experiment/assets/english_books/1695.txt"
+    },
+    {
+      "book_id": "1696",
+      "archive_member": "librispeech-lm-corpus/corpus/1696/1696.txt",
+      "bytes": 245762,
+      "sha256": "97889f435675a637f69ca3e107a610a419ff650f9cd87e696ac3ce81075ccece",
+      "extracted_path": "experiment/assets/english_books/1696.txt"
+    },
+    {
+      "book_id": "1697",
+      "archive_member": "librispeech-lm-corpus/corpus/1697/1697.txt",
+      "bytes": 391050,
+      "sha256": "99da8854e8a4b9026325908acdff8ac33053befa6e5325d13c950c2f6dff7900",
+      "extracted_path": "experiment/assets/english_books/1697.txt"
+    },
+    {
+      "book_id": "1703",
+      "archive_member": "librispeech-lm-corpus/corpus/1703/1703.txt",
+      "bytes": 295728,
+      "sha256": "2fa4a5ba97793b9040a67aa4d730a86fb22c562ff53f12e02633be853b96c31e",
+      "extracted_path": "experiment/assets/english_books/1703.txt"
+    },
+    {
+      "book_id": "1718",
+      "archive_member": "librispeech-lm-corpus/corpus/1718/1718.txt",
+      "bytes": 325759,
+      "sha256": "4f7666612cc50c1d1dce3b71da6fe15453946f862aefab301332ab331b0e3048",
+      "extracted_path": "experiment/assets/english_books/1718.txt"
+    },
+    {
+      "book_id": "1719",
+      "archive_member": "librispeech-lm-corpus/corpus/1719/1719.txt",
+      "bytes": 91799,
+      "sha256": "9abb2b89a9d80420b4a8883a37ac6118eb8975e329b6b1e944a4e0472089f1dd",
+      "extracted_path": "experiment/assets/english_books/1719.txt"
+    },
+    {
+      "book_id": "1720",
+      "archive_member": "librispeech-lm-corpus/corpus/1720/1720.txt",
+      "bytes": 328406,
+      "sha256": "2242110319aaf2279d346221faae2fbccee3f05dfae7767d18a7d3b9716992d0",
+      "extracted_path": "experiment/assets/english_books/1720.txt"
+    },
+    {
+      "book_id": "1721",
+      "archive_member": "librispeech-lm-corpus/corpus/1721/1721.txt",
+      "bytes": 136536,
+      "sha256": "a169e8b15dc2d15170796697c4b6401ad3b19c54cc3100d0fde1bf703457e3b7",
+      "extracted_path": "experiment/assets/english_books/1721.txt"
+    },
+    {
+      "book_id": "1734",
+      "archive_member": "librispeech-lm-corpus/corpus/1734/1734.txt",
+      "bytes": 358688,
+      "sha256": "5807aa1d5bfa1169b4109c130b81a04984217d9a654c2c89ad7fbca322a9f6d1",
+      "extracted_path": "experiment/assets/english_books/1734.txt"
+    },
+    {
+      "book_id": "1741",
+      "archive_member": "librispeech-lm-corpus/corpus/1741/1741.txt",
+      "bytes": 480029,
+      "sha256": "e4f3022ee07ddabc204ea9202cd22560b3e34a42cb6f4a42a6a3b0865401910a",
+      "extracted_path": "experiment/assets/english_books/1741.txt"
+    },
+    {
+      "book_id": "1747",
+      "archive_member": "librispeech-lm-corpus/corpus/1747/1747.txt",
+      "bytes": 323536,
+      "sha256": "26d627b39baf6248e6ac914860f74f3e46d81b372c9b398fac7326b9fb269a51",
+      "extracted_path": "experiment/assets/english_books/1747.txt"
+    },
+    {
+      "book_id": "1748",
+      "archive_member": "librispeech-lm-corpus/corpus/1748/1748.txt",
+      "bytes": 824705,
+      "sha256": "b0e802608eb7a24be87b98a8a7bff069f3c71c80bc75c3022b9ceb1d123244e7",
+      "extracted_path": "experiment/assets/english_books/1748.txt"
+    },
+    {
+      "book_id": "1751",
+      "archive_member": "librispeech-lm-corpus/corpus/1751/1751.txt",
+      "bytes": 379179,
+      "sha256": "656d6292d19ad31ff695c43944b0e36328b261a9baafa78e831aaeb453ef7e77",
+      "extracted_path": "experiment/assets/english_books/1751.txt"
+    },
+    {
+      "book_id": "1752",
+      "archive_member": "librispeech-lm-corpus/corpus/1752/1752.txt",
+      "bytes": 689487,
+      "sha256": "55dc9c524a57df0cd6eda28bbb625f171ba7bd0a783bb7589670b2427ec5624c",
+      "extracted_path": "experiment/assets/english_books/1752.txt"
+    },
+    {
+      "book_id": "1759",
+      "archive_member": "librispeech-lm-corpus/corpus/1759/1759.txt",
+      "bytes": 258433,
+      "sha256": "ddda5b53eec92d6dce03ade385ce29c447b4574bac13d2e1396a9f2d333dc7c6",
+      "extracted_path": "experiment/assets/english_books/1759.txt"
+    },
+    {
+      "book_id": "1761",
+      "archive_member": "librispeech-lm-corpus/corpus/1761/1761.txt",
+      "bytes": 76132,
+      "sha256": "93a33f79601e4966dac0afe893def0354ba16d6c847ea4c99a45d12370acc384",
+      "extracted_path": "experiment/assets/english_books/1761.txt"
+    },
+    {
+      "book_id": "1807",
+      "archive_member": "librispeech-lm-corpus/corpus/1807/1807.txt",
+      "bytes": 105668,
+      "sha256": "a45a51726654f7eb1ad391e41249bf0fff2734dbd11f6bfae5432903a98d0069",
+      "extracted_path": "experiment/assets/english_books/1807.txt"
+    },
+    {
+      "book_id": "1814",
+      "archive_member": "librispeech-lm-corpus/corpus/1814/1814.txt",
+      "bytes": 136923,
+      "sha256": "af8b1d36fef43c39fe5a2f27421453e92c68d21f349ad8c879f61611c6e32506",
+      "extracted_path": "experiment/assets/english_books/1814.txt"
+    },
+    {
+      "book_id": "1815",
+      "archive_member": "librispeech-lm-corpus/corpus/1815/1815.txt",
+      "bytes": 320483,
+      "sha256": "7d30f2b30050cbe6d788dffbfee304fdd9ebc0c9f8f200ffe71e177b079bdf0c",
+      "extracted_path": "experiment/assets/english_books/1815.txt"
+    },
+    {
+      "book_id": "1822",
+      "archive_member": "librispeech-lm-corpus/corpus/1822/1822.txt",
+      "bytes": 44016,
+      "sha256": "500674d25205f9a456f4412a4d2ced5c5179c38ab1b3aad655bf0a6d5b504f12",
+      "extracted_path": "experiment/assets/english_books/1822.txt"
+    },
+    {
+      "book_id": "1823",
+      "archive_member": "librispeech-lm-corpus/corpus/1823/1823.txt",
+      "bytes": 59882,
+      "sha256": "7c0d1f50824d1eb9fdf52a002497ab2f7340fd2f1d52fb0679d7a57670869052",
+      "extracted_path": "experiment/assets/english_books/1823.txt"
+    },
+    {
+      "book_id": "1825",
+      "archive_member": "librispeech-lm-corpus/corpus/1825/1825.txt",
+      "bytes": 78398,
+      "sha256": "55ad3607837a7f9c3853c0a515525db8638502056d484bc116a0692690f0ad7f",
+      "extracted_path": "experiment/assets/english_books/1825.txt"
+    },
+    {
+      "book_id": "1839",
+      "archive_member": "librispeech-lm-corpus/corpus/1839/1839.txt",
+      "bytes": 365036,
+      "sha256": "52765c2a5847710b716bb5add13afd1b9bd95294cc42383793023799d0d50d80",
+      "extracted_path": "experiment/assets/english_books/1839.txt"
+    },
+    {
+      "book_id": "1840",
+      "archive_member": "librispeech-lm-corpus/corpus/1840/1840.txt",
+      "bytes": 1094360,
+      "sha256": "5637ee61b5518780a0e732c69d79eebcedec6e42f150420eb995e7620e2b01e1",
+      "extracted_path": "experiment/assets/english_books/1840.txt"
+    },
+    {
+      "book_id": "1842",
+      "archive_member": "librispeech-lm-corpus/corpus/1842/1842.txt",
+      "bytes": 540918,
+      "sha256": "2b58bc2c0bba0d6a865738e87f474831ff27500a344b903482533e5eed573f8e",
+      "extracted_path": "experiment/assets/english_books/1842.txt"
+    },
+    {
+      "book_id": "1845",
+      "archive_member": "librispeech-lm-corpus/corpus/1845/1845.txt",
+      "bytes": 447717,
+      "sha256": "e950e65aa0ab67f4020449a34d6694700e4fb8533ff3a261044b7f54ce38f107",
+      "extracted_path": "experiment/assets/english_books/1845.txt"
+    },
+    {
+      "book_id": "1850",
+      "archive_member": "librispeech-lm-corpus/corpus/1850/1850.txt",
+      "bytes": 106781,
+      "sha256": "9c16a1ce61aa352fb9116cee8765cf78755fa7e136334de4926392a0f753af6c",
+      "extracted_path": "experiment/assets/english_books/1850.txt"
+    },
+    {
+      "book_id": "1851",
+      "archive_member": "librispeech-lm-corpus/corpus/1851/1851.txt",
+      "bytes": 361977,
+      "sha256": "bbbd9cda92da2e4e390e8cb23f67edef5c462d73878cd0267a919fc3d15dbd70",
+      "extracted_path": "experiment/assets/english_books/1851.txt"
+    },
+    {
+      "book_id": "1853",
+      "archive_member": "librispeech-lm-corpus/corpus/1853/1853.txt",
+      "bytes": 372770,
+      "sha256": "b5378881eba1e81c801d01ebbf1f6c36884c54891b0388f35c2b739ba7939d2d",
+      "extracted_path": "experiment/assets/english_books/1853.txt"
+    },
+    {
+      "book_id": "1858",
+      "archive_member": "librispeech-lm-corpus/corpus/1858/1858.txt",
+      "bytes": 399435,
+      "sha256": "5428258a003e2bf1702ab489b86ea78cdc90fc03b1a3174626be682ff945a569",
+      "extracted_path": "experiment/assets/english_books/1858.txt"
+    },
+    {
+      "book_id": "1862",
+      "archive_member": "librispeech-lm-corpus/corpus/1862/1862.txt",
+      "bytes": 168733,
+      "sha256": "935e2b91f6056d4ac0bc1c4c3bad98db7ee5ea975fa2fe822764e53a6e978b37",
+      "extracted_path": "experiment/assets/english_books/1862.txt"
+    },
+    {
+      "book_id": "1869",
+      "archive_member": "librispeech-lm-corpus/corpus/1869/1869.txt",
+      "bytes": 353873,
+      "sha256": "fb2e85ecf2e3eaecada06196bb116c8ddeb0d8056900670f0450f705070672c7",
+      "extracted_path": "experiment/assets/english_books/1869.txt"
+    },
+    {
+      "book_id": "1870",
+      "archive_member": "librispeech-lm-corpus/corpus/1870/1870.txt",
+      "bytes": 128424,
+      "sha256": "fd046f5ce4af8840f0cde959ba086562d54a3492dce0188cc333f18880db4a07",
+      "extracted_path": "experiment/assets/english_books/1870.txt"
+    },
+    {
+      "book_id": "1872",
+      "archive_member": "librispeech-lm-corpus/corpus/1872/1872.txt",
+      "bytes": 333245,
+      "sha256": "8b50a9b81222bbbdaf27a6c3df197e218bb809bfb04cafed68069b3fadffe720",
+      "extracted_path": "experiment/assets/english_books/1872.txt"
+    },
+    {
+      "book_id": "1874",
+      "archive_member": "librispeech-lm-corpus/corpus/1874/1874.txt",
+      "bytes": 325644,
+      "sha256": "88c108f4f78d9e50ef0eecc678a4460f66870f4570851aaf794e0ffe20edc6ed",
+      "extracted_path": "experiment/assets/english_books/1874.txt"
+    },
+    {
+      "book_id": "1880",
+      "archive_member": "librispeech-lm-corpus/corpus/1880/1880.txt",
+      "bytes": 981182,
+      "sha256": "20836b90c7a0887c8bb75b24b6f06362dd9239e145dfc337761a4b9049455c1c",
+      "extracted_path": "experiment/assets/english_books/1880.txt"
+    },
+    {
+      "book_id": "1885",
+      "archive_member": "librispeech-lm-corpus/corpus/1885/1885.txt",
+      "bytes": 430513,
+      "sha256": "3d2c1ba7ddf21b6071fd8bb6df71ee032964aec50c31d4bc9ce695c5364e0683",
+      "extracted_path": "experiment/assets/english_books/1885.txt"
+    },
+    {
+      "book_id": "1892",
+      "archive_member": "librispeech-lm-corpus/corpus/1892/1892.txt",
+      "bytes": 22921,
+      "sha256": "3d90337e001266d05c237fe7c3992b16443d15630db0cdf0371153906213f2bd",
+      "extracted_path": "experiment/assets/english_books/1892.txt"
+    },
+    {
+      "book_id": "1895",
+      "archive_member": "librispeech-lm-corpus/corpus/1895/1895.txt",
+      "bytes": 1640393,
+      "sha256": "f3819d00cac24eabb704c048e0fd89bef34d81f25eb5ebacff3d668372cccb96",
+      "extracted_path": "experiment/assets/english_books/1895.txt"
+    },
+    {
+      "book_id": "1897",
+      "archive_member": "librispeech-lm-corpus/corpus/1897/1897.txt",
+      "bytes": 415765,
+      "sha256": "11bd5655b3c6139e4870c25c3c652265cdd30078281a2146cc8242ac2275b7bb",
+      "extracted_path": "experiment/assets/english_books/1897.txt"
+    },
+    {
+      "book_id": "1902",
+      "archive_member": "librispeech-lm-corpus/corpus/1902/1902.txt",
+      "bytes": 75765,
+      "sha256": "cd413c7acad6d4a5aa0741c40a6ff6b25adf8774357b0c8400dcd3c73e32bdcf",
+      "extracted_path": "experiment/assets/english_books/1902.txt"
+    },
+    {
+      "book_id": "1911",
+      "archive_member": "librispeech-lm-corpus/corpus/1911/1911.txt",
+      "bytes": 99681,
+      "sha256": "b70a71f460a310a8e5d2325de53f941f73323e4e172d24c0d62471b8d9594503",
+      "extracted_path": "experiment/assets/english_books/1911.txt"
+    },
+    {
+      "book_id": "1913",
+      "archive_member": "librispeech-lm-corpus/corpus/1913/1913.txt",
+      "bytes": 482878,
+      "sha256": "cb670b1331a62f6a7b6118f126c329c81362e50058e1445d7dc6b3a25d7387d9",
+      "extracted_path": "experiment/assets/english_books/1913.txt"
+    },
+    {
+      "book_id": "1915",
+      "archive_member": "librispeech-lm-corpus/corpus/1915/1915.txt",
+      "bytes": 348025,
+      "sha256": "ead242ad59ee5cdd5dec93ba6c1ff5598197caeccbd10e3e70feadf782eec315",
+      "extracted_path": "experiment/assets/english_books/1915.txt"
+    },
+    {
+      "book_id": "1916",
+      "archive_member": "librispeech-lm-corpus/corpus/1916/1916.txt",
+      "bytes": 109859,
+      "sha256": "57b4f17c70c41ba84dc63f1a8b7ed9d690fd9c0c4c116b8934b0da39e0acfe6a",
+      "extracted_path": "experiment/assets/english_books/1916.txt"
+    },
+    {
+      "book_id": "1930",
+      "archive_member": "librispeech-lm-corpus/corpus/1930/1930.txt",
+      "bytes": 469517,
+      "sha256": "73c4f5f606f22350d0ad119a06efbd779732a761b451e9f87e3035d194b14d5d",
+      "extracted_path": "experiment/assets/english_books/1930.txt"
+    },
+    {
+      "book_id": "1931",
+      "archive_member": "librispeech-lm-corpus/corpus/1931/1931.txt",
+      "bytes": 354752,
+      "sha256": "372e8bfe83afef5e38f95c95e956d9b45d11071f84cd274211f54127fb844b8d",
+      "extracted_path": "experiment/assets/english_books/1931.txt"
+    },
+    {
+      "book_id": "1932",
+      "archive_member": "librispeech-lm-corpus/corpus/1932/1932.txt",
+      "bytes": 219278,
+      "sha256": "422e418efa9023c06e3d83d0f70e899f6911c38f88911129588c3479af125b34",
+      "extracted_path": "experiment/assets/english_books/1932.txt"
+    },
+    {
+      "book_id": "1937",
+      "archive_member": "librispeech-lm-corpus/corpus/1937/1937.txt",
+      "bytes": 344676,
+      "sha256": "f980c283972d8c5fb0d2a1588fe824c718d674d47abb6932c1cd94a08d4ac5e7",
+      "extracted_path": "experiment/assets/english_books/1937.txt"
+    },
+    {
+      "book_id": "1947",
+      "archive_member": "librispeech-lm-corpus/corpus/1947/1947.txt",
+      "bytes": 707122,
+      "sha256": "a330cac9f67dc8a3297b18df63c6bf151c36a9364cd5897931629cb8ce9c52f4",
+      "extracted_path": "experiment/assets/english_books/1947.txt"
+    },
+    {
+      "book_id": "1948",
+      "archive_member": "librispeech-lm-corpus/corpus/1948/1948.txt",
+      "bytes": 314643,
+      "sha256": "a54b4746e3bdad3662c14e3a887bf7f359eea64d2e5b99075a954a6905a57ad9",
+      "extracted_path": "experiment/assets/english_books/1948.txt"
+    },
+    {
+      "book_id": "1951",
+      "archive_member": "librispeech-lm-corpus/corpus/1951/1951.txt",
+      "bytes": 300593,
+      "sha256": "81aca5afd5a40983676d3414cad69e6fcc6aff1016dc2b7882d988b6c5f50656",
+      "extracted_path": "experiment/assets/english_books/1951.txt"
+    },
+    {
+      "book_id": "1953",
+      "archive_member": "librispeech-lm-corpus/corpus/1953/1953.txt",
+      "bytes": 116981,
+      "sha256": "641ef1ca8af7c6fa90ba32dce55374944ad7344d11e4aab80783bfc5dc58d96e",
+      "extracted_path": "experiment/assets/english_books/1953.txt"
+    },
+    {
+      "book_id": "1963",
+      "archive_member": "librispeech-lm-corpus/corpus/1963/1963.txt",
+      "bytes": 156499,
+      "sha256": "17036c8249bc886b5bf203b4febd14d1f0eefa5ea3433bf3a9e91dadc098c15f",
+      "extracted_path": "experiment/assets/english_books/1963.txt"
+    },
+    {
+      "book_id": "1965",
+      "archive_member": "librispeech-lm-corpus/corpus/1965/1965.txt",
+      "bytes": 642063,
+      "sha256": "1627d047ba0b2b53beea924b7ab9a65e2e35a8c0eba8edf4cdf30ddbe8e6e02d",
+      "extracted_path": "experiment/assets/english_books/1965.txt"
+    },
+    {
+      "book_id": "1978",
+      "archive_member": "librispeech-lm-corpus/corpus/1978/1978.txt",
+      "bytes": 41295,
+      "sha256": "d31bfeb02e9811de8dbe18146259fd51aff88440783723fa01ee5420b69deea7",
+      "extracted_path": "experiment/assets/english_books/1978.txt"
+    },
+    {
+      "book_id": "1983",
+      "archive_member": "librispeech-lm-corpus/corpus/1983/1983.txt",
+      "bytes": 71724,
+      "sha256": "40bcc677f0fb5ab34160550723b603d659960c982df9cce8492156291c0d1767",
+      "extracted_path": "experiment/assets/english_books/1983.txt"
+    },
+    {
+      "book_id": "1987",
+      "archive_member": "librispeech-lm-corpus/corpus/1987/1987.txt",
+      "bytes": 521243,
+      "sha256": "62a54e8d28ccc656625a088d15f8651baf783b48951e48ded4e67b45647d039f",
+      "extracted_path": "experiment/assets/english_books/1987.txt"
+    },
+    {
+      "book_id": "1999",
+      "archive_member": "librispeech-lm-corpus/corpus/1999/1999.txt",
+      "bytes": 330436,
+      "sha256": "7a9c7a2043e0918a2d0ef1f4b5bb62b288c4030f1f2f3cba86cb406dce4ba5d3",
+      "extracted_path": "experiment/assets/english_books/1999.txt"
+    },
+    {
+      "book_id": "2003",
+      "archive_member": "librispeech-lm-corpus/corpus/2003/2003.txt",
+      "bytes": 51014,
+      "sha256": "0effae9d97691966de26bf3a999f2902c87dc7ba30e7fa412959cd9f513b229d",
+      "extracted_path": "experiment/assets/english_books/2003.txt"
+    },
+    {
+      "book_id": "2005",
+      "archive_member": "librispeech-lm-corpus/corpus/2005/2005.txt",
+      "bytes": 449323,
+      "sha256": "a0b8f800086b842a3631c96ecdd6f2a2bd1480921bf1edcb9e92b81bdb0d6c14",
+      "extracted_path": "experiment/assets/english_books/2005.txt"
+    },
+    {
+      "book_id": "2011",
+      "archive_member": "librispeech-lm-corpus/corpus/2011/2011.txt",
+      "bytes": 349146,
+      "sha256": "c878c8ad232e0f7079e51a74e51bcf60052bfa13d199ec81a2a0d86a9e4a5e83",
+      "extracted_path": "experiment/assets/english_books/2011.txt"
+    },
+    {
+      "book_id": "2014",
+      "archive_member": "librispeech-lm-corpus/corpus/2014/2014.txt",
+      "bytes": 433034,
+      "sha256": "64ab109b09e8c8c31e8eb60839a63fa4c9f8a4bb3306d11c29ee2c40d5827d5b",
+      "extracted_path": "experiment/assets/english_books/2014.txt"
+    },
+    {
+      "book_id": "2015",
+      "archive_member": "librispeech-lm-corpus/corpus/2015/2015.txt",
+      "bytes": 292672,
+      "sha256": "15fed07eafa717df0c7fc7ad77c520eebf5d57823aca841efa76628d18456cae",
+      "extracted_path": "experiment/assets/english_books/2015.txt"
+    },
+    {
+      "book_id": "2020",
+      "archive_member": "librispeech-lm-corpus/corpus/2020/2020.txt",
+      "bytes": 527693,
+      "sha256": "c3f791db75dc2f9ecf4a54048356de0955143a5d93c37fb6b9982dec902969c2",
+      "extracted_path": "experiment/assets/english_books/2020.txt"
+    },
+    {
+      "book_id": "2021",
+      "archive_member": "librispeech-lm-corpus/corpus/2021/2021.txt",
+      "bytes": 967716,
+      "sha256": "c113de5c9921d15ab77e29b1737b9d21e757ba9d6c583fae248eb8221699edf8",
+      "extracted_path": "experiment/assets/english_books/2021.txt"
+    },
+    {
+      "book_id": "2024",
+      "archive_member": "librispeech-lm-corpus/corpus/2024/2024.txt",
+      "bytes": 231016,
+      "sha256": "af05d5da0c37612040c7fa12865a58d17f7d9be65898d450cf07bcc52bd1a3ea",
+      "extracted_path": "experiment/assets/english_books/2024.txt"
+    },
+    {
+      "book_id": "2039",
+      "archive_member": "librispeech-lm-corpus/corpus/2039/2039.txt",
+      "bytes": 89943,
+      "sha256": "1bb36f7dc1079ee93e01a65d3edbf64ba733e0e44866d4d6e3720f3ddd6ecb4a",
+      "extracted_path": "experiment/assets/english_books/2039.txt"
+    },
+    {
+      "book_id": "2040",
+      "archive_member": "librispeech-lm-corpus/corpus/2040/2040.txt",
+      "bytes": 219115,
+      "sha256": "4a948b4e02c85ec5f6af129d3a41d846b356c4b85e6d5f93dc00f06919c7c871",
+      "extracted_path": "experiment/assets/english_books/2040.txt"
+    },
+    {
+      "book_id": "2042",
+      "archive_member": "librispeech-lm-corpus/corpus/2042/2042.txt",
+      "bytes": 418556,
+      "sha256": "6136b8043680c9c43c26f79dd507ff8e2337fb0451796f9f4cabe5192e0f6504",
+      "extracted_path": "experiment/assets/english_books/2042.txt"
+    },
+    {
+      "book_id": "2048",
+      "archive_member": "librispeech-lm-corpus/corpus/2048/2048.txt",
+      "bytes": 739177,
+      "sha256": "a000380e1d442bbf70666b7b88e71a0420f6de55605c0ff795d7782a930c305a",
+      "extracted_path": "experiment/assets/english_books/2048.txt"
+    },
+    {
+      "book_id": "2049",
+      "archive_member": "librispeech-lm-corpus/corpus/2049/2049.txt",
+      "bytes": 160923,
+      "sha256": "56833d87b058346d417b894dd3e3154c3a4321325936fe9bec5e40968e953a0b",
+      "extracted_path": "experiment/assets/english_books/2049.txt"
+    },
+    {
+      "book_id": "2057",
+      "archive_member": "librispeech-lm-corpus/corpus/2057/2057.txt",
+      "bytes": 388353,
+      "sha256": "dafc14dbd0dbfa58bbeed777b16a7ca230e135574df4d34b8b1a63ec3fe9c702",
+      "extracted_path": "experiment/assets/english_books/2057.txt"
+    },
+    {
+      "book_id": "2070",
+      "archive_member": "librispeech-lm-corpus/corpus/2070/2070.txt",
+      "bytes": 531087,
+      "sha256": "27eccdb076783c00c7ce5a5f2da8c3463b28a6d4b0bcf1a7e30d3996044e889b",
+      "extracted_path": "experiment/assets/english_books/2070.txt"
+    },
+    {
+      "book_id": "2081",
+      "archive_member": "librispeech-lm-corpus/corpus/2081/2081.txt",
+      "bytes": 436321,
+      "sha256": "95e2c4c56b1193a972920e347619f1197754c4d70c46626c6d92014d24fc9486",
+      "extracted_path": "experiment/assets/english_books/2081.txt"
+    },
+    {
+      "book_id": "2084",
+      "archive_member": "librispeech-lm-corpus/corpus/2084/2084.txt",
+      "bytes": 879019,
+      "sha256": "915f6052894beb685d261a3e1de3fc8f416b05868e327af2aef46ecbc4d59291",
+      "extracted_path": "experiment/assets/english_books/2084.txt"
+    },
+    {
+      "book_id": "2097",
+      "archive_member": "librispeech-lm-corpus/corpus/2097/2097.txt",
+      "bytes": 233380,
+      "sha256": "14ea653c67cdd6ba0e0b555f00d3fa615af60eb02aee1985e745fc86eb00bfe2",
+      "extracted_path": "experiment/assets/english_books/2097.txt"
+    },
+    {
+      "book_id": "2098",
+      "archive_member": "librispeech-lm-corpus/corpus/2098/2098.txt",
+      "bytes": 340273,
+      "sha256": "ee3c139095dad80fd3d059ea7b7ea6d025092de94fce36a350f2377a8548e065",
+      "extracted_path": "experiment/assets/english_books/2098.txt"
+    },
+    {
+      "book_id": "2126",
+      "archive_member": "librispeech-lm-corpus/corpus/2126/2126.txt",
+      "bytes": 288918,
+      "sha256": "7511294c0d9e9b0060b8e06b4dcba127ac6ff6e7be29673729fa94179ba9fa7b",
+      "extracted_path": "experiment/assets/english_books/2126.txt"
+    },
+    {
+      "book_id": "2134",
+      "archive_member": "librispeech-lm-corpus/corpus/2134/2134.txt",
+      "bytes": 182777,
+      "sha256": "70508220feea253edea474a0a1fa44f8b76f3451a34e9bb283648e3435db9d7f",
+      "extracted_path": "experiment/assets/english_books/2134.txt"
+    },
+    {
+      "book_id": "2145",
+      "archive_member": "librispeech-lm-corpus/corpus/2145/2145.txt",
+      "bytes": 1100124,
+      "sha256": "81e1e7c09dec38c9f8a07a2e3685da00574445c8cbfa5c26cef37737bd541173",
+      "extracted_path": "experiment/assets/english_books/2145.txt"
+    },
+    {
+      "book_id": "2148",
+      "archive_member": "librispeech-lm-corpus/corpus/2148/2148.txt",
+      "bytes": 549371,
+      "sha256": "1d5339c70477cbda43cd67493016728be3aa2c66648eea668ba0cedcacbc3f20",
+      "extracted_path": "experiment/assets/english_books/2148.txt"
+    },
+    {
+      "book_id": "2149",
+      "archive_member": "librispeech-lm-corpus/corpus/2149/2149.txt",
+      "bytes": 567323,
+      "sha256": "b845cd96d0e7ade68c19c9898b1819bb25a7e20b7c0a3a35f076273c24b0a89f",
+      "extracted_path": "experiment/assets/english_books/2149.txt"
+    },
+    {
+      "book_id": "2150",
+      "archive_member": "librispeech-lm-corpus/corpus/2150/2150.txt",
+      "bytes": 458382,
+      "sha256": "ea23a49da205dd1348f13ed55543e217cc0ec5d483083d630c794d4d4e75088a",
+      "extracted_path": "experiment/assets/english_books/2150.txt"
+    },
+    {
+      "book_id": "2151",
+      "archive_member": "librispeech-lm-corpus/corpus/2151/2151.txt",
+      "bytes": 417163,
+      "sha256": "e64df79d7cc16d84ecef613ed03116a5c4c3f266cc3a82261b71213c6b87e65f",
+      "extracted_path": "experiment/assets/english_books/2151.txt"
+    },
+    {
+      "book_id": "2158",
+      "archive_member": "librispeech-lm-corpus/corpus/2158/2158.txt",
+      "bytes": 1512532,
+      "sha256": "6094091dccff915edf115daf4da58f79b6995164da628d82e78d171d103b6bd4",
+      "extracted_path": "experiment/assets/english_books/2158.txt"
+    },
+    {
+      "book_id": "2160",
+      "archive_member": "librispeech-lm-corpus/corpus/2160/2160.txt",
+      "bytes": 850116,
+      "sha256": "5e4036ee1b9a01200135481446487e81d526a6e8e18e201376eaa0580c4f6aaf",
+      "extracted_path": "experiment/assets/english_books/2160.txt"
+    },
+    {
+      "book_id": "2165",
+      "archive_member": "librispeech-lm-corpus/corpus/2165/2165.txt",
+      "bytes": 99366,
+      "sha256": "f36bd19b76c45907e9aecb779556bd3f52bc43df6893c0c7377870d809e43b4f",
+      "extracted_path": "experiment/assets/english_books/2165.txt"
+    },
+    {
+      "book_id": "2166",
+      "archive_member": "librispeech-lm-corpus/corpus/2166/2166.txt",
+      "bytes": 444341,
+      "sha256": "4a30e5cf1613f238d6f8f5bf948bc616d7a5f670e057a6a9c207d7d05ecaa0c4",
+      "extracted_path": "experiment/assets/english_books/2166.txt"
+    },
+    {
+      "book_id": "2171",
+      "archive_member": "librispeech-lm-corpus/corpus/2171/2171.txt",
+      "bytes": 94392,
+      "sha256": "f6f432bce73eaccadc823ef90551ffc668dcc9006396490d3882c9c63fbbf1dc",
+      "extracted_path": "experiment/assets/english_books/2171.txt"
+    },
+    {
+      "book_id": "2172",
+      "archive_member": "librispeech-lm-corpus/corpus/2172/2172.txt",
+      "bytes": 590875,
+      "sha256": "b6b012bd127e5a9b7bf7f893ae4731b22c3fddb0b23bc63cba9293a8c12056fb",
+      "extracted_path": "experiment/assets/english_books/2172.txt"
+    },
+    {
+      "book_id": "2183",
+      "archive_member": "librispeech-lm-corpus/corpus/2183/2183.txt",
+      "bytes": 373155,
+      "sha256": "07b28ef7417cc2c118a168cf5cfc04cec7101d1880c292c21d110719c203acef",
+      "extracted_path": "experiment/assets/english_books/2183.txt"
+    },
+    {
+      "book_id": "2186",
+      "archive_member": "librispeech-lm-corpus/corpus/2186/2186.txt",
+      "bytes": 294326,
+      "sha256": "4fb3bd8d23547dc8255d63d642116002ba8dc1e32255150d9ceb23b965eb590a",
+      "extracted_path": "experiment/assets/english_books/2186.txt"
+    },
+    {
+      "book_id": "2198",
+      "archive_member": "librispeech-lm-corpus/corpus/2198/2198.txt",
+      "bytes": 416405,
+      "sha256": "d4bb88d28e728766bd722629f22ee0ce1be7dd91c608aaea520f111e0a7fdbd5",
+      "extracted_path": "experiment/assets/english_books/2198.txt"
+    },
+    {
+      "book_id": "2226",
+      "archive_member": "librispeech-lm-corpus/corpus/2226/2226.txt",
+      "bytes": 583167,
+      "sha256": "5035f53086ab646bb807eda7beb1a530fb7635f7f4888b47b3b4aec0eb1e5638",
+      "extracted_path": "experiment/assets/english_books/2226.txt"
+    },
+    {
+      "book_id": "2233",
+      "archive_member": "librispeech-lm-corpus/corpus/2233/2233.txt",
+      "bytes": 428292,
+      "sha256": "de406d81469211f9f79792691a2cc8e3cdc4c4103897b8238085775c12f660d3",
+      "extracted_path": "experiment/assets/english_books/2233.txt"
+    },
+    {
+      "book_id": "2271",
+      "archive_member": "librispeech-lm-corpus/corpus/2271/2271.txt",
+      "bytes": 561693,
+      "sha256": "63ed1c108cd3095f18da7bc3e66b8cbdba4db162cec7cb1bec99f702ae1c922b",
+      "extracted_path": "experiment/assets/english_books/2271.txt"
+    },
+    {
+      "book_id": "2274",
+      "archive_member": "librispeech-lm-corpus/corpus/2274/2274.txt",
+      "bytes": 71525,
+      "sha256": "ebd5526a301b662b7a58d763f5ce772084517e3d40e66e12656a449b7884898c",
+      "extracted_path": "experiment/assets/english_books/2274.txt"
+    },
+    {
+      "book_id": "2275",
+      "archive_member": "librispeech-lm-corpus/corpus/2275/2275.txt",
+      "bytes": 964394,
+      "sha256": "1d18020186c0f2ad8c894bbc326b3423b2a56be0e850debb99c52bd1e161abbb",
+      "extracted_path": "experiment/assets/english_books/2275.txt"
+    },
+    {
+      "book_id": "2290",
+      "archive_member": "librispeech-lm-corpus/corpus/2290/2290.txt",
+      "bytes": 209152,
+      "sha256": "c13c8a0a4e4a5472ac11038be9b29996f0b5da3db6683ac5d0d44f6318ed30b8",
+      "extracted_path": "experiment/assets/english_books/2290.txt"
+    },
+    {
+      "book_id": "2293",
+      "archive_member": "librispeech-lm-corpus/corpus/2293/2293.txt",
+      "bytes": 352907,
+      "sha256": "6e90a349460a145e06675e1dcf75618ead538ecb9c0948fc1df818180553e404",
+      "extracted_path": "experiment/assets/english_books/2293.txt"
+    },
+    {
+      "book_id": "2295",
+      "archive_member": "librispeech-lm-corpus/corpus/2295/2295.txt",
+      "bytes": 163752,
+      "sha256": "991f8a8eba17c87056a825e7efb1f3fb803ba8b0e7e39f11859afdc7d79b5b86",
+      "extracted_path": "experiment/assets/english_books/2295.txt"
+    },
+    {
+      "book_id": "2350",
+      "archive_member": "librispeech-lm-corpus/corpus/2350/2350.txt",
+      "bytes": 33374,
+      "sha256": "ee2705cb40b401c04b17be40e7204461a74da5bbdeaa28b1d3d9644363ac4b8e",
+      "extracted_path": "experiment/assets/english_books/2350.txt"
+    }
+  ],
+  "book_count": 500,
+  "extracted_bytes": 210728223,
+  "all_extracted_sha256_match_source": true,
+  "elapsed_seconds": 14.859000000000378,
+  "selection_used_model_or_ocr_results": false
+}
