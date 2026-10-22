@@ -1,0 +1,370 @@
+{
+  "created_at_kst": "2026-10-22T09:43:49.415366+09:00",
+  "original_inputs_preserved": false,
+  "final_pdf_pages": 25,
+  "all_delivery_input_baselines_preserved": true,
+  "original_supplied_input_count": 3,
+  "user_designated_replacement_count": 1,
+  "delivery_input_baseline_count": 4,
+  "delivery_input_policy": "three_initial_originals_plus_user_designated_code_replacement",
+  "historical_original_code_archive_preserved": false,
+  "historical_original_code_sha256": "d28c5e6042d6b2276b6d67aca331d2f4d097e8c82ad38112886d8936bb541cd1",
+  "user_designated_code_baseline": {
+    "user_instruction": "이걸 그럼 최초 원본으로 하고 다시!",
+    "source_path": "C:\\Users\\ParkBS\\Documents\\ChatGPT\\문서 이미지 복원을 위한 저주파 서브스페이스 일관성 정규화 기법의 경험적 비교\\output\\packages\\all_10_github_packages_updated.zip",
+    "original_filename": "all_10_github_packages_updated.zip",
+    "snapshot_path": "analysis/original_inputs/user_designated_code_baseline/af1f865a33f77c9c8acc64eb3543f7f158c0c3e7625e65cbc059f4d1ed35783c/all_10_github_packages_updated.zip",
+    "bytes": 783914,
+    "sha256": "af1f865a33f77c9c8acc64eb3543f7f158c0c3e7625e65cbc059f4d1ed35783c",
+    "designated_at_kst": "2026-10-22T09:16:12.047616+09:00",
+    "historical_original_sha256": "d28c5e6042d6b2276b6d67aca331d2f4d097e8c82ad38112886d8936bb541cd1",
+    "scope": "delivery_input_baseline_only_preserve_frozen_experiments",
+    "old_original_claim": false,
+    "outer_zip_crc": "passed",
+    "outer_entries": 100,
+    "nested_zip_crc_passed": 10,
+    "byte_unchanged_snapshot_verified": true,
+    "source_validation_report_path": "output/packages/all_10_github_packages_updated.validation.json",
+    "source_validation_report_sha256": "4e25b0a1f81d3cb316f88cdc5ebf9730d522063b1feed3fefde0be2bdb5dd117",
+    "matches_current_source_validation": true,
+    "schema_version": 1,
+    "authority": "explicit_user_instruction",
+    "status": "accepted_by_user_designation",
+    "source_validation_report_snapshot_path": "analysis/original_inputs/user_designated_code_baseline/af1f865a33f77c9c8acc64eb3543f7f158c0c3e7625e65cbc059f4d1ed35783c/packaging_validation_at_designation.json",
+    "source_validation_report_snapshot_sha256": "4e25b0a1f81d3cb316f88cdc5ebf9730d522063b1feed3fefde0be2bdb5dd117",
+    "descriptor_path": "analysis/original_inputs/user_designated_code_baseline.json",
+    "descriptor_sha256": "95b1fdd577da68a4f32a5e22fc342a81d79b83ff30bbe6e8dda413d54d7a4147"
+  },
+  "additional_supplied_snapshot_count": 16,
+  "additional_supplied_snapshots": [
+    {
+      "snapshot_path": "analysis/input_snapshots/supplied_updated_code_snapshot_d767a74d1266df41ec4078af3de0712841cc29b7cc6e1be9648169b59a8cce4c.zip",
+      "original_filename": "all_10_github_packages_updated.zip",
+      "sha256": "d767a74d1266df41ec4078af3de0712841cc29b7cc6e1be9648169b59a8cce4c",
+      "bytes": 759834,
+      "received_at_kst": "2026-10-22T05:37:05.708886+09:00",
+      "archive_alias": "supplied_updated_code_snapshot.zip",
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/d767a74d1266df41ec4078af3de0712841cc29b7cc6e1be9648169b59a8cce4c/supplied_updated_code_snapshot.zip"
+    },
+    {
+      "snapshot_path": "analysis/input_snapshots/supplied_updated_code_snapshot_0a79cb9c0c3cf5b2d2849fd334ec03ec1b14839d344b76dca056c147a8a44928.zip",
+      "original_filename": "all_10_github_packages_updated_20261022_055508.zip",
+      "sha256": "0a79cb9c0c3cf5b2d2849fd334ec03ec1b14839d344b76dca056c147a8a44928",
+      "bytes": 764251,
+      "received_at_kst": "2026-10-22T05:57:57.895428+09:00",
+      "archive_alias": "all_10_github_packages_updated_20261022_055508.zip",
+      "observed_source_location": "C:\\Users\\ParkBS\\Downloads\\all_10_github_packages_updated_20261022_055508.zip",
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/0a79cb9c0c3cf5b2d2849fd334ec03ec1b14839d344b76dca056c147a8a44928/all_10_github_packages_updated_20261022_055508.zip"
+    },
+    {
+      "snapshot_path": "analysis/input_snapshots/supplied_updated_code_snapshot_0c61302e2d3c697ba873d7cf636fec41d6e7ee24b1ea1f2a2ef2da0623503e5e.zip",
+      "original_filename": "all_10_github_packages_updated_20261022_060322.zip",
+      "sha256": "0c61302e2d3c697ba873d7cf636fec41d6e7ee24b1ea1f2a2ef2da0623503e5e",
+      "bytes": 764408,
+      "received_at_kst": "2026-10-22T06:06:22.454371+09:00",
+      "archive_alias": "all_10_github_packages_updated_20261022_060322.zip",
+      "observed_source_location": "C:\\Users\\ParkBS\\Downloads\\all_10_github_packages_updated_20261022_060322.zip",
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/0c61302e2d3c697ba873d7cf636fec41d6e7ee24b1ea1f2a2ef2da0623503e5e/all_10_github_packages_updated_20261022_060322.zip"
+    },
+    {
+      "snapshot_path": "analysis/input_snapshots/supplied_updated_code_snapshot_ade9fa719a7e88db9f4ec4e79f6ef9e401df1b74900f6720c332875c64462fe1.zip",
+      "original_filename": "all_10_github_packages_updated_20261022_062232.zip",
+      "sha256": "ade9fa719a7e88db9f4ec4e79f6ef9e401df1b74900f6720c332875c64462fe1",
+      "bytes": 782482,
+      "received_at_kst": "2026-10-22T06:28:36.005711+09:00",
+      "archive_alias": "all_10_github_packages_updated_20261022_062232.zip",
+      "observed_source_location": "C:\\Users\\ParkBS\\Downloads\\all_10_github_packages_updated_20261022_062232.zip",
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/ade9fa719a7e88db9f4ec4e79f6ef9e401df1b74900f6720c332875c64462fe1/all_10_github_packages_updated_20261022_062232.zip"
+    },
+    {
+      "snapshot_path": "analysis/input_snapshots/supplied_updated_code_snapshot_de555a7eb3958a5c64ef8eae90909d7b8332cc2b313652f299e6f231ea03c19e.zip",
+      "original_filename": "all_10_github_packages_updated_20261022_064151.zip",
+      "sha256": "de555a7eb3958a5c64ef8eae90909d7b8332cc2b313652f299e6f231ea03c19e",
+      "bytes": 783349,
+      "received_at_kst": "2026-10-22T06:44:05.762121+09:00",
+      "archive_alias": "all_10_github_packages_updated_20261022_064151.zip",
+      "observed_source_location": "C:\\Users\\ParkBS\\Downloads\\all_10_github_packages_updated_20261022_064151.zip",
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/de555a7eb3958a5c64ef8eae90909d7b8332cc2b313652f299e6f231ea03c19e/all_10_github_packages_updated_20261022_064151.zip"
+    },
+    {
+      "snapshot_path": "analysis/input_snapshots/supplied_updated_code_snapshot_9376205b25a520e6b4e57d44c0a9f79ab4897aab82d13eef777804955c809dc5.zip",
+      "original_filename": "all_10_github_packages_updated_20261022_065827.zip",
+      "sha256": "9376205b25a520e6b4e57d44c0a9f79ab4897aab82d13eef777804955c809dc5",
+      "bytes": 783699,
+      "received_at_kst": "2026-10-22T07:00:27.116266+09:00",
+      "archive_alias": "all_10_github_packages_updated_20261022_065827.zip",
+      "observed_source_location": "C:\\Users\\ParkBS\\Downloads\\all_10_github_packages_updated_20261022_065827.zip",
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/9376205b25a520e6b4e57d44c0a9f79ab4897aab82d13eef777804955c809dc5/all_10_github_packages_updated_20261022_065827.zip"
+    },
+    {
+      "snapshot_path": "analysis/input_snapshots/supplied_updated_code_snapshot_d032b625b5e499d9cc14b0d818dfc12a8793f4d54539827e409c0183039f9abf.zip",
+      "original_filename": "all_10_github_packages_updated_20261022_070916.zip",
+      "sha256": "d032b625b5e499d9cc14b0d818dfc12a8793f4d54539827e409c0183039f9abf",
+      "bytes": 783804,
+      "received_at_kst": "2026-10-22T07:11:17.109279+09:00",
+      "archive_alias": "all_10_github_packages_updated_20261022_070916.zip",
+      "observed_source_location": "C:\\Users\\ParkBS\\Downloads\\all_10_github_packages_updated_20261022_070916.zip",
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/d032b625b5e499d9cc14b0d818dfc12a8793f4d54539827e409c0183039f9abf/all_10_github_packages_updated_20261022_070916.zip"
+    },
+    {
+      "snapshot_path": "analysis/input_snapshots/supplied_updated_code_snapshot_750dc2dd8da4347b7703971b5537e8425ca66975cf8998c04c33cf16590657c7.zip",
+      "original_filename": "all_10_github_packages_updated_20261022_071711.zip",
+      "sha256": "750dc2dd8da4347b7703971b5537e8425ca66975cf8998c04c33cf16590657c7",
+      "bytes": 783841,
+      "received_at_kst": "2026-10-22T07:20:51.887172+09:00",
+      "archive_alias": "all_10_github_packages_updated_20261022_071711.zip",
+      "observed_source_location": "C:\\Users\\ParkBS\\Downloads\\all_10_github_packages_updated_20261022_071711.zip",
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/750dc2dd8da4347b7703971b5537e8425ca66975cf8998c04c33cf16590657c7/all_10_github_packages_updated_20261022_071711.zip"
+    },
+    {
+      "snapshot_path": "analysis/input_snapshots/supplied_updated_code_snapshot_e78196e2873c87667978b3d32b307effc73fb91f59a81ea146c70ef397c21ea8.zip",
+      "original_filename": "all_10_github_packages_updated_20261022_072605.zip",
+      "sha256": "e78196e2873c87667978b3d32b307effc73fb91f59a81ea146c70ef397c21ea8",
+      "bytes": 783940,
+      "received_at_kst": "2026-10-22T07:27:50.750057+09:00",
+      "archive_alias": "all_10_github_packages_updated_20261022_072605.zip",
+      "observed_source_location": "C:\\Users\\ParkBS\\Downloads\\all_10_github_packages_updated_20261022_072605.zip",
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/e78196e2873c87667978b3d32b307effc73fb91f59a81ea146c70ef397c21ea8/all_10_github_packages_updated_20261022_072605.zip"
+    },
+    {
+      "snapshot_path": "analysis/input_snapshots/supplied_updated_code_snapshot_287ed11b5cf41b0d7e8bf3a9c95c3e975c041e1bc6cdae4ffdb5174b78c64ee1.zip",
+      "original_filename": "all_10_github_packages_updated_20261022_074255.zip",
+      "sha256": "287ed11b5cf41b0d7e8bf3a9c95c3e975c041e1bc6cdae4ffdb5174b78c64ee1",
+      "bytes": 783987,
+      "received_at_kst": "2026-10-22T07:44:49.102919+09:00",
+      "archive_alias": "all_10_github_packages_updated_20261022_074255.zip",
+      "observed_source_location": "C:\\Users\\ParkBS\\Downloads\\all_10_github_packages_updated_20261022_074255.zip",
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/287ed11b5cf41b0d7e8bf3a9c95c3e975c041e1bc6cdae4ffdb5174b78c64ee1/all_10_github_packages_updated_20261022_074255.zip"
+    },
+    {
+      "snapshot_path": "analysis/input_snapshots/supplied_updated_code_snapshot_ba0e67c7e1d55d36247db4b65647f81901be49d3b1a79a21902979e2bdc2769c.zip",
+      "original_filename": "all_10_github_packages_updated_20261022_074719.zip",
+      "sha256": "ba0e67c7e1d55d36247db4b65647f81901be49d3b1a79a21902979e2bdc2769c",
+      "bytes": 783966,
+      "received_at_kst": "2026-10-22T07:50:37.966815+09:00",
+      "archive_alias": "all_10_github_packages_updated_20261022_074719.zip",
+      "observed_source_location": "C:\\Users\\ParkBS\\Downloads\\all_10_github_packages_updated_20261022_074719.zip",
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/ba0e67c7e1d55d36247db4b65647f81901be49d3b1a79a21902979e2bdc2769c/all_10_github_packages_updated_20261022_074719.zip"
+    },
+    {
+      "snapshot_path": "analysis/input_snapshots/supplied_updated_code_snapshot_fed9e887eb5e6fa00f31b01b1331c0d916381e36d54e8de1c8ba05edf53371e1.zip",
+      "original_filename": "all_10_github_packages_updated_20261022_075456.zip",
+      "sha256": "fed9e887eb5e6fa00f31b01b1331c0d916381e36d54e8de1c8ba05edf53371e1",
+      "bytes": 783889,
+      "received_at_kst": "2026-10-22T07:56:41.952906+09:00",
+      "archive_alias": "all_10_github_packages_updated_20261022_075456.zip",
+      "observed_source_location": "C:\\Users\\ParkBS\\Downloads\\all_10_github_packages_updated_20261022_075456.zip",
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/fed9e887eb5e6fa00f31b01b1331c0d916381e36d54e8de1c8ba05edf53371e1/all_10_github_packages_updated_20261022_075456.zip"
+    },
+    {
+      "snapshot_path": "analysis/input_snapshots/supplied_updated_code_snapshot_dc07a79adfab7346903aa3c9aa104e86217a44b7e0019080568c5c2efa33b370.zip",
+      "original_filename": "all_10_github_packages_updated_20261022_081143.zip",
+      "sha256": "dc07a79adfab7346903aa3c9aa104e86217a44b7e0019080568c5c2efa33b370",
+      "bytes": 783976,
+      "received_at_kst": "2026-10-22T08:14:59.147220+09:00",
+      "archive_alias": "all_10_github_packages_updated_20261022_081143.zip",
+      "observed_source_location": "C:\\Users\\ParkBS\\Downloads\\all_10_github_packages_updated_20261022_081143.zip",
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/dc07a79adfab7346903aa3c9aa104e86217a44b7e0019080568c5c2efa33b370/all_10_github_packages_updated_20261022_081143.zip"
+    },
+    {
+      "snapshot_path": "analysis/input_snapshots/supplied_updated_code_snapshot_9658554fb7f937bd0e55abbc0a1685e7d1a227d93b1efee4787f5cdf7d47c3f8.zip",
+      "original_filename": "all_10_github_packages_updated_20261022_081913.zip",
+      "sha256": "9658554fb7f937bd0e55abbc0a1685e7d1a227d93b1efee4787f5cdf7d47c3f8",
+      "bytes": 783880,
+      "received_at_kst": "2026-10-22T08:20:43.713262+09:00",
+      "archive_alias": "all_10_github_packages_updated_20261022_081913.zip",
+      "observed_source_location": "C:\\Users\\ParkBS\\Downloads\\all_10_github_packages_updated_20261022_081913.zip",
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/9658554fb7f937bd0e55abbc0a1685e7d1a227d93b1efee4787f5cdf7d47c3f8/all_10_github_packages_updated_20261022_081913.zip"
+    },
+    {
+      "snapshot_path": "analysis/input_snapshots/supplied_updated_code_snapshot_af1f865a33f77c9c8acc64eb3543f7f158c0c3e7625e65cbc059f4d1ed35783c.zip",
+      "original_filename": "all_10_github_packages_updated_20261022_085301.zip",
+      "sha256": "af1f865a33f77c9c8acc64eb3543f7f158c0c3e7625e65cbc059f4d1ed35783c",
+      "bytes": 783914,
+      "received_at_kst": "2026-10-22T08:54:25.821947+09:00",
+      "archive_alias": "all_10_github_packages_updated_20261022_085301.zip",
+      "observed_source_location": "C:\\Users\\ParkBS\\Downloads\\all_10_github_packages_updated_20261022_085301.zip",
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/af1f865a33f77c9c8acc64eb3543f7f158c0c3e7625e65cbc059f4d1ed35783c/all_10_github_packages_updated_20261022_085301.zip"
+    },
+    {
+      "snapshot_path": "analysis/input_snapshots/supplied_original_code_candidate_0466a663cf7688b36f044b2a57a8c86821fc82a591d298cacd4eafd0245c6498.zip",
+      "original_filename": "all_10_github_packages.zip",
+      "sha256": "0466a663cf7688b36f044b2a57a8c86821fc82a591d298cacd4eafd0245c6498",
+      "bytes": 256492,
+      "received_at_kst": "2026-10-22T09:11:42.106167+09:00",
+      "archive_alias": "received_original_code_candidate.zip",
+      "observed_source_location": "C:\\Users\\ParkBS\\Downloads\\all_10_github_packages.zip",
+      "identity_status": "does_not_match_recorded_original",
+      "recorded_original_expected_bytes": 256492,
+      "recorded_original_expected_sha256": "d28c5e6042d6b2276b6d67aca331d2f4d097e8c82ad38112886d8936bb541cd1",
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/0466a663cf7688b36f044b2a57a8c86821fc82a591d298cacd4eafd0245c6498/received_original_code_candidate.zip"
+    }
+  ],
+  "design_references_used_for_design_only": true,
+  "entries": [
+    {
+      "archive_path": "00_original_inputs/original_rough_draft.pdf",
+      "source_name": "An Empirical Comparison of Low-Frequency Subspace Consistency Regularization for Document Image Restoration_v5_thesis_final.pdf",
+      "bytes": 228991,
+      "sha256": "483eeaffdfe9d542e72fc0efe019c063b41717ef4d8ad0fa4b9285b2bbf734b3",
+      "status": "supplied_original_unchanged"
+    },
+    {
+      "archive_path": "00_original_inputs/user_designated_code_baseline.zip",
+      "source_name": "all_10_github_packages_updated.zip",
+      "bytes": 783914,
+      "sha256": "af1f865a33f77c9c8acc64eb3543f7f158c0c3e7625e65cbc059f4d1ed35783c",
+      "status": "user_designated_code_baseline_unchanged"
+    },
+    {
+      "archive_path": "00_original_inputs/source_database.zip",
+      "source_name": "An Empirical Comparison of Low-Frequency Subspace Consistency Regularization for Document Image Restoration DB.zip",
+      "bytes": 1819223408,
+      "sha256": "4881a1aca0bcb1d945a81079b6de4a143faedeec916e0d6989caae498dafd5b7",
+      "status": "supplied_original_unchanged"
+    },
+    {
+      "archive_path": "00_original_inputs/design_references_only.zip",
+      "source_name": "선행 연구.zip",
+      "bytes": 54677212,
+      "sha256": "2f1272813895da0cfb312a6cb7b47bcf7c9df0d3fca76b166f1b0525e305a8e4",
+      "status": "supplied_original_unchanged"
+    },
+    {
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/d767a74d1266df41ec4078af3de0712841cc29b7cc6e1be9648169b59a8cce4c/supplied_updated_code_snapshot.zip",
+      "source_name": "supplied_updated_code_snapshot_d767a74d1266df41ec4078af3de0712841cc29b7cc6e1be9648169b59a8cce4c.zip",
+      "bytes": 759834,
+      "sha256": "d767a74d1266df41ec4078af3de0712841cc29b7cc6e1be9648169b59a8cce4c",
+      "status": "additional_supplied_code_snapshot_unchanged"
+    },
+    {
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/0a79cb9c0c3cf5b2d2849fd334ec03ec1b14839d344b76dca056c147a8a44928/all_10_github_packages_updated_20261022_055508.zip",
+      "source_name": "supplied_updated_code_snapshot_0a79cb9c0c3cf5b2d2849fd334ec03ec1b14839d344b76dca056c147a8a44928.zip",
+      "bytes": 764251,
+      "sha256": "0a79cb9c0c3cf5b2d2849fd334ec03ec1b14839d344b76dca056c147a8a44928",
+      "status": "additional_supplied_code_snapshot_unchanged"
+    },
+    {
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/0c61302e2d3c697ba873d7cf636fec41d6e7ee24b1ea1f2a2ef2da0623503e5e/all_10_github_packages_updated_20261022_060322.zip",
+      "source_name": "supplied_updated_code_snapshot_0c61302e2d3c697ba873d7cf636fec41d6e7ee24b1ea1f2a2ef2da0623503e5e.zip",
+      "bytes": 764408,
+      "sha256": "0c61302e2d3c697ba873d7cf636fec41d6e7ee24b1ea1f2a2ef2da0623503e5e",
+      "status": "additional_supplied_code_snapshot_unchanged"
+    },
+    {
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/ade9fa719a7e88db9f4ec4e79f6ef9e401df1b74900f6720c332875c64462fe1/all_10_github_packages_updated_20261022_062232.zip",
+      "source_name": "supplied_updated_code_snapshot_ade9fa719a7e88db9f4ec4e79f6ef9e401df1b74900f6720c332875c64462fe1.zip",
+      "bytes": 782482,
+      "sha256": "ade9fa719a7e88db9f4ec4e79f6ef9e401df1b74900f6720c332875c64462fe1",
+      "status": "additional_supplied_code_snapshot_unchanged"
+    },
+    {
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/de555a7eb3958a5c64ef8eae90909d7b8332cc2b313652f299e6f231ea03c19e/all_10_github_packages_updated_20261022_064151.zip",
+      "source_name": "supplied_updated_code_snapshot_de555a7eb3958a5c64ef8eae90909d7b8332cc2b313652f299e6f231ea03c19e.zip",
+      "bytes": 783349,
+      "sha256": "de555a7eb3958a5c64ef8eae90909d7b8332cc2b313652f299e6f231ea03c19e",
+      "status": "additional_supplied_code_snapshot_unchanged"
+    },
+    {
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/9376205b25a520e6b4e57d44c0a9f79ab4897aab82d13eef777804955c809dc5/all_10_github_packages_updated_20261022_065827.zip",
+      "source_name": "supplied_updated_code_snapshot_9376205b25a520e6b4e57d44c0a9f79ab4897aab82d13eef777804955c809dc5.zip",
+      "bytes": 783699,
+      "sha256": "9376205b25a520e6b4e57d44c0a9f79ab4897aab82d13eef777804955c809dc5",
+      "status": "additional_supplied_code_snapshot_unchanged"
+    },
+    {
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/d032b625b5e499d9cc14b0d818dfc12a8793f4d54539827e409c0183039f9abf/all_10_github_packages_updated_20261022_070916.zip",
+      "source_name": "supplied_updated_code_snapshot_d032b625b5e499d9cc14b0d818dfc12a8793f4d54539827e409c0183039f9abf.zip",
+      "bytes": 783804,
+      "sha256": "d032b625b5e499d9cc14b0d818dfc12a8793f4d54539827e409c0183039f9abf",
+      "status": "additional_supplied_code_snapshot_unchanged"
+    },
+    {
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/750dc2dd8da4347b7703971b5537e8425ca66975cf8998c04c33cf16590657c7/all_10_github_packages_updated_20261022_071711.zip",
+      "source_name": "supplied_updated_code_snapshot_750dc2dd8da4347b7703971b5537e8425ca66975cf8998c04c33cf16590657c7.zip",
+      "bytes": 783841,
+      "sha256": "750dc2dd8da4347b7703971b5537e8425ca66975cf8998c04c33cf16590657c7",
+      "status": "additional_supplied_code_snapshot_unchanged"
+    },
+    {
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/e78196e2873c87667978b3d32b307effc73fb91f59a81ea146c70ef397c21ea8/all_10_github_packages_updated_20261022_072605.zip",
+      "source_name": "supplied_updated_code_snapshot_e78196e2873c87667978b3d32b307effc73fb91f59a81ea146c70ef397c21ea8.zip",
+      "bytes": 783940,
+      "sha256": "e78196e2873c87667978b3d32b307effc73fb91f59a81ea146c70ef397c21ea8",
+      "status": "additional_supplied_code_snapshot_unchanged"
+    },
+    {
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/287ed11b5cf41b0d7e8bf3a9c95c3e975c041e1bc6cdae4ffdb5174b78c64ee1/all_10_github_packages_updated_20261022_074255.zip",
+      "source_name": "supplied_updated_code_snapshot_287ed11b5cf41b0d7e8bf3a9c95c3e975c041e1bc6cdae4ffdb5174b78c64ee1.zip",
+      "bytes": 783987,
+      "sha256": "287ed11b5cf41b0d7e8bf3a9c95c3e975c041e1bc6cdae4ffdb5174b78c64ee1",
+      "status": "additional_supplied_code_snapshot_unchanged"
+    },
+    {
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/ba0e67c7e1d55d36247db4b65647f81901be49d3b1a79a21902979e2bdc2769c/all_10_github_packages_updated_20261022_074719.zip",
+      "source_name": "supplied_updated_code_snapshot_ba0e67c7e1d55d36247db4b65647f81901be49d3b1a79a21902979e2bdc2769c.zip",
+      "bytes": 783966,
+      "sha256": "ba0e67c7e1d55d36247db4b65647f81901be49d3b1a79a21902979e2bdc2769c",
+      "status": "additional_supplied_code_snapshot_unchanged"
+    },
+    {
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/fed9e887eb5e6fa00f31b01b1331c0d916381e36d54e8de1c8ba05edf53371e1/all_10_github_packages_updated_20261022_075456.zip",
+      "source_name": "supplied_updated_code_snapshot_fed9e887eb5e6fa00f31b01b1331c0d916381e36d54e8de1c8ba05edf53371e1.zip",
+      "bytes": 783889,
+      "sha256": "fed9e887eb5e6fa00f31b01b1331c0d916381e36d54e8de1c8ba05edf53371e1",
+      "status": "additional_supplied_code_snapshot_unchanged"
+    },
+    {
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/dc07a79adfab7346903aa3c9aa104e86217a44b7e0019080568c5c2efa33b370/all_10_github_packages_updated_20261022_081143.zip",
+      "source_name": "supplied_updated_code_snapshot_dc07a79adfab7346903aa3c9aa104e86217a44b7e0019080568c5c2efa33b370.zip",
+      "bytes": 783976,
+      "sha256": "dc07a79adfab7346903aa3c9aa104e86217a44b7e0019080568c5c2efa33b370",
+      "status": "additional_supplied_code_snapshot_unchanged"
+    },
+    {
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/9658554fb7f937bd0e55abbc0a1685e7d1a227d93b1efee4787f5cdf7d47c3f8/all_10_github_packages_updated_20261022_081913.zip",
+      "source_name": "supplied_updated_code_snapshot_9658554fb7f937bd0e55abbc0a1685e7d1a227d93b1efee4787f5cdf7d47c3f8.zip",
+      "bytes": 783880,
+      "sha256": "9658554fb7f937bd0e55abbc0a1685e7d1a227d93b1efee4787f5cdf7d47c3f8",
+      "status": "additional_supplied_code_snapshot_unchanged"
+    },
+    {
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/af1f865a33f77c9c8acc64eb3543f7f158c0c3e7625e65cbc059f4d1ed35783c/all_10_github_packages_updated_20261022_085301.zip",
+      "source_name": "supplied_updated_code_snapshot_af1f865a33f77c9c8acc64eb3543f7f158c0c3e7625e65cbc059f4d1ed35783c.zip",
+      "bytes": 783914,
+      "sha256": "af1f865a33f77c9c8acc64eb3543f7f158c0c3e7625e65cbc059f4d1ed35783c",
+      "status": "additional_supplied_code_snapshot_unchanged"
+    },
+    {
+      "archive_path": "00_original_inputs/additional_supplied_snapshots/0466a663cf7688b36f044b2a57a8c86821fc82a591d298cacd4eafd0245c6498/received_original_code_candidate.zip",
+      "source_name": "supplied_original_code_candidate_0466a663cf7688b36f044b2a57a8c86821fc82a591d298cacd4eafd0245c6498.zip",
+      "bytes": 256492,
+      "sha256": "0466a663cf7688b36f044b2a57a8c86821fc82a591d298cacd4eafd0245c6498",
+      "status": "additional_supplied_code_snapshot_unchanged"
+    },
+    {
+      "archive_path": "01_updated/completed_thesis.pdf",
+      "source_name": "low_frequency_subspace_document_restoration.pdf",
+      "bytes": 746536,
+      "sha256": "944c8c9e10b4c7ad851dfe3d9c8741dab3a31791363b9eca3219cf5cac8da2af",
+      "status": "completed_and_visually_verified"
+    },
+    {
+      "archive_path": "01_updated/all_10_github_packages_updated.zip",
+      "source_name": "all_10_github_packages_updated.zip",
+      "bytes": 842701,
+      "sha256": "8ab6a0cc4397ef9d340560de57e28c151d74f5bfd39bee70dd7f95adbaef5a51",
+      "status": "updated_code_and_manuscript_sources"
+    },
+    {
+      "archive_path": "02_reproducibility/reproducibility_evidence.zip",
+      "source_name": "reproducibility_evidence.zip",
+      "bytes": 48356754,
+      "sha256": "80b216b061b2663258281d6bf52dc8c5ba540421cd4853aff21d3a13abee4ea3",
+      "status": "measured_results_and_provenance"
+    }
+  ],
+  "recovery_events_included": 1,
+  "execution_timing_note": "Completed-run summary times exclude any abandoned pre-checkpoint attempts, which are preserved separately in the evidence archive.",
+  "large_reconstruction_note": "Full generated images, installed libraries, and model checkpoints are not duplicated; their regeneration uses the included frozen protocol and original source database."
+}
